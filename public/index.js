@@ -82,81 +82,81 @@ let Monster = class {
 }
 console.log("starting tests")
 var Data = {
-    "banditGuard": {
+    "banditGuard":{
         "name": "Bandit Guard",
-        "statFront": "public/images/monster-stat-cards/gh-bandit-guard-0.png",
-        "statBack": "public/images/monster-stat-cards/gh-bandit-guard-4.png",
-        "image": "public/images/monster-standees/Bandit-Guard.avif",
+        "statFront": "images/monster-stat-cards/gh-bandit-guard-0.png",
+        "statBack": "images/monster-stat-cards/gh-bandit-guard-4.png",
+        "image":"images/monster-standees/Bandit-Guard.avif",
         "deck": [
             {
-                "image": "public/images/moster-ability-cards/guard/gh-ma-gu-1.png",
+                "image": "images/monster-ability-cards/guard/gh-ma-gu-1.png",
                 "shuffle": "true"
             },
             {
-                "image": "public/images/moster-ability-cards/guard/gh-ma-gu-2.png",
+                "image": "images/monster-ability-cards/guard/gh-ma-gu-2.png",
                 "shuffle": "false"
             },
             {
-                "image": "public/images/moster-ability-cards/guard/gh-ma-gu-3.png",
+                "image": "images/monster-ability-cards/guard/gh-ma-gu-3.png",
                 "shuffle": "false"
             },
             {
-                "image": "public/images/moster-ability-cards/guard/gh-ma-gu-4.png",
+                "image": "images/monster-ability-cards/guard/gh-ma-gu-4.png",
                 "shuffle": "false"
             },
             {
-                "image": "public/images/moster-ability-cards/guard/gh-ma-gu-5.png",
+                "image": "images/monster-ability-cards/guard/gh-ma-gu-5.png",
                 "shuffle": "false"
             },
             {
-                "image": "public/images/moster-ability-cards/guard/gh-ma-gu-6.png",
+                "image": "images/monster-ability-cards/guard/gh-ma-gu-6.png",
                 "shuffle": "false"
             },
             {
-                "image": "public/images/moster-ability-cards/guard/gh-ma-gu-7.png",
+                "image": "images/monster-ability-cards/guard/gh-ma-gu-7.png",
                 "shuffle": "false"
             },
             {
-                "image": "public/images/moster-ability-cards/guard/gh-ma-gu-8.png",
+                "image": "images/monster-ability-cards/guard/gh-ma-gu-8.png",
                 "shuffle": "true"
             }
         ],
         "health": [
             {
-                "normal": "5",
+                "normal":"5",
                 "elite": "9"
             },
             {
-                "normal": "6",
+                "normal":"6",
                 "elite": "9"
             },
             {
-                "normal": "6",
+                "normal":"6",
                 "elite": "10"
             },
             {
-                "normal": "9",
+                "normal":"9", 
                 "elite": "10"
             },
             {
-                "normal": "10",
+                "normal":"10",
                 "elite": "11"
             },
             {
-                "normal": "11",
+                "normal":"11",
                 "elite": "12"
             },
             {
-                "normal": "14",
+                "normal":"14",
                 "elite": "14"
             },
             {
-                "normal": "16",
+                "normal":"16",
                 "elite": "14"
             }
         ],
-        "cardBack": "public/images/moster-ability-cards/guard/gh-ma-gu-back.png",
-        "sleeve": "public/images/monster-stat-cards/gh-monster-stat-card-envelope-6.png"
+        "cardBack": "images/monster-ability-cards/guard/gh-ma-gu-back.png",
+        "sleeve" :"images/monster-stat-cards/gh-monster-stat-card-envelope-6.png"
     }
 
 }
