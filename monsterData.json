@@ -1,8 +1,8 @@
 {
-    "bandit-guard":{
+    "banditGuard":{
         "name": "Bandit Guard",
-        "stat-front": "public/images/monster-stat-cards/gh-bandit-guard-0.png",
-        "stat-back": "public/images/monster-stat-cards/gh-bandit-guard-4.png",
+        "statFront": "public/images/monster-stat-cards/gh-bandit-guard-0.png",
+        "statBack": "public/images/monster-stat-cards/gh-bandit-guard-4.png",
         "image":"public/images/monster-standees/Bandit-Guard.avif",
         "deck": [
             {
@@ -27,15 +27,15 @@
             },
             {
                 "image": "public/images/moster-ability-cards/guard/gh-ma-gu-6.png",
-                "shuffle": "trfalseue"
+                "shuffle": "false"
             },
             {
                 "image": "public/images/moster-ability-cards/guard/gh-ma-gu-7.png",
-                "shuffle": "true"
+                "shuffle": "false"
             },
             {
                 "image": "public/images/moster-ability-cards/guard/gh-ma-gu-8.png",
-                "shuffle": "false"
+                "shuffle": "true"
             }
         ],
         "health": [
@@ -72,7 +72,7 @@
                 "elite": "14"
             }
         ],
-        "card-back": "public/images/moster-ability-cards/guard/gh-ma-gu-back.png",
+        "cardBack": "public/images/moster-ability-cards/guard/gh-ma-gu-back.png",
         "sleeve" :"public/images/monster-stat-cards/gh-monster-stat-card-envelope-6.png"
     }
 
