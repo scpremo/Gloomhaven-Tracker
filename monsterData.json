@@ -7,35 +7,43 @@
         "deck": [
             {
                 "image": "images/monster-ability-cards/guard/gh-ma-gu-1.png",
-                "shuffle": "true"
+                "shuffle": "true",
+                "initiative":15
             },
             {
                 "image": "images/monster-ability-cards/guard/gh-ma-gu-2.png",
-                "shuffle": "false"
+                "shuffle": "false",
+                "initiative":30
             },
             {
                 "image": "images/monster-ability-cards/guard/gh-ma-gu-3.png",
-                "shuffle": "false"
+                "shuffle": "false",
+                "initiative":35
             },
             {
                 "image": "images/monster-ability-cards/guard/gh-ma-gu-4.png",
-                "shuffle": "false"
+                "shuffle": "false",
+                "initiative":50
             },
             {
                 "image": "images/monster-ability-cards/guard/gh-ma-gu-5.png",
-                "shuffle": "false"
+                "shuffle": "false",
+                "initiative":50
             },
             {
                 "image": "images/monster-ability-cards/guard/gh-ma-gu-6.png",
-                "shuffle": "false"
+                "shuffle": "false",
+                "initiative":70
             },
             {
                 "image": "images/monster-ability-cards/guard/gh-ma-gu-7.png",
-                "shuffle": "false"
+                "shuffle": "false",
+                "initiative":55
             },
             {
                 "image": "images/monster-ability-cards/guard/gh-ma-gu-8.png",
-                "shuffle": "true"
+                "shuffle": "true",
+                "initiative":15
             }
         ],
         "health": [
@@ -73,7 +81,8 @@
             }
         ],
         "cardBack": "images/monster-ability-cards/guard/gh-ma-gu-back.png",
-        "sleeve" :"images/monster-stat-cards/gh-monster-stat-card-envelope-6.png"
+        "sleeve" :"images/monster-stat-cards/gh-monster-stat-card-envelope-6.png",
+        "maxCount" : 6
     }
 
 }

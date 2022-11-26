@@ -3,12 +3,16 @@ let Card = class {
     constructor(card) {
         this.cardFront = card.image
         this.shuffle = card.shuffle
+        this.initiative = card.initiative
     }
     getCardFront() {
         return this.cardFront
     }
     cardShuffle() {
         return this.shuffle
+    }
+    getInitiative(){
+        return this.initiative
     }
 }
 let Deck = class {
@@ -47,10 +51,45 @@ let Deck = class {
     }
 
 }
-
+let healthTracker=class{
+    constructor(health,type,playerCount,number){
+        this.mumber=number
+        this.type=type
+        if(type==="elite")
+        {
+            this.health=health.elite
+            this.max=health.elite
+        }
+        else if(type==="boss")
+        {
+            this.health=health.boss*playerCount
+            this.max=this.health
+        }
+        else{
+            this.health=health.normal
+            this.max=health.normal
+        }
+    }
+    lowerHealth(){
+        this.health--
+        if (this.health<=0)
+        {
+            //delete stuff
+            this.health=0
+        }
+    }
+    increasHealth(){
+        this.health++
+        if(this.health>this.max)
+        {
+            this.health=this.max
+        }
+    }
+}
 let Monster = class {
-    constructor(monsterData, level, type) {
+    constructor(monsterData, level,playerCount) {
         this.name = monsterData.name
+        this.playerCount=playerCount
         this.rotation = 90 * (level % 4)
         this.deck = new Deck(monsterData.deck, monsterData.cardBack)
         this.deck.shuffle()
@@ -60,13 +99,17 @@ let Monster = class {
             this.statCard = monsterData.statFront
         this.sleeve = monsterData.sleeve
         this.image = monsterData.image
-        if (type === "elite") {
-            this.health = monsterData.health[level].elite
-        }
-        else {
-            this.health = monsterData.health[level].normal
-        }
+        this.health=monsterData.health[level]
+        this.maxCount=monsterData.maxCount
         this.discard = null
+        this.monsters = new Array(this.maxCount)
+        for (let index = 0; index < this.maxCount; index++) {
+            this.monsters[index]={
+                filled: "false",
+                monster: "null"                
+            }
+        }
+        this.currentCount=0
     }
     startRound(){
         this.discard=this.deck.draw()
@@ -77,6 +120,33 @@ let Monster = class {
         {
             if(this.discard.cardShuffle()==='true')
                 this.deck.shuffle()
+            this.discard=null
+        }
+    }
+    newMonster(type){
+        if (this.currentCount<this.maxCount)
+        {
+            var numb=Math.floor(Math.random() * this.maxCount)
+            while(this.monsters[numb].filled==='true'){
+                var numb=Math.floor(Math.random() * this.maxCount)
+            }
+            this.monsters[numb].monster= new healthTracker(this.health, type, this.playerCount,numb)
+            this.monsters[numb].filled="true"
+            this.currentCount++
+        }
+        else{
+            //display already at max
+        }
+    }
+    deleteMonster(index)
+    {
+        delete this.monsters[index].monster
+        this.monsters[index].monster="null"
+        this.monsters[index].filled="false"        
+    }
+    getInitiative(){
+        if(this.discard){
+            return this.discard.getInitiative()
         }
     }
 }
@@ -90,35 +160,43 @@ var Data = {
         "deck": [
             {
                 "image": "images/monster-ability-cards/guard/gh-ma-gu-1.png",
-                "shuffle": "true"
+                "shuffle": "true",
+                "initiative":15
             },
             {
                 "image": "images/monster-ability-cards/guard/gh-ma-gu-2.png",
-                "shuffle": "false"
+                "shuffle": "false",
+                "initiative":30
             },
             {
                 "image": "images/monster-ability-cards/guard/gh-ma-gu-3.png",
-                "shuffle": "false"
+                "shuffle": "false",
+                "initiative":35
             },
             {
                 "image": "images/monster-ability-cards/guard/gh-ma-gu-4.png",
-                "shuffle": "false"
+                "shuffle": "false",
+                "initiative":50
             },
             {
                 "image": "images/monster-ability-cards/guard/gh-ma-gu-5.png",
-                "shuffle": "false"
+                "shuffle": "false",
+                "initiative":50
             },
             {
                 "image": "images/monster-ability-cards/guard/gh-ma-gu-6.png",
-                "shuffle": "false"
+                "shuffle": "false",
+                "initiative":70
             },
             {
                 "image": "images/monster-ability-cards/guard/gh-ma-gu-7.png",
-                "shuffle": "false"
+                "shuffle": "false",
+                "initiative":55
             },
             {
                 "image": "images/monster-ability-cards/guard/gh-ma-gu-8.png",
-                "shuffle": "true"
+                "shuffle": "true",
+                "initiative":15
             }
         ],
         "health": [
@@ -156,7 +234,8 @@ var Data = {
             }
         ],
         "cardBack": "images/monster-ability-cards/guard/gh-ma-gu-back.png",
-        "sleeve" :"images/monster-stat-cards/gh-monster-stat-card-envelope-6.png"
+        "sleeve" :"images/monster-stat-cards/gh-monster-stat-card-envelope-6.png",
+        "maxCount" : 6
     }
 
 }
