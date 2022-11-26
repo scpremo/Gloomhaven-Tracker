@@ -1,88 +1,342 @@
 {
-    "banditGuard":{
-        "name": "Bandit Guard",
-        "statFront": "images/monster-stat-cards/gh-bandit-guard-0.png",
-        "statBack": "images/monster-stat-cards/gh-bandit-guard-4.png",
-        "image":"images/monster-standees/Bandit-Guard.avif",
+    "attackMods": {
         "deck": [
             {
-                "image": "images/monster-ability-cards/guard/gh-ma-gu-1.png",
+                "image": "images/attack-modifiers/monster/gh-am-m-01.png",
+                "shuffle": "false"
+            },
+            {
+                "image": "images/attack-modifiers/monster/gh-am-m-02.png",
+                "shuffle": "false"
+            },
+            {
+                "image": "images/attack-modifiers/monster/gh-am-m-03.png",
+                "shuffle": "false"
+            },
+            {
+                "image": "images/attack-modifiers/monster/gh-am-m-04.png",
+                "shuffle": "false"
+            },
+            {
+                "image": "images/attack-modifiers/monster/gh-am-m-05.png",
+                "shuffle": "false"
+            },
+            {
+                "image": "images/attack-modifiers/monster/gh-am-m-06.png",
+                "shuffle": "false"
+            },
+            {
+                "image": "images/attack-modifiers/monster/gh-am-m-07.png",
+                "shuffle": "false"
+            },
+            {
+                "image": "images/attack-modifiers/monster/gh-am-m-08.png",
+                "shuffle": "false"
+            },
+            {
+                "image": "images/attack-modifiers/monster/gh-am-m-09.png",
+                "shuffle": "false"
+            },
+            {
+                "image": "images/attack-modifiers/monster/gh-am-m-10.png",
+                "shuffle": "false"
+            },
+            {
+                "image": "images/attack-modifiers/monster/gh-am-m-11.png",
+                "shuffle": "false"
+            },
+            {
+                "image": "images/attack-modifiers/monster/gh-am-m-12.png",
+                "shuffle": "false"
+            },
+            {
+                "image": "images/attack-modifiers/monster/gh-am-m-13.png",
+                "shuffle": "false"
+            },
+            {
+                "image": "images/attack-modifiers/monster/gh-am-m-14.png",
+                "shuffle": "false"
+            },
+            {
+                "image": "images/attack-modifiers/monster/gh-am-m-15.png",
+                "shuffle": "false"
+            },
+            {
+                "image": "images/attack-modifiers/monster/gh-am-m-16.png",
+                "shuffle": "false"
+            },
+            {
+                "image": "images/attack-modifiers/monster/gh-am-m-17.png",
+                "shuffle": "false"
+            },
+            {
+                "image": "images/attack-modifiers/monster/gh-am-m-18.png",
+                "shuffle": "false"
+            },
+            {
+                "image": "images/attack-modifiers/monster/gh-am-m-19.png",
+                "shuffle": "true"
+            },
+            {
+                "image": "images/attack-modifiers/monster/gh-am-m-20.png",
+                "shuffle": "true"
+            }
+        ],
+        "cardBack": "images/attack-modifiers/monster/gh-am-m-back.png"
+    },
+    "banditArcher": {
+        "name": "Bandit Archer",
+        "statFront": "images/monster-stat-cards/gh-bandit-archer-0.png",
+        "statBack": "images/monster-stat-cards/gh-bandit-archer-4.png",
+        "image": "images/monster-standees/Bandit-Archer.avif",
+        "deck": [
+            {
+                "image": "images/monster-ability-cards/guard/gh-ma-ar-1.png",
+                "shuffle": "false",
+                "initiative": 16
+            },
+            {
+                "image": "images/monster-ability-cards/guard/gh-ma-ar-2.png",
+                "shuffle": "false",
+                "initiative": 31
+            },
+            {
+                "image": "images/monster-ability-cards/guard/gh-ma-ar-3.png",
+                "shuffle": "false",
+                "initiative": 32
+            },
+            {
+                "image": "images/monster-ability-cards/guard/gh-ma-ar-4.png",
+                "shuffle": "false",
+                "initiative": 44
+            },
+            {
+                "image": "images/monster-ability-cards/guard/gh-ma-ar-5.png",
+                "shuffle": "false",
+                "initiative": 56
+            },
+            {
+                "image": "images/monster-ability-cards/guard/gh-ma-ar-6.png",
                 "shuffle": "true",
-                "initiative":15
+                "initiative": 69
             },
             {
-                "image": "images/monster-ability-cards/guard/gh-ma-gu-2.png",
+                "image": "images/monster-ability-cards/guard/gh-ma-ar-7.png",
                 "shuffle": "false",
-                "initiative":30
+                "initiative": 14
             },
             {
-                "image": "images/monster-ability-cards/guard/gh-ma-gu-3.png",
-                "shuffle": "false",
-                "initiative":35
-            },
-            {
-                "image": "images/monster-ability-cards/guard/gh-ma-gu-4.png",
-                "shuffle": "false",
-                "initiative":50
-            },
-            {
-                "image": "images/monster-ability-cards/guard/gh-ma-gu-5.png",
-                "shuffle": "false",
-                "initiative":50
-            },
-            {
-                "image": "images/monster-ability-cards/guard/gh-ma-gu-6.png",
-                "shuffle": "false",
-                "initiative":70
-            },
-            {
-                "image": "images/monster-ability-cards/guard/gh-ma-gu-7.png",
-                "shuffle": "false",
-                "initiative":55
-            },
-            {
-                "image": "images/monster-ability-cards/guard/gh-ma-gu-8.png",
+                "image": "images/monster-ability-cards/guard/gh-ma-ar-8.png",
                 "shuffle": "true",
-                "initiative":15
+                "initiative": 29
             }
         ],
         "health": [
             {
-                "normal":"5",
+                "normal": "4",
+                "elite": "6"
+            },
+            {
+                "normal": "5",
+                "elite": "7"
+            },
+            {
+                "normal": "6",
                 "elite": "9"
             },
             {
-                "normal":"6",
-                "elite": "9"
-            },
-            {
-                "normal":"6",
+                "normal": "6",
                 "elite": "10"
             },
             {
-                "normal":"9", 
+                "normal": "8",
                 "elite": "10"
             },
             {
-                "normal":"10",
-                "elite": "11"
-            },
-            {
-                "normal":"11",
+                "normal": "10",
                 "elite": "12"
             },
             {
-                "normal":"14",
+                "normal": "10",
+                "elite": "13"
+            },
+            {
+                "normal": "13",
+                "elite": "17"
+            }
+        ],
+        "cardBack": "images/monster-ability-cards/guard/gh-ma-ar-back.png",
+        "sleeve": "images/monster-stat-cards/gh-monster-stat-card-envelope-6.png",
+        "maxCount": 6
+    },
+    "banditGuard": {
+        "name": "Bandit Guard",
+        "statFront": "images/monster-stat-cards/gh-bandit-guard-0.png",
+        "statBack": "images/monster-stat-cards/gh-bandit-guard-4.png",
+        "image": "images/monster-standees/Bandit-Guard.avif",
+        "deck": [
+            {
+                "image": "images/monster-ability-cards/guard/gh-ma-gu-1.png",
+                "shuffle": "true",
+                "initiative": 15
+            },
+            {
+                "image": "images/monster-ability-cards/guard/gh-ma-gu-2.png",
+                "shuffle": "false",
+                "initiative": 30
+            },
+            {
+                "image": "images/monster-ability-cards/guard/gh-ma-gu-3.png",
+                "shuffle": "false",
+                "initiative": 35
+            },
+            {
+                "image": "images/monster-ability-cards/guard/gh-ma-gu-4.png",
+                "shuffle": "false",
+                "initiative": 50
+            },
+            {
+                "image": "images/monster-ability-cards/guard/gh-ma-gu-5.png",
+                "shuffle": "false",
+                "initiative": 50
+            },
+            {
+                "image": "images/monster-ability-cards/guard/gh-ma-gu-6.png",
+                "shuffle": "false",
+                "initiative": 70
+            },
+            {
+                "image": "images/monster-ability-cards/guard/gh-ma-gu-7.png",
+                "shuffle": "false",
+                "initiative": 55
+            },
+            {
+                "image": "images/monster-ability-cards/guard/gh-ma-gu-8.png",
+                "shuffle": "true",
+                "initiative": 15
+            }
+        ],
+        "health": [
+            {
+                "normal": "5",
+                "elite": "9"
+            },
+            {
+                "normal": "6",
+                "elite": "9"
+            },
+            {
+                "normal": "6",
+                "elite": "10"
+            },
+            {
+                "normal": "9",
+                "elite": "10"
+            },
+            {
+                "normal": "10",
+                "elite": "11"
+            },
+            {
+                "normal": "11",
+                "elite": "12"
+            },
+            {
+                "normal": "14",
                 "elite": "14"
             },
             {
-                "normal":"16",
+                "normal": "16",
                 "elite": "14"
             }
         ],
         "cardBack": "images/monster-ability-cards/guard/gh-ma-gu-back.png",
-        "sleeve" :"images/monster-stat-cards/gh-monster-stat-card-envelope-6.png",
-        "maxCount" : 6
+        "sleeve": "images/monster-stat-cards/gh-monster-stat-card-envelope-6.png",
+        "maxCount": 6
+    },
+    "livingBones": {
+        "name": "Bandit Guard",
+        "statFront": "images/monster-stat-cards/gh-living-bones-0.png",
+        "statBack": "images/monster-stat-cards/gh-living-bones-4.png",
+        "image": "images/monster-standees/Living-Bones.avif",
+        "deck": [
+            {
+                "image": "images/monster-ability-cards/guard/gh-lb-gu-1.png",
+                "shuffle": "false",
+                "initiative": 64
+            },
+            {
+                "image": "images/monster-ability-cards/guard/gh-lb-gu-2.png",
+                "shuffle": "true",
+                "initiative": 20
+            },
+            {
+                "image": "images/monster-ability-cards/guard/gh-lb-gu-3.png",
+                "shuffle": "false",
+                "initiative": 25
+            },
+            {
+                "image": "images/monster-ability-cards/guard/gh-lb-gu-4.png",
+                "shuffle": "false",
+                "initiative": 45
+            },
+            {
+                "image": "images/monster-ability-cards/guard/gh-lb-gu-5.png",
+                "shuffle": "false",
+                "initiative": 45
+            },
+            {
+                "image": "images/monster-ability-cards/guard/gh-lb-gu-6.png",
+                "shuffle": "false",
+                "initiative": 81
+            },
+            {
+                "image": "images/monster-ability-cards/guard/gh-lb-gu-7.png",
+                "shuffle": "false",
+                "initiative": 74
+            },
+            {
+                "image": "images/monster-ability-cards/guard/gh-lb-gu-8.png",
+                "shuffle": "true",
+                "initiative": 12
+            }
+        ],
+        "health": [
+            {
+                "normal": "5",
+                "elite": "6"
+            },
+            {
+                "normal": "5",
+                "elite": "6"
+            },
+            {
+                "normal": "5",
+                "elite": "7"
+            },
+            {
+                "normal": "7",
+                "elite": "10"
+            },
+            {
+                "normal": "7",
+                "elite": "11"
+            },
+            {
+                "normal": "9",
+                "elite": "11"
+            },
+            {
+                "normal": "10",
+                "elite": "11"
+            },
+            {
+                "normal": "13",
+                "elite": "14"
+            }
+        ],
+        "cardBack": "images/monster-ability-cards/guard/gh-ma-lb-back.png",
+        "sleeve": "images/monster-stat-cards/gh-monster-stat-card-envelope-10.png",
+        "maxCount": 10
     }
-
 }
