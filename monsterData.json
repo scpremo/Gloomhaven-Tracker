@@ -91,42 +91,42 @@
         "image": "images/monster-standees/Bandit-Archer.avif",
         "deck": [
             {
-                "image": "images/monster-ability-cards/guard/gh-ma-ar-1.png",
+                "image": "images/monster-ability-cards/archer/gh-ma-ar-1.png",
                 "shuffle": "false",
                 "initiative": 16
             },
             {
-                "image": "images/monster-ability-cards/guard/gh-ma-ar-2.png",
+                "image": "images/monster-ability-cards/archer/gh-ma-ar-2.png",
                 "shuffle": "false",
                 "initiative": 31
             },
             {
-                "image": "images/monster-ability-cards/guard/gh-ma-ar-3.png",
+                "image": "images/monster-ability-cards/archer/gh-ma-ar-3.png",
                 "shuffle": "false",
                 "initiative": 32
             },
             {
-                "image": "images/monster-ability-cards/guard/gh-ma-ar-4.png",
+                "image": "images/monster-ability-cards/archer/gh-ma-ar-4.png",
                 "shuffle": "false",
                 "initiative": 44
             },
             {
-                "image": "images/monster-ability-cards/guard/gh-ma-ar-5.png",
+                "image": "images/monster-ability-cards/archer/gh-ma-ar-5.png",
                 "shuffle": "false",
                 "initiative": 56
             },
             {
-                "image": "images/monster-ability-cards/guard/gh-ma-ar-6.png",
+                "image": "images/monster-ability-cards/archer/gh-ma-ar-6.png",
                 "shuffle": "true",
                 "initiative": 69
             },
             {
-                "image": "images/monster-ability-cards/guard/gh-ma-ar-7.png",
+                "image": "images/monster-ability-cards/archer/gh-ma-ar-7.png",
                 "shuffle": "false",
                 "initiative": 14
             },
             {
-                "image": "images/monster-ability-cards/guard/gh-ma-ar-8.png",
+                "image": "images/monster-ability-cards/archer/gh-ma-ar-8.png",
                 "shuffle": "true",
                 "initiative": 29
             }
@@ -165,7 +165,7 @@
                 "elite": "17"
             }
         ],
-        "cardBack": "images/monster-ability-cards/guard/gh-ma-ar-back.png",
+        "cardBack": "images/monster-ability-cards/archer/gh-ma-ar-back.png",
         "sleeve": "images/monster-stat-cards/gh-monster-stat-card-envelope-6.png",
         "maxCount": 6
     },
@@ -255,13 +255,13 @@
         "maxCount": 6
     },
     "livingBones": {
-        "name": "Bandit Guard",
+        "name": "Living Bones",
         "statFront": "images/monster-stat-cards/gh-living-bones-0.png",
         "statBack": "images/monster-stat-cards/gh-living-bones-4.png",
         "image": "images/monster-standees/Living-Bones.avif",
         "deck": [
             {
-                "image": "images/monster-ability-cards/guard/gh-lb-gu-1.png",
+                "image": "images/monster-ability-cards/living-bones/gh-ma-lb.png",
                 "shuffle": "false",
                 "initiative": 64
             },
