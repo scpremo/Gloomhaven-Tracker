@@ -11,6 +11,11 @@ var port = process.env.PORT || 3000;
 //app.set('view engine', 'handlebars')
 
 app.use(express.static('public'));
+app.get('/data',function(req,res,next){
+  var data=monsterData
+  console.log("==request:", req)
+  res.status(200).send(JSON.stringify(data))
+})
 // app.get('/', function (req, res, next) {
 //   var dataPosts = postData
 //   console.log("== data ", dataPosts)
