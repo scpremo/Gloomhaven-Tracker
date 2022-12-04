@@ -1,10 +1,37 @@
-async function loadData() {
-    response = await fetch('/data');
-    Data = await response.json();
-    console.log(Data);
-    return Data
+function lessorequal(item1, item2) {
+    if (item1.name && item1.initiative && item2.name && item2.initiative) {
+        if (item1.initiative < item2.initiative)
+            return true
+        else if (item1.initiative == item2.initiative) {
+            if (item1.name <= item2.name)
+                return true
+        }
+    }
+    return false
 }
-Data = loadData()
+const Elite = "Elite"
+const Normal = "Normal"
+////Merge sort function comes from https://stackabuse.com/merge-sort-in-javascript/ 
+/// merge sort was chosen becasue it is a really quick stable sort as stability is needed in this sort operation.
+function merge(left, right) {
+    let arr = new Array()
+    while (left.length && right.length) {
+        if (lessorequal(left[0], right[0]))
+            arr.push(left.shift())
+        else
+            arr.push(right.shift())
+    }
+    return [...arr, ...left, ...right]
+}
+function mergeSort(array) {
+    const half = array.length / 2
+    if (array.length < 2) {
+        return array
+    }
+    const left = array.splice(0, half)
+    return merge(mergeSort(left), mergeSort(array))
+}
+////// end of merge sort function
 let Card = class {
     constructor(card) {
         this.cardFront = card.image
@@ -61,7 +88,7 @@ let healthTracker = class {
     constructor(health, type, playerCount, number) {
         this.mumber = number
         this.type = type
-        if (type === "elite") {
+        if (type === Elite) {
             this.health = health.elite
             this.max = health.elite
         }
@@ -130,11 +157,11 @@ let Monster = class {
     newMonster(type) {
         if (this.currentCount < this.maxCount) {
             var numb = Math.floor(Math.random() * this.maxCount)
-            while (this.monsters[numb].filled === 'true') {
+            while (this.monsters[numb].filled === true) {
                 var numb = Math.floor(Math.random() * this.maxCount)
             }
             this.monsters[numb].monster = new healthTracker(this.health, type, this.playerCount, numb)
-            this.monsters[numb].filled = "true"
+            this.monsters[numb].filled = true
             this.currentCount++
         }
         else {
@@ -144,7 +171,7 @@ let Monster = class {
     deleteMonster(index) {
         delete this.monsters[index].monster
         this.monsters[index].monster = "null"
-        this.monsters[index].filled = "false"
+        this.monsters[index].filled = false
         this.currentCount--
     }
     getInitiative() {
@@ -157,6 +184,17 @@ let Monster = class {
     }
     getName() {
         return this.name
+    }
+    containsType(type) {
+        for (let i = 0; i < this.maxCount; i++) {
+            if (this.monsters[i].filled == true) {
+                if (this.monsters[i].monster.type === type) {
+                    return true
+                }
+            }
+        }
+        return false
+
     }
 }
 let levelControl = class {
@@ -177,15 +215,63 @@ let levelControl = class {
         for (let i = 0; i < this.size; i++) {
             if (this.monsters[i].getMonsterCount() > 0) {
                 this.monsters[i].startRound()
-                var init = {
-                    name: this.monsters[i].getName(),
-                    initiative: this.monster[i].getInitiative()
+                if (this.monsters[i].containsType(Elite)) {
+                    var init = {
+                        name: this.monsters[i].getName(),
+                        initiative: this.monsters[i].getInitiative(),
+                        elite: true
+                    }
+                    this.initiativeList.push(init)
                 }
-                this.initiativeList.push(init)
+                if (this.monsters[i].containsType(Normal)) {
+                    var init = {
+                        name: this.monsters[i].getName(),
+                        initiative: this.monsters[i].getInitiative(),
+                        elite: false
+                    }
+                    this.initiativeList.push(init)
+                }
+
             }
-            console.log(i)
+        }
+        this.initiativeList = mergeSort(this.initiativeList)
+    }
+    endRound() {
+        for (let i = 0; i < this.size; i++) {
+            this.monsters[i].endRound()
         }
     }
 
 }
-console.log("starting tests")
+var ready = false
+async function loadData() {
+    response = await fetch('/data');
+    Data = await response.json();
+    console.log(Data);
+    return Data
+}
+var Data = loadData()
+var arr = new Array()
+setTimeout(function () {
+    console.log(Data)
+    console.log(Data.banditArcher)
+    console.log("starting tests")
+    arr.push(Data.banditGuard)
+    arr.push(Data.livingBones)
+    arr.push(Data.banditArcher)
+
+    //TEST CODE REMOVE ONCE DONE
+    cat = new levelControl(arr, 5, 6, Data.attackMods)
+    cat.monsters[0].newMonster(Elite)
+    cat.monsters[2].newMonster(Elite)
+    cat.monsters[1].newMonster(Elite)
+    cat.monsters[0].newMonster(Normal)
+    cat.monsters[2].newMonster(Normal)
+    cat.monsters[1].newMonster(Normal)
+    cat.monsters[0].newMonster(Normal)
+    cat.monsters[2].newMonster(Normal)
+    cat.monsters[1].newMonster(Normal)
+}, 500);
+
+
+

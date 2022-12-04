@@ -16,6 +16,14 @@ app.get('/data',function(req,res,next){
   console.log("==request:", req)
   res.status(200).send(JSON.stringify(data))
 })
+
+
+
+//add request so that you can get only specic mosnsters rather than every monster 
+
+
+
+
 // app.get('/', function (req, res, next) {
 //   var dataPosts = postData
 //   console.log("== data ", dataPosts)
