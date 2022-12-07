@@ -3,83 +3,83 @@
         "deck": [
             {
                 "image": "images/attack-modifiers/monster/gh-am-m-01.png",
-                "shuffle": "false"
+                "shuffle": false
             },
             {
                 "image": "images/attack-modifiers/monster/gh-am-m-02.png",
-                "shuffle": "false"
+                "shuffle": false
             },
             {
                 "image": "images/attack-modifiers/monster/gh-am-m-03.png",
-                "shuffle": "false"
+                "shuffle": false
             },
             {
                 "image": "images/attack-modifiers/monster/gh-am-m-04.png",
-                "shuffle": "false"
+                "shuffle": false
             },
             {
                 "image": "images/attack-modifiers/monster/gh-am-m-05.png",
-                "shuffle": "false"
+                "shuffle": false
             },
             {
                 "image": "images/attack-modifiers/monster/gh-am-m-06.png",
-                "shuffle": "false"
+                "shuffle": false
             },
             {
                 "image": "images/attack-modifiers/monster/gh-am-m-07.png",
-                "shuffle": "false"
+                "shuffle": false
             },
             {
                 "image": "images/attack-modifiers/monster/gh-am-m-08.png",
-                "shuffle": "false"
+                "shuffle": false
             },
             {
                 "image": "images/attack-modifiers/monster/gh-am-m-09.png",
-                "shuffle": "false"
+                "shuffle": false
             },
             {
                 "image": "images/attack-modifiers/monster/gh-am-m-10.png",
-                "shuffle": "false"
+                "shuffle": false
             },
             {
                 "image": "images/attack-modifiers/monster/gh-am-m-11.png",
-                "shuffle": "false"
+                "shuffle": false
             },
             {
                 "image": "images/attack-modifiers/monster/gh-am-m-12.png",
-                "shuffle": "false"
+                "shuffle": false
             },
             {
                 "image": "images/attack-modifiers/monster/gh-am-m-13.png",
-                "shuffle": "false"
+                "shuffle": false
             },
             {
                 "image": "images/attack-modifiers/monster/gh-am-m-14.png",
-                "shuffle": "false"
+                "shuffle": false
             },
             {
                 "image": "images/attack-modifiers/monster/gh-am-m-15.png",
-                "shuffle": "false"
+                "shuffle": false
             },
             {
                 "image": "images/attack-modifiers/monster/gh-am-m-16.png",
-                "shuffle": "false"
+                "shuffle": false
             },
             {
                 "image": "images/attack-modifiers/monster/gh-am-m-17.png",
-                "shuffle": "false"
+                "shuffle": false
             },
             {
                 "image": "images/attack-modifiers/monster/gh-am-m-18.png",
-                "shuffle": "false"
+                "shuffle": false
             },
             {
                 "image": "images/attack-modifiers/monster/gh-am-m-19.png",
-                "shuffle": "true"
+                "shuffle": true
             },
             {
                 "image": "images/attack-modifiers/monster/gh-am-m-20.png",
-                "shuffle": "true"
+                "shuffle": true
             }
         ],
         "cardBack": "images/attack-modifiers/monster/gh-am-m-back.png"
