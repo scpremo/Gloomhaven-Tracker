@@ -1,0 +1,103 @@
+  html {
+    background-color: darkgreen;
+  }
+  
+  header {
+    background-color: green;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+.party-info {
+    display: flex;
+    border: 1px;
+    border-color: black;
+    column-count: auto;
+    padding: 30px;
+    background-color: lightgreen;
+}
+
+.party-name {
+    display: inline-block;
+    min-width: 300px;
+    max-width: 300px;
+    max-height: 20px;
+
+    flex: 1 100%;
+    /*border: 1px solid #ababab;
+    margin: 10 10 10 10;*/
+    background-color: lightgreen;
+}
+
+.part-reputation {
+    display: inline-block;
+    min-width: 300px;
+    max-width: 300px;
+    max-height: 20px;
+
+    flex: 1 100%;
+    /*border: 1px solid #ababab;
+    margin: 10 10 10 10;*/
+    background-color: lightgreen;
+}
+
+.scenario-level {
+    display: inline-block;
+    min-width: 300px;
+    max-width: 300px;
+    max-height: 20px;
+
+    flex: 1 100%;
+    /*border: 1px solid #ababab;
+    margin: 10 10 10 10;*/
+    background-color: lightgreen;
+}
+
+.scenario-label {
+    min-width: 20px;
+    max-width: 30px;
+}
+
+
+.scenarios {
+    background-color: lightgreen;
+    min-height: 500px;
+    max-height: 500px;
+    column-count: 4;
+}
+
+
+#scenario-odd {
+    background-color: rgba(255, 255, 255, 0.37);
+}
+
+.achievements {
+    background-color: lightgreen;
+    display: flex;
+    min-height: 400px;
+    max-height: 400px;
+    max-width: 600px;
+    column-count: 2;
+    padding: 10 10 10 10;
+}
+
+.player-achievements {
+    border: 3px solid black;
+    min-height: 350px;
+    max-height: 350px;
+    min-width: 200px;
+    column-count: 2;
+    
+}
+
+.global-achievements {
+    border: 3px solid black;
+    min-height: 350px;
+    max-height: 350px;
+    min-width: 300px;
+}
+
+legend {
+    font-weight: bold;
+}
