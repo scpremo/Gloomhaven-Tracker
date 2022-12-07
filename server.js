@@ -2,7 +2,8 @@ var path = require('path');
 var express = require('express');
 var exphbs = require('express-handlebars')
 var monsterData= require('./monsterData.json')
-
+var levelData=require('./levels.json')
+console.log(levelData)
 var app = express();
 var port = process.env.PORT || 3000;
 // app.engine('handlebars', exphbs.engine({
@@ -39,25 +40,26 @@ app.get('/data',function(req,res,next){
 //     next();
 //   }
 // });
-// app.get('/posts/:n', function (req, res, next) {
-//   var numb = parseInt(req.params.n);
-//   var postDat = postData[numb]
-//   console.log("== data for", numb, ":", postDat)
-
-//   if (postDat) {
-//     res.status(200).render('index', {
-//       photoURL: postDat.photoURL,
-//       caption: postDat.caption,
-//       condition: postDat.condition,
-//       city: postDat.city,
-//       price: postDat.price,
-//       description: postDat.description
-      
-//     })
-//   } else {
-//     next();
-//   }
-// });
+app.get('/level/:n', function (req, res, next) {
+  var level = req.params.n;
+  var levelDat = levelData[level]
+  console.log("== data for", level, ":", levelDat)
+  if (levelDat) {
+    var monsterArray= new Array()
+    for(let i=0;i<levelDat.monsters.length; i++){
+      monsterArray.push(monsterData[levelDat.monsters[i]])
+    }
+    resData={
+      "monsters" : monsterArray,
+      "LevelName": levelDat.name,
+      "attackMods": monsterData.attackMods
+    }
+    res.status(200).send(JSON.stringify(resData))
+    //res.status(200).send(JSON.stringify(resData))
+  } else {
+    next();
+  }
+});
 // app.get('*', function (req, res) {
 //   res.status(404).render('404')
 // });

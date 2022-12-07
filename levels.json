@@ -1,0 +1,19 @@
+{
+    "blackBarrow":{
+        "monsters":[
+            "banditGuard",
+            "banditArcher",
+            "livingBones"
+        ],
+        "name":"Black Barrow"
+    },
+    "barrowLair":{
+        "monsters":[
+            "banditArcher",
+            "banditCommaner",
+            "livingBones",
+            "livingCorpse"
+        ],
+        "name":"Barrow Lair"
+    }
+}

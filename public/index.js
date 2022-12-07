@@ -11,6 +11,20 @@ function lessorequal(item1, item2) {
 }
 const Elite = "Elite"
 const Normal = "Normal"
+const DISCARD = null//put path to discard pile image here
+const BLESS = {
+    "image": "images/attack-modifiers/monster-mod/gh-am-mm-01.png",
+    "shuffle": false,
+    "remove": true
+}
+const CURSE = {
+    "image": "images/attack-modifiers/monster-mod/gh-am-pm-11.png",
+    "shuffle": false,
+    "remove": true
+}
+
+//var level=levelHtml[0].dataset.level
+
 ////Merge sort function comes from https://stackabuse.com/merge-sort-in-javascript/ 
 /// merge sort was chosen becasue it is a really quick stable sort as stability is needed in this sort operation.
 function merge(left, right) {
@@ -37,6 +51,10 @@ let Card = class {
         this.cardFront = card.image
         this.shuffle = card.shuffle
         this.initiative = card.initiative
+        this.remove = false
+        if (card.remove) {
+            this.remove = true
+        }
     }
     getCardFront() {
         return this.cardFront
@@ -52,23 +70,36 @@ let Deck = class {
     constructor(cards, cardBack) {
         this.size = cards.length
         this.deck = new Array(this.size)
-        console.log(cards)
+
         for (let index = 0; index < this.size; index++) {
             var card = new Card(cards[index])
             this.deck[index] = (card)
         }
         this.cardBack = cardBack
-        this.recentCard
+        this.recentCard = DISCARD
         this.index = 0
-        console.log(this.deck)
+    }
+    removeCardAt(index) {
+        if (index > 0) {
+            if (this.deck[--index].remove) {
+                this.deck.splice(index, 1)
+                this.index--;
+                this.size--;
+            }
+        }
+
     }
     draw() {
+        this.removeCardAt(this.index)
         this.recentCard = this.deck[this.index]
         this.index = this.index + 1
         return this.recentCard
     }
+
     shuffle() {
+        this.removeCardAt(this.index)
         var location = this.size
+
         while (location > 0) {
             var ranIndex = Math.floor(Math.random() * location);
             location--
@@ -77,10 +108,28 @@ let Deck = class {
             this.deck[ranIndex] = save;
         }
         this.index = 0
+        this.recentCard = DISCARD
 
+    }
+    PartialShuffle() {
+        var location = this.size
+        while (location > this.index) {
+            var ranIndex = Math.floor(Math.random() * (location - this.index)) + this.index;
+            location--
+            var save = this.deck[location]
+            this.deck[location] = this.deck[ranIndex]
+            this.deck[ranIndex] = save;
+        }
+        console.log("shuffle")
     }
     getRecentCard() {
         return this.recentCard
+    }
+    addCard(card) {
+        this.deck.push(card)
+        this.size++
+        this.PartialShuffle()
+
     }
 
 }
@@ -208,6 +257,35 @@ let levelControl = class {
         this.attackMod.shuffle()
         this.initiativeList = new Array()
         this.roundCards
+        this.curse = 10
+        this.bless = 10
+        this.discard = DISCARD
+        this.shuffle = false
+    }
+    drawMod() {
+        this.discard = this.attackMod.draw()
+        if (this.discard.cardFront === "images/attack-modifiers/monster-mod/gh-am-mm-01.png") {
+            this.curse++
+        }
+        else if (this.discard.cardFront === "images/attack-modifiers/monster-mod/gh-am-pm-11.png") {
+            this.curse++
+        }
+        if (this.discard.cardShuffle())
+            this.shuffle = true;
+        console.log(this.discard)
+        console.log(this.shuffle)
+    }
+    addCurse() {
+        if (this.curse > 0) {
+            this.attackMod.addCard(new Card(CURSE))
+            this.curse--
+        }
+    }
+    addBless() {
+        if (this.bless > 0) {
+            this.attackMod.addCard(new Card(BLESS))
+            this.bless--
+        }
     }
     startRound() {
         delete this.initiativeList
@@ -240,28 +318,52 @@ let levelControl = class {
         for (let i = 0; i < this.size; i++) {
             this.monsters[i].endRound()
         }
+        if (this.shuffle) {
+            this.attackMod.shuffle()
+        }
     }
 
 }
-var ready = false
-async function loadData() {
-    response = await fetch('/data');
-    Data = await response.json();
-    console.log(Data);
-    return Data
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
 }
-var Data = loadData()
+  
+async function getLevel() {
+    var levelHtml="bad"
+    await sleep(5);
+    levelHtml=document.getElementById("level")
+    return levelHtml
+  }
+var ready = false
+async function loadData() {   
+    level= await getLevel()
+    level=level.getAttribute("data-level")
+    console.log('/level/'+level)
+    response = await fetch('/level/'+level);
+    levelData = await response.json();
+    console.log(levelData.monsters);
+    returnStff=levelData
+    return returnStff
+    // response = await fetch('/data');
+    // Data = await response.json();
+    // return Data
+}
+sleep(50)
+var levelData = loadData()
+var Datra
+levelData.then(function(levelData){
+    Data=  levelData
+})
+
 var arr = new Array()
 setTimeout(function () {
-    console.log(Data)
-    console.log(Data.banditArcher)
+    // test code 
     console.log("starting tests")
-    arr.push(Data.banditGuard)
-    arr.push(Data.livingBones)
-    arr.push(Data.banditArcher)
+    // arr.push(Data.banditGuard)
+    // arr.push(Data.livingBones)
+    // arr.push(Data.banditArcher)
 
-    //TEST CODE REMOVE ONCE DONE
-    cat = new levelControl(arr, 5, 6, Data.attackMods)
+    cat = new levelControl(Data.monsters, 5, 6, Data.attackMods)
     cat.monsters[0].newMonster(Elite)
     cat.monsters[2].newMonster(Elite)
     cat.monsters[1].newMonster(Elite)
