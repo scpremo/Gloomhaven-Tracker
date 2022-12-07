@@ -4,51 +4,869 @@
         <meta charset="utf-8">
         <title>Gloomhaven Campaign Tracker</title>
         <!--<link href="" rel="stylesheet">   Font Style-->
-        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="style.css">
         <!--js script-->
     </head>
     <body>
         <header>
             <div class = "party-info">
-                <div class="party-name">
+                <fieldset class="party-name">
                     <!-- Needs a value to store -->
-                </div>
-                <div class="party-reputation">
+                    <label for="party-name-text" class="name-label">Party Name: </label>
+                    <input type="text" name="Party Name" class="party-name-text">
+                </fieldset>
+                <fieldset class="party-reputation">
                     <!-- Needs the chart for how modifiers work, could be a js function (enter reputation, get modifier)?-->
-                </div>
-                <div class=" scenario-level">
+                    <label for="party-reputation-text" class="reputation-label">Reputation: </label>
+                    <input type="text" name="Party Reputation" class="party-reputation-text">
+
+                    <label for="shop-modifier-text" class="modifier-label">Shop Modifier: </label>
+
+                </fieldset>
+                <fieldset class=" scenario-level">
                     <!-- If JS function, then enters sum level of players and number of players, gets level-->
-                </div>
+                    <label for="num-players-text" class="scenario-label">Number of Players: </label>
+                    <input type="text" name="Num Players" class="num-players-text">
+
+                    <label for="sum-levels-text" class="scenario-label">Sum of Player Levels: </label>
+                    <input type="text" name="Sum Levels" class="sum-levels-text">
+                    
+                    <label for="scenario-level-text" class="scenario-level-label">Scenario Level: </label>
+                    <!-- Might need something to store scenario level -->
+                </fieldset>
                 <!-- Needs an Update Button -->
             </div>
         </header>
         <main class = "trackers">
             <div class="tracker">
-                <div class = "scenarios">
+                <fieldset class = "scenarios">
+                    <legend> Scenarios </legend>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-1-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-1-completed" value="">
+                        <label class="scenario-label">Scenario 1</label>
+                    </div>
                     <div class = "scenario">
                         <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-2-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-2-completed" value="">
+                        <label class="scenario-label">Scenario 2</label>
                     </div>
-                </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-3-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-3-completed" value="">
+                        <label class="scenario-label">Scenario 3</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-4-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-4-completed" value="">
+                        <label class="scenario-label">Scenario 4</label>
+                    </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-5-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-5-completed" value="">
+                        <label class="scenario-label">Scenario 5</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-6-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-6-completed" value="">
+                        <label class="scenario-label">Scenario 6</label>
+                    </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-7-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-7-completed" value="">
+                        <label class="scenario-label">Scenario 7</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-8-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-8-completed" value="">
+                        <label class="scenario-label">Scenario 8</label>
+                    </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-9-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-9-completed" value="">
+                        <label class="scenario-label">Scenario 9</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-10-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-10-completed" value="">
+                        <label class="scenario-label">Scenario 10</label>
+                    </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-11-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-11-completed" value="">
+                        <label class="scenario-label">Scenario 11</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-12-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-12-completed" value="">
+                        <label class="scenario-label">Scenario 12</label>
+                    </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-13-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-13-completed" value="">
+                        <label class="scenario-label">Scenario 13</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-14-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-14-completed" value="">
+                        <label class="scenario-label">Scenario 14</label>
+                    </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-15-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-15-completed" value="">
+                        <label class="scenario-label">Scenario 15</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-16-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-16-completed" value="">
+                        <label class="scenario-label">Scenario 16</label>
+                    </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-17-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-17-completed" value="">
+                        <label class="scenario-label">Scenario 17</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-18-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-18-completed" value="">
+                        <label class="scenario-label">Scenario 18</label>
+                    </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-19-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-19-completed" value="">
+                        <label class="scenario-label">Scenario 19</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-20-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-20-completed" value="">
+                        <label class="scenario-label">Scenario 20</label>
+                    </div>                    
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-21-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-21-completed" value="">
+                        <label class="scenario-label">Scenario 21</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-22-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-22-completed" value="">
+                        <label class="scenario-label">Scenario 22</label>
+                    </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-23-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-23-completed" value="">
+                        <label class="scenario-label">Scenario 23</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-24-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-24-completed" value="">
+                        <label class="scenario-label">Scenario 24</label>
+                    </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-25-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-25-completed" value="">
+                        <label class="scenario-label">Scenario 25</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-26-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-26-completed" value="">
+                        <label class="scenario-label">Scenario 26</label>
+                    </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-27-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-27-completed" value="">
+                        <label class="scenario-label">Scenario 27</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-28-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-28-completed" value="">
+                        <label class="scenario-label">Scenario 28</label>
+                    </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-29-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-29-completed" value="">
+                        <label class="scenario-label">Scenario 29</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-30-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-30-completed" value="">
+                        <label class="scenario-label">Scenario 30</label>
+                    </div>                    
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-31-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-31-completed" value="">
+                        <label class="scenario-label">Scenario 31</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-32-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-32-completed" value="">
+                        <label class="scenario-label">Scenario 32</label>
+                    </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-33-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-33-completed" value="">
+                        <label class="scenario-label">Scenario 33</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-34-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-34-completed" value="">
+                        <label class="scenario-label">Scenario 34</label>
+                    </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-35-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-35-completed" value="">
+                        <label class="scenario-label">Scenario 35</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-36-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-36-completed" value="">
+                        <label class="scenario-label">Scenario 36</label>
+                    </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-37-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-37-completed" value="">
+                        <label class="scenario-label">Scenario 37</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-38-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-38-completed" value="">
+                        <label class="scenario-label">Scenario 38</label>
+                    </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-39-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-39-completed" value="">
+                        <label class="scenario-label">Scenario 39</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-40-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-40-completed" value="">
+                        <label class="scenario-label">Scenario 40</label>
+                    </div>                    
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-41-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-41-completed" value="">
+                        <label class="scenario-label">Scenario 41</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-42-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-42-completed" value="">
+                        <label class="scenario-label">Scenario 42</label>
+                    </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-43-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-43-completed" value="">
+                        <label class="scenario-label">Scenario 43</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-44-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-44-completed" value="">
+                        <label class="scenario-label">Scenario 44</label>
+                    </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-45-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-45-completed" value="">
+                        <label class="scenario-label">Scenario 45</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-46-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-46-completed" value="">
+                        <label class="scenario-label">Scenario 46</label>
+                    </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-47-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-47-completed" value="">
+                        <label class="scenario-label">Scenario 47</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-48-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-48-completed" value="">
+                        <label class="scenario-label">Scenario 48</label>
+                    </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-49-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-49-completed" value="">
+                        <label class="scenario-label">Scenario 49</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-50-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-50-completed" value="">
+                        <label class="scenario-label">Scenario 50</label>
+                    </div>                    
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-51-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-51-completed" value="">
+                        <label class="scenario-label">Scenario 51</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-52-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-52-completed" value="">
+                        <label class="scenario-label">Scenario 52</label>
+                    </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-53-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-53-completed" value="">
+                        <label class="scenario-label">Scenario 53</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-54-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-54-completed" value="">
+                        <label class="scenario-label">Scenario 54</label>
+                    </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-55-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-55-completed" value="">
+                        <label class="scenario-label">Scenario 55</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-56-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-56-completed" value="">
+                        <label class="scenario-label">Scenario 56</label>
+                    </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-57-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-57-completed" value="">
+                        <label class="scenario-label">Scenario 57</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-58-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-58-completed" value="">
+                        <label class="scenario-label">Scenario 58</label>
+                    </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-59-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-59-completed" value="">
+                        <label class="scenario-label">Scenario 59</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-60-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-60-completed" value="">
+                        <label class="scenario-label">Scenario 60</label>
+                    </div>                    
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-61-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-61-completed" value="">
+                        <label class="scenario-label">Scenario 61</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-62-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-62-completed" value="">
+                        <label class="scenario-label">Scenario 62</label>
+                    </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-63-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-63-completed" value="">
+                        <label class="scenario-label">Scenario 63</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-64-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-64-completed" value="">
+                        <label class="scenario-label">Scenario 64</label>
+                    </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-65-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-65-completed" value="">
+                        <label class="scenario-label">Scenario 65</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-66-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-66-completed" value="">
+                        <label class="scenario-label">Scenario 66</label>
+                    </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-67-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-67-completed" value="">
+                        <label class="scenario-label">Scenario 67</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-68-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-68-completed" value="">
+                        <label class="scenario-label">Scenario 68</label>
+                    </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-69-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-69-completed" value="">
+                        <label class="scenario-label">Scenario 69</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-70-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-70-completed" value="">
+                        <label class="scenario-label">Scenario 70</label>
+                    </div>                    
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-71-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-71-completed" value="">
+                        <label class="scenario-label">Scenario 71</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-72-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-72-completed" value="">
+                        <label class="scenario-label">Scenario 72</label>
+                    </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-73-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-73-completed" value="">
+                        <label class="scenario-label">Scenario 73</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-74-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-74-completed" value="">
+                        <label class="scenario-label">Scenario 74</label>
+                    </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-75-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-75-completed" value="">
+                        <label class="scenario-label">Scenario 75</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-76-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-76-completed" value="">
+                        <label class="scenario-label">Scenario 76</label>
+                    </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-77-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-77-completed" value="">
+                        <label class="scenario-label">Scenario 77</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-78-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-78-completed" value="">
+                        <label class="scenario-label">Scenario 78</label>
+                    </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-79-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-79-completed" value="">
+                        <label class="scenario-label">Scenario 79</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-80-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-80-completed" value="">
+                        <label class="scenario-label">Scenario 80</label>
+                    </div>                    
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-81-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-81-completed" value="">
+                        <label class="scenario-label">Scenario 81</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-82-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-82-completed" value="">
+                        <label class="scenario-label">Scenario 82</label>
+                    </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-83-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-83-completed" value="">
+                        <label class="scenario-label">Scenario 83</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-84-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-84-completed" value="">
+                        <label class="scenario-label">Scenario 84</label>
+                    </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-85-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-85-completed" value="">
+                        <label class="scenario-label">Scenario 85</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-86-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-86-completed" value="">
+                        <label class="scenario-label">Scenario 86</label>
+                    </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-87-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-87-completed" value="">
+                        <label class="scenario-label">Scenario 87</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-88-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-88-completed" value="">
+                        <label class="scenario-label">Scenario 88</label>
+                    </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-89-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-89-completed" value="">
+                        <label class="scenario-label">Scenario 89</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-90-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-90-completed" value="">
+                        <label class="scenario-label">Scenario 90</label>
+                    </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-91-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-91-completed" value="">
+                        <label class="scenario-label">Scenario 91</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-92-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-92-completed" value="">
+                        <label class="scenario-label">Scenario 92</label>
+                    </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-93-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-93-completed" value="">
+                        <label class="scenario-label">Scenario 93</label>
+                    </div>
+                    <div class = "scenario">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-94-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-94-completed" value="">
+                        <label class="scenario-label">Scenario 94</label>
+                    </div>
+                    <div class = "scenario" id="scenario-odd">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <input type="checkbox" name="scenario-found" id="scenario-95-found" value="">
+                        <input type="checkbox" name="scenario-completed" id="scenario-95-completed" value="">
+                        <label class="scenario-label">Scenario 95</label>
+                    </div>
+                </fieldset>
             </div>
             <div class = "tracker">
                 <div class = "achievements">
-                    <div class = "player-achievements">
+                    <fieldset class = "player-achievements">
+                        <legend> Player Achievements</legend>
                         <div class = "achievement">
                             <!-- Needs 1 checkbox and a Name-->
+                            <input type="checkbox" name="achievement-completed" id="pa-1" value="">
+                            <label class="achievement-label">PA 1</label>
                         </div>
-                    </div>
-                    <legend class="global-achievements">
                         <div class = "achievement">
                             <!-- Needs 1 checkbox and a Name-->
+                            <input type="checkbox" name="achievement-completed" id="pa-2" value="">
+                            <label class="achievement-label">PA 2</label>
                         </div>
-                    </legend>
+                        <div class = "achievement">
+                            <!-- Needs 1 checkbox and a Name-->
+                            <input type="checkbox" name="achievement-completed" id="pa-3" value="">
+                            <label class="achievement-label">PA 3</label>
+                        </div>
+                        <div class = "achievement">
+                            <!-- Needs 1 checkbox and a Name-->
+                            <input type="checkbox" name="achievement-completed" id="pa-4" value="">
+                            <label class="achievement-label">PA 4</label>
+                        </div>
+                        <div class = "achievement">
+                            <!-- Needs 1 checkbox and a Name-->
+                            <input type="checkbox" name="achievement-completed" id="pa-5" value="">
+                            <label class="achievement-label">PA 5</label>
+                        </div>
+                        <div class = "achievement">
+                            <!-- Needs 1 checkbox and a Name-->
+                            <input type="checkbox" name="achievement-completed" id="pa-6" value="">
+                            <label class="achievement-label">PA 6</label>
+                        </div>
+                        <div class = "achievement">
+                            <!-- Needs 1 checkbox and a Name-->
+                            <input type="checkbox" name="achievement-completed" id="pa-7" value="">
+                            <label class="achievement-label">PA 7</label>
+                        </div>
+                        <div class = "achievement">
+                            <!-- Needs 1 checkbox and a Name-->
+                            <input type="checkbox" name="achievement-completed" id="pa-8" value="">
+                            <label class="achievement-label">PA 8</label>
+                        </div>
+                        <div class = "achievement">
+                            <!-- Needs 1 checkbox and a Name-->
+                            <input type="checkbox" name="achievement-completed" id="pa-9" value="">
+                            <label class="achievement-label">PA 9</label>
+                        </div>
+                        <div class = "achievement">
+                            <!-- Needs 1 checkbox and a Name-->
+                            <input type="checkbox" name="achievement-completed" id="pa-10" value="">
+                            <label class="achievement-label">PA 10</label>
+                        </div>
+                        <div class = "achievement">
+                            <!-- Needs 1 checkbox and a Name-->
+                            <input type="checkbox" name="achievement-completed" id="pa-11" value="">
+                            <label class="achievement-label">PA 11</label>
+                        </div>
+                        <div class = "achievement">
+                            <!-- Needs 1 checkbox and a Name-->
+                            <input type="checkbox" name="achievement-completed" id="pa-12" value="">
+                            <label class="achievement-label">PA 12</label>
+                        </div>
+                        <div class = "achievement">
+                            <!-- Needs 1 checkbox and a Name-->
+                            <input type="checkbox" name="achievement-completed" id="pa-13" value="">
+                            <label class="achievement-label">PA 13</label>
+                        </div>
+                        <div class = "achievement">
+                            <!-- Needs 1 checkbox and a Name-->
+                            <input type="checkbox" name="achievement-completed" id="pa-14" value="">
+                            <label class="achievement-label">PA 14</label>
+                        </div>
+                        <div class = "achievement">
+                            <!-- Needs 1 checkbox and a Name-->
+                            <input type="checkbox" name="achievement-completed" id="pa-15" value="">
+                            <label class="achievement-label">PA 15</label>
+                        </div>
+                        <div class = "achievement">
+                            <!-- Needs 1 checkbox and a Name-->
+                            <input type="checkbox" name="achievement-completed" id="pa-16" value="">
+                            <label class="achievement-label">PA 16</label>
+                        </div>
+                        <div class = "achievement">
+                            <!-- Needs 1 checkbox and a Name-->
+                            <input type="checkbox" name="achievement-completed" id="pa-17" value="">
+                            <label class="achievement-label">PA 17</label>
+                        </div>
+                        <div class = "achievement">
+                            <!-- Needs 1 checkbox and a Name-->
+                            <input type="checkbox" name="achievement-completed" id="pa-18" value="">
+                            <label class="achievement-label">PA 18</label>
+                        </div>
+                        <div class = "achievement">
+                            <!-- Needs 1 checkbox and a Name-->
+                            <input type="checkbox" name="achievement-completed" id="pa-19" value="">
+                            <label class="achievement-label">PA 19</label>
+                        </div>
+                        <div class = "achievement">
+                            <!-- Needs 1 checkbox and a Name-->
+                            <input type="checkbox" name="achievement-completed" id="pa-20" value="">
+                            <label class="achievement-label">PA 20</label>
+                        </div>
+                        <div class = "achievement">
+                            <!-- Needs 1 checkbox and a Name-->
+                            <input type="checkbox" name="achievement-completed" id="pa-21" value="">
+                            <label class="achievement-label">PA 21</label>
+                        </div>
+                        <div class = "achievement">
+                            <!-- Needs 1 checkbox and a Name-->
+                            <input type="checkbox" name="achievement-completed" id="pa-22" value="">
+                            <label class="achievement-label">PA 22</label>
+                        </div>
+                        <div class = "achievement">
+                            <!-- Needs 1 checkbox and a Name-->
+                            <input type="checkbox" name="achievement-completed" id="pa-23" value="">
+                            <label class="achievement-label">PA 23</label>
+                        </div>
+                        <div class = "achievement">
+                            <!-- Needs 1 checkbox and a Name-->
+                            <input type="checkbox" name="achievement-completed" id="pa-24" value="">
+                            <label class="achievement-label">PA 24</label>
+                        </div>
+                        <div class = "achievement">
+                            <!-- Needs 1 checkbox and a Name-->
+                            <input type="checkbox" name="achievement-completed" id="pa-25" value="">
+                            <label class="achievement-label">PA 25</label>
+                        </div>
+                        <div class = "achievement">
+                            <!-- Needs 1 checkbox and a Name-->
+                            <input type="checkbox" name="achievement-completed" id="pa-26" value="">
+                            <label class="achievement-label">PA 26</label>
+                        </div>
+                        <div class = "achievement">
+                            <!-- Needs 1 checkbox and a Name-->
+                            <input type="checkbox" name="achievement-completed" id="pa-27" value="">
+                            <label class="achievement-label">PA 27</label>
+                        </div>
+                        <div class = "achievement">
+                            <!-- Needs 1 checkbox and a Name-->
+                            <input type="checkbox" name="achievement-completed" id="pa-28" value="">
+                            <label class="achievement-label">PA 28</label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="global-achievements">
+                        <legend> Global Achievements </legend>
+                        <div class = "global-achievement">
+                            <label class="artifact-label">Artifact: </label>
+                            <input type="checkbox" name="artifact-recovered" id="art-r" value="">
+                            <label class="artifact-label">Recovered</label>
+
+                            <input type="checkbox" name= "artifact-lost" id="art-l" value="">
+                            <label class="artifact-label">Lost</label>
+
+                            <input type="checkbox" name="artifact-cleansed" id="art-c" value="">
+                            <label class="artifact-label">Cleansed</label>
+                        </div>
+                        <div class = "global-achievement">
+                            <label class="city-label">City Rule: </label>
+                            <input type="checkbox" name="city-militaristic" id="city-m" value="">
+                            <label class="city-label">Militaristic</label>
+
+                            <input type="checkbox" name="city-economic" id="city-e" value="">
+                            <label  class="city-label">Economic</label>
+
+                            <input type="checkbox" name="city-demonic" id="city-d" value="">
+                            <label class="city-label">Demonic</label>
+                        </div>
+                        <div class = "global-achievement">
+                            <label class="drake-label">The Drake: </label>
+                            <input type="checkbox" name="drake-aided" id="drake-a" value="">
+                            <label class="drake-label">Aided</label>
+
+                            <input type="checkbox" name="drake-slain" id="drake-s" value="">
+                            <label class="drake-label">Slain</label>
+                        </div>
+                        <div class = "global-achievement">
+                            <label class="voice-label">The Voice: </label>
+                            <input type="checkbox" name="voice-silenced" id="voice-s" value="">
+                            <label  class="voice-label">Silenced</label>
+
+                            <input type="checkbox" name="voice-freed" id="voice-f" value="">
+                            <label class="voice-label">Freed</label>
+                        </div>
+                        <div class = "global-achievement">
+                            <label class="at-label">Ancient Technology</label>
+                            <input type="checkbox" name="ancient-technology" id="at-1" value="">
+                            <input type="checkbox" name="ancient-technology" id="at-2" value="">
+                            <input type="checkbox" name="ancient-technology" id="at-3" value="">
+                            <input type="checkbox" name="ancient-technology" id="at-4" value="">
+                            <input type="checkbox" name="ancient-technology" id="at-5" value="">
+                        </div>  
+                        <div class = "global-achievement">
+                            <label class="corruption-label">End of Corruption</label>
+                            <input type="checkbox" name="end-of-corruption" id="eoc-1" value="">
+                            <input type="checkbox" name="end-of-corruption" id="eoc-2" value="">
+                            <input type="checkbox" name="end-of-corruption" id="eoc-3" value="">
+                        </div> 
+                        <div class = "global-achievement">
+                            <!-- Needs 1 checkbox and a Name-->
+                            <input type="checkbox" name="achievement-completed" id="ga-1" value="">
+                            <label class="achievement-label">GA 1</label>
+                        </div>
+                        <div class = "global-achievement">
+                            <!-- Needs 1 checkbox and a Name-->
+                            <input type="checkbox" name="achievement-completed" id="ga-2" value="">
+                            <label class="achievement-label">GA 2</label>
+                        </div>
+                        <div class = "global-achievement">
+                            <!-- Needs 1 checkbox and a Name-->
+                            <input type="checkbox" name="achievement-completed" id="ga-3" value="">
+                            <label class="achievement-label">GA 3</label>
+                        </div>
+                        <div class = "global-achievement">
+                            <!-- Needs 1 checkbox and a Name-->
+                            <input type="checkbox" name="achievement-completed" id="ga-4" value="">
+                            <label class="achievement-label">GA 4</label>
+                        </div>
+                        <div class = "global-achievement">
+                            <!-- Needs 1 checkbox and a Name-->
+                            <input type="checkbox" name="achievement-completed" id="ga-5" value="">
+                            <label class="achievement-label">GA 5</label>
+                        </div>
+                        <div class = "global-achievement">
+                            <!-- Needs 1 checkbox and a Name-->
+                            <input type="checkbox" name="achievement-completed" id="ga-6" value="">
+                            <label class="achievement-label">GA 6</label>
+                        </div>
+                        <div class = "global-achievement">
+                            <!-- Needs 1 checkbox and a Name-->
+                            <input type="checkbox" name="achievement-completed" id="ga-7" value="">
+                            <label class="achievement-label">GA 7</label>
+                        </div>
+                        <div class = "global-achievement">
+                            <!-- Needs 1 checkbox and a Name-->
+                            <input type="checkbox" name="achievement-completed" id="ga-8" value="">
+                            <label class="achievement-label">GA 8</label>
+                        </div>
+                        <div class = "global-achievement">
+                            <!-- Needs 1 checkbox and a Name-->
+                            <input type="checkbox" name="achievement-completed" id="ga-9" value="">
+                            <label class="achievement-label">GA 9</label>
+                        </div> 
+                    </fieldset>
                 </div>
             </div>
             <div class = "tracker">
-                <legend class = "prosperity">
-                    <!-- Needs rows of checkboxes, make a container for each prosperity level?-->
-                </legend>
+                <fieldset class="prosperity">
+                    <legend>Prosperity</legend>
+                    <div class = "prosperity-level">
 
+                    </div>
+                </fieldset>
             </div>
             <div class = "tracker">
                 <legend class = "donations">
