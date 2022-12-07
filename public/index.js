@@ -166,6 +166,7 @@ let healthTracker = class {
 }
 let Monster = class {
     constructor(monsterData, level, playerCount) {
+        this.boss=monsterData.boss
         this.name = monsterData.name
         this.playerCount = playerCount
         this.rotation = 90 * (level % 4)
@@ -209,7 +210,10 @@ let Monster = class {
             while (this.monsters[numb].filled === true) {
                 var numb = Math.floor(Math.random() * this.maxCount)
             }
-            this.monsters[numb].monster = new healthTracker(this.health, type, this.playerCount, numb)
+            if(this.boss)
+                this.monsters[numb].monster = new healthTracker(this.health, "boss", this.playerCount, numb)
+            else
+                this.monsters[numb].monster = new healthTracker(this.health, type, this.playerCount, numb)
             this.monsters[numb].filled = true
             this.currentCount++
         }
@@ -363,7 +367,7 @@ setTimeout(function () {
     // arr.push(Data.livingBones)
     // arr.push(Data.banditArcher)
 
-    cat = new levelControl(Data.monsters, 5, 6, Data.attackMods)
+    cat = new levelControl(Data.monsters, 5, 3, Data.attackMods)
     cat.monsters[0].newMonster(Elite)
     cat.monsters[2].newMonster(Elite)
     cat.monsters[1].newMonster(Elite)
