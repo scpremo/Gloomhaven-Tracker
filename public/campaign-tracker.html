@@ -31,10 +31,10 @@
                 <table class="player-characters">
                     <!-- If JS function, then enters sum level of players and number of players, gets level-->
                     <tr>
-                        <td></td>
+                        <td> </td>
                         <td><div>Party Member</div></td>
                         <td><div>Level</div></td>
-                        <td></td>
+                        <td> </td>
                         <td><div>Party Member</div></td>
                         <td><div>Level</div></td>
                     </tr>
@@ -94,6 +94,24 @@
                             <option>9</option>
                         </select></td>
                     </tr>
+                    <tr>
+                        <td><div> </div></td>
+                        <td><div>Average Party Level: </div></td>
+                        <td><div class = "avg-level"></div></td>
+                        <td><div> </div></td>
+                        <td>
+                            <div>   
+                                <select class="scenario-level" name="scenario-level">
+                                    <option selected value="">Normal</option>
+                                    <option>Easy</option>
+                                    <option>Hard</option>
+                                    <option>Very Hard</option>
+                                </select>
+                                <label for="scenario-level">Difficulty: </label>
+                            </div>
+                        </td>
+                        <td><div class = "scenario-level"></div></td>
+                    </tr>
                 </table>
                 <!-- Needs an Update Button -->
                 <button class = "update-button">Update Information</button>
@@ -103,6 +121,11 @@
             <div class="tracker">
                 <fieldset class = "scenarios">
                     <legend> Scenarios </legend>
+                    <div class = "scenario-example" id="scenario-example">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <label class="scenario-found-example">🔍</label>
+                        <label class="scenario-completed-example">❌</label>
+                    </div>
                     <div class = "scenario" id="scenario-odd">
                         <!-- Needs 2 checkboxes and a name-->
                         <input type="checkbox" name="scenario-found" id="scenario-1-found" value="">
@@ -246,6 +269,11 @@
                         <input type="checkbox" name="scenario-found" id="scenario-24-found" value="">
                         <input type="checkbox" name="scenario-completed" id="scenario-24-completed" value="">
                         <label class="scenario-label">Scenario 24</label>
+                    </div>
+                    <div class = "scenario-example" id="scenario-example">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <label class="scenario-found-example">🔍</label>
+                        <label class="scenario-completed-example">❌</label>
                     </div>
                     <div class = "scenario" id="scenario-odd">
                         <!-- Needs 2 checkboxes and a name-->
@@ -391,6 +419,11 @@
                         <input type="checkbox" name="scenario-completed" id="scenario-48-completed" value="">
                         <label class="scenario-label">Scenario 48</label>
                     </div>
+                    <div class = "scenario-example" id="scenario-example">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <label class="scenario-found-example">🔍</label>
+                        <label class="scenario-completed-example">❌</label>
+                    </div>
                     <div class = "scenario" id="scenario-odd">
                         <!-- Needs 2 checkboxes and a name-->
                         <input type="checkbox" name="scenario-found" id="scenario-49-found" value="">
@@ -534,6 +567,11 @@
                         <input type="checkbox" name="scenario-found" id="scenario-72-found" value="">
                         <input type="checkbox" name="scenario-completed" id="scenario-72-completed" value="">
                         <label class="scenario-label">Scenario 72</label>
+                    </div>
+                    <div class = "scenario-example" id="scenario-example">
+                        <!-- Needs 2 checkboxes and a name-->
+                        <label class="scenario-found-example">🔍</label>
+                        <label class="scenario-completed-example">❌</label>
                     </div>
                     <div class = "scenario" id="scenario-odd">
                         <!-- Needs 2 checkboxes and a name-->
@@ -925,13 +963,14 @@
             <div class = "tracker">
                 <fieldset class="prosperity">
                     <legend>Prosperity Level</legend>
-                    <div class = "prosperity-level">
+                    <div class = "prosperity-level" id = "odd">
                         <label class="achievement-label">1 </label>   
                         <input type="checkbox" name="prosperity-check" id="p-check" value="">
                         <input type="checkbox" name="prosperity-check" id="p-check" value="">
                         <input type="checkbox" name="prosperity-check" id="p-check" value="">
                         <input type="checkbox" name="prosperity-check" id="p-check" value="">
                         <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <label class="prosperity-label">| Items 001-014</label>
                     </div>
                     <div class = "prosperity-level">
                         <label class="achievement-label">2 </label>   
@@ -941,8 +980,9 @@
                         <input type="checkbox" name="prosperity-check" id="p-check" value="">
                         <input type="checkbox" name="prosperity-check" id="p-check" value="">
                         <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <label class="prosperity-label">| Items 015-021</label>
                     </div>
-                    <div class = "prosperity-level">
+                    <div class = "prosperity-level" id = "odd">
                         <label class="achievement-label">3 </label>   
                         <input type="checkbox" name="prosperity-check" id="p-check odd" value="">
                         <input type="checkbox" name="prosperity-check" id="p-check" value="">
@@ -951,6 +991,7 @@
                         <input type="checkbox" name="prosperity-check" id="p-check" value="">
                         <input type="checkbox" name="prosperity-check" id="p-check" value="">
                         <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <label class="prosperity-label">| Items 022-028</label>
                     </div>                    
                     <div class = "prosperity-level">
                         <label class="achievement-label">4 </label>   
@@ -962,8 +1003,9 @@
                         <input type="checkbox" name="prosperity-check" id="p-check" value="">
                         <input type="checkbox" name="prosperity-check" id="p-check" value="">
                         <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <label class="prosperity-label">| Items 029-035</label>
                     </div>                    
-                    <div class = "prosperity-level">
+                    <div class = "prosperity-level" id = "odd">
                         <label class="achievement-label">5 </label>   
                         <input type="checkbox" name="prosperity-check" id="p-check odd" value="">
                         <input type="checkbox" name="prosperity-check" id="p-check" value="">
@@ -974,6 +1016,7 @@
                         <input type="checkbox" name="prosperity-check" id="p-check" value="">
                         <input type="checkbox" name="prosperity-check" id="p-check" value="">
                         <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <label class="prosperity-label">| Items 036-042</label>
                     </div>                    
                     <div class = "prosperity-level">
                         <label class="achievement-label">6 </label>   
@@ -987,8 +1030,9 @@
                         <input type="checkbox" name="prosperity-check" id="p-check" value="">
                         <input type="checkbox" name="prosperity-check" id="p-check" value="">
                         <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <label class="prosperity-label">| Items 043-049</label>
                     </div>                    
-                    <div class = "prosperity-level">
+                    <div class = "prosperity-level" id = "odd">
                         <label class="achievement-label">7 </label>   
                         <input type="checkbox" name="prosperity-check" id="p-check odd" value="">
                         <input type="checkbox" name="prosperity-check" id="p-check" value="">
@@ -1001,6 +1045,8 @@
                         <input type="checkbox" name="prosperity-check" id="p-check" value="">
                         <input type="checkbox" name="prosperity-check" id="p-check" value="">
                         <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <label class="prosperity-label">| Items 050-056</label>
                     </div>                    
                     <div class = "prosperity-level">
                         <label class="achievement-label">8 </label>   
@@ -1016,17 +1062,167 @@
                         <input type="checkbox" name="prosperity-check" id="p-check" value="">
                         <input type="checkbox" name="prosperity-check" id="p-check" value="">
                         <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <label class="prosperity-label">| Items 057-063</label>
                     </div>                    
-                    <div class = "prosperity-level">
+                    <div class = "prosperity-level" id = "odd">
                         <label class="achievement-label">9 </label>   
                         <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <label class="prosperity-label">| Items 064-070</label>
                     </div>
                 </fieldset>
             </div>
             <div class = "tracker">
-                <legend class = "donations">
+                <fieldset class = "donations">
                     <!-- Checkboxes can come in multiples of 5 in order to maximize. Final box must be different background for prosperity-->
-                </legend>
+                    <legend>Sanctuary of the Great Oak</legend>
+                    <div class = "intro">
+                        <label class="donation-label">Once pre visit to Gloomhaven, each player may donate 10 gold. For each donation, add two bless attack modifiers to the player's deck & check off a box.</label>
+
+                        <div class = "donate-set">                    
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" id = "mid-point"  value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" id = "end" value="">
+                            </div>
+                    </div>
+                    <div class = "donate-sets">
+                        <div class = "donate-set">                    
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" id = "end" value="">
+                        </div>
+                        <div class = "donate-set">                    
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" id = "end" value="">
+                        </div>
+                        <div class = "donate-set">                    
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" id = "end" value="">
+                        </div>
+                        <div class = "donate-set">                    
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" id = "end" value="">
+                        </div>
+                        <div class = "donate-set">                    
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" id = "end" value="">
+                        </div>
+                        <div class = "donate-set">                    
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" id = "end" value="">
+                        </div>
+                        <div class = "donate-set">                    
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" id = "end" value="">
+                        </div>
+                        <div class = "donate-set">                    
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" id = "end" value="">
+                        </div>
+                        <div class = "donate-set">                    
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" id = "end" value="">
+                        </div>
+                        <div class = "donate-set">                    
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" id = "end" value="">
+                        </div>
+                        <div class = "donate-set">                    
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" id = "end" value="">
+                        </div>
+                        <div class = "donate-set">                    
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" id = "end" value="">
+                        </div>
+                        <div class = "donate-set">                    
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" id = "end" value="">
+                        </div>
+                        <div class = "donate-set">                    
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" id = "end" value="">
+                        </div>
+                        <div class = "donate-set">                    
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" id = "end" value="">
+                        </div>
+                        <div class = "donate-set">                    
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" id = "end" value="">
+                        </div>
+                        <div class = "donate-set">                    
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" id = "end" value="">
+                        </div>
+                        <div class = "donate-set">                    
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" value="">
+                            <input type="checkbox" name="donation-check" class="d-check" id = "end" value="">
+                        </div>
+                    </div>
+                </fieldset>
             </div>
         </main>
     </body>

@@ -1,5 +1,5 @@
   html {
-    background-color: darkgreen;
+    background-color: lightgreen;
   }
 
   .title {
@@ -18,14 +18,9 @@
   legend {
     font-weight: bold;
 }
-
-  main {
-    display: flexbox;
-  }
   
-  header {
+  header { 
     background-color: green;
-    display: flex;
     align-items: center;
     position: relative;
   }
@@ -36,7 +31,6 @@
     border-color: black;
     column-count: auto;
     padding: 30px;
-    background-color: lightgreen;
 }
 
 .party-name {
@@ -48,30 +42,28 @@
     flex: 1 100%;
     /*border: 1px solid #ababab;
     margin: 10 10 10 10;*/
-    background-color: lightgreen;
 }
 
-.part-reputation {
+.party-reputation {
     display: inline-block;
-    min-width: 300px;
-    max-width: 300px;
-    max-height: 20px;
+    min-width: 270px;
+    max-width: 270px;
+    max-height: 35px;
 
     flex: 1 100%;
     /*border: 1px solid #ababab;
     margin: 10 10 10 10;*/
-    background-color: lightgreen;
 }
 
-.scenario-level {
-    display: inline-block;
-    min-width: 300px;
-    max-width: 300px;
-    max-height: 20px;
+.update-button {
+    align-self: center;
+    background-color: darkgreen;
+    border-radius: 17px;
+    min-height: 55px;
+    max-height: 55px;
+}
 
-    flex: 1 100%;
-    /*border: 1px solid #ababab;
-    margin: 10 10 10 10;*/
+.update-button:hover{
     background-color: lightgreen;
 }
 
@@ -82,19 +74,43 @@
 
 
 .scenarios {
+    border: 3px solid black;
     background-color: lightgreen;
-    min-height: 500px;
-    max-height: 500px;
+    min-height: 525px;
+    max-height: 525px;
     column-count: 4;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
 
+.scenario:hover {
+    background-color: greenyellow;
+}
+
+#scenario-odd:hover {
+    background-color: greenyellow;
+}
 
 #scenario-odd {
     background-color: rgba(255, 255, 255, 0.37);
 }
+
+
+#odd {
+    background-color: rgba(255, 255, 255, 0.37);
+}
+
+.scenario-found-example {
+    border: 1px solid black;
+    background-color: lightgrey;
+}
+
+.scenario-completed-example {
+    border: 1px solid black;
+    background-color: lightgrey;
+}
+
 
 .achievements {
     background-color: lightgreen;
@@ -126,6 +142,43 @@
 
 
 .prosperity {
+    border: 3px solid black;
     display: flex;
     flex-direction: column;
+    background-color: lightgreen;
+    max-width: 475px;
+}
+
+.prosperity-label {
+    float: right;
+}
+
+.trackers {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap-reverse;
+
+}
+
+.donate-sets {
+    column-count: 6;
+    max-width: 570px;
+}
+
+.donations {
+    border: 3px solid black;
+    max-width: 570px;
+}
+
+.d-check {
+    margin: 0px;
+}
+
+#mid-point {
+    margin-right: 13px;
+}
+
+#end {
+    border: 25px solid gold;
+    border-color: gold;
 }
