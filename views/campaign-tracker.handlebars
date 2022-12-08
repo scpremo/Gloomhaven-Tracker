@@ -8,15 +8,15 @@
         <fieldset class="party-name">
             <!-- Needs a value to store -->
             <label for="party-name-text" class="name-label">Party Name: </label>
-            <input type="text" name="Party Name" class="party-name-text" id="party-name">
+            <input type="text" name="Party Name" class="party-name-text" id="party-name" value="{{partyName}}">
         </fieldset>
         <fieldset class="party-reputation">
             <!-- Needs the chart for how modifiers work, could be a js function (enter reputation, get modifier)?-->
             <label for="party-reputation-text" class="reputation-label">Reputation: </label>
-            <input type="number" name="Party Reputation" class="party-reputation-text" id="reputation">
+            <input type="number" name="Party Reputation" class="party-reputation-text" id="reputation" value="{{reputation}}">
 
             <label for="shop-modifier-text" class="modifier-label">Shop Modifier: </label>
-            <label for="shop-modifier-text" id="modifier">0</label>
+            <label for="shop-modifier-text" id="modifier">{{shopModifier}}</label>
 
         </fieldset>
         <table class="player-characters">
@@ -121,7 +121,7 @@
                     <div>Average Party Level: </div>
                 </td>
                 <td>
-                    <div class="avg-level" id="avg-level"></div>
+                    <div class="avg-level" id="avg-level">{{averageLevel}}</div>
                 </td>
                 <td>
                     <div> </div>
@@ -138,7 +138,7 @@
                     </div>
                 </td>
                 <td>
-                    <div class="scenario-level" id="scenario-level" ></div>
+                    <div class="scenario-level" id="scenario-level" >{{scenarioLevel}}</div>
                 </td>
             </tr>
         </table>

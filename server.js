@@ -34,15 +34,20 @@ app.put('/update/:update', function (req, res, next) {
     console.log("==request contents:" + req.body.partyName)
     var campaignInfo = {
       partyName: req.body.partyName,
-      reputaion: req.body.reputation,
+      reputation: req.body.reputation,
       shopModifier: req.body.shopModifier,
-      playerCharacters: req.body.partyMembers,
+      playerCharacters: req.body.playerCharacters,
       playerCount: req.body.playerCount,
-      averageLevel: req.body.averagePlayerLevel,
-      dificulty: req.body.difficulty,
+      averageLevel: req.body.averageLevel,
+      difficulty: req.body.difficulty,
       scenarioLevel: req.body.scenarioLevel,
       scenarios: req.body.scenarios
     }
+    console.log("reputation:"+campaignInfo.reputation)
+    console.log("players:"+campaignInfo.playerCharacters)
+    console.log("average level:"+campaignInfo.averageLevel)
+    console.log("average level:"+campaignInfo.difficulty) 
+
     //console.log(campaignInfo)
     //res.status(500).send("File system not set up yet")
     fs.writeFile(
@@ -71,6 +76,11 @@ app.get('/', function (req, res, next) {
     res.status(200).render('campaign-tracker', {
       layout: 'campaign-layout',
       missions: scenarioData.scenarios,
+      partyName: scenarioData.partyName,
+      reputation: scenarioData.reputation,
+      shopModifier: scenarioData.shopModifier,
+      averageLevel:scenarioData.averageLevel,
+      scenarioLevel:scenarioData.scenarioLevel
     })
   } else {
     next();

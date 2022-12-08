@@ -1,8 +1,29 @@
 {
-  "partyName": "Big Bean",
+  "partyName": "Biggus",
+  "reputation": 20,
   "shopModifier": -5,
-  "playerCount": 2,
-  "scenarioLevel": 4,
+  "playerCharacters": [
+    {
+      "name": "",
+      "level": 9
+    },
+    {
+      "name": "",
+      "level": 0
+    },
+    {
+      "name": "",
+      "level": 9
+    },
+    {
+      "name": "",
+      "level": 9
+    }
+  ],
+  "playerCount": 3,
+  "averageLevel": 9,
+  "difficulty": 2,
+  "scenarioLevel": 7,
   "scenarios": [
     {
       "example": true,
@@ -13,7 +34,7 @@
       "found": "checked",
       "example": false,
       "completed": "checked",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/blackBarrow",
+      "scenarioLocation": "http://localhost:3000/load/blackBarrow",
       "scenario": "Black Barrow"
     },
     {
@@ -21,7 +42,7 @@
       "found": "checked",
       "example": false,
       "completed": "checked",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/barrowLair",
+      "scenarioLocation": "http://localhost:3000/load/barrowLair",
       "scenario": "Barrow Lair"
     },
     {
@@ -29,7 +50,7 @@
       "found": "checked",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -37,15 +58,15 @@
       "found": "checked",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
       "scenario-even/odd": "scenario-odd",
-      "found": "",
+      "found": "checked",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -53,7 +74,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -61,7 +82,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -69,7 +90,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -77,7 +98,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -85,7 +106,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -93,7 +114,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -101,7 +122,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -109,7 +130,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -117,7 +138,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -125,7 +146,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -133,7 +154,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -141,7 +162,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -149,7 +170,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -157,7 +178,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -165,7 +186,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -173,7 +194,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -181,7 +202,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -189,7 +210,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -197,7 +218,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -209,7 +230,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -217,7 +238,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -225,7 +246,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -233,7 +254,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -241,7 +262,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -249,7 +270,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -257,7 +278,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -265,7 +286,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -273,7 +294,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -281,7 +302,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -289,7 +310,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -297,7 +318,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -305,7 +326,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -313,7 +334,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -321,7 +342,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -329,7 +350,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -337,7 +358,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -345,7 +366,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -353,7 +374,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -361,7 +382,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -369,7 +390,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -377,7 +398,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -385,7 +406,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -393,7 +414,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -405,7 +426,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -413,7 +434,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -421,7 +442,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -429,7 +450,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -437,7 +458,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -445,7 +466,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -453,7 +474,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -461,7 +482,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -469,7 +490,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -477,7 +498,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -485,7 +506,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -493,7 +514,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -501,7 +522,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -509,7 +530,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -517,7 +538,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -525,7 +546,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -533,7 +554,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -541,7 +562,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -549,7 +570,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -557,7 +578,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -565,7 +586,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -573,7 +594,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -581,7 +602,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -589,7 +610,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -601,7 +622,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -609,7 +630,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -617,7 +638,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -625,7 +646,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -633,7 +654,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -641,7 +662,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -649,7 +670,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -657,7 +678,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -665,7 +686,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -673,7 +694,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -681,7 +702,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -689,7 +710,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -697,7 +718,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -705,7 +726,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -713,7 +734,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -721,7 +742,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -729,7 +750,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -737,7 +758,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -745,7 +766,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -753,7 +774,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -761,7 +782,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -769,7 +790,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     },
     {
@@ -777,7 +798,7 @@
       "found": "",
       "example": false,
       "completed": "",
-      "scenarioLocation": "http://localhost:3000/load/http://localhost:3000/load/scenario-name",
+      "scenarioLocation": "http://localhost:3000/load/scenario-name",
       "scenario": "scenarion name"
     }
   ]

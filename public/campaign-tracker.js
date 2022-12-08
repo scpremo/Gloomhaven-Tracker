@@ -104,12 +104,12 @@ function update() {
         method: 'PUT',
         body: JSON.stringify({
             partyName: partyName,
-            reputaion: reputation,
+            reputation: reputation,
             shopModifier:shopModifier,
             playerCharacters:partyMembers,
             playerCount:playerCount,
             averageLevel:averagePlayerLevel,
-            dificulty:difficulty,
+            difficulty:difficulty,
             scenarioLevel: scenarioLevel,
             scenarios:scenarios
         }),
