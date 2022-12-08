@@ -1,0 +1,800 @@
+{
+    "party-name": "",
+    "party-reputation": "0",
+    "player-character": [
+        {
+            "name": "",
+            "level": 0
+        },
+        {
+            "name": "",
+            "level": 0
+        },
+        {
+            "name": "",
+            "level": 0
+        },
+        {
+            "name": "",
+            "level": 0
+        }
+    ],
+    "avg-level": {
+        "scenario-dificulty": "normal",
+        "scenario-level": 0
+    },
+    "scenarios": [
+        {
+            "example": true
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "blackBarrow",
+            "scenario": "Black Barrow"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "barrowLair",
+            "scenario": "Barrow Lair"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "example": true
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "example": true
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "example": true
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-even",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        },
+        {
+            "scenario-even/odd": "scenario-odd",
+            "found": "",
+            "example": false,
+            "completed": "",
+            "scenarioLocation": "scenario-name",
+            "scenario": "scenarion name"
+        }
+    ]
+}

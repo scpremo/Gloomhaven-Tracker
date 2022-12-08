@@ -3,15 +3,29 @@ var express = require('express');
 var exphbs = require('express-handlebars')
 var monsterData= require('./monsterData.json')
 var levelData=require('./levels.json')
+var campaignData= require('./campaign-tracker.json')
 console.log(levelData)
 var app = express();
 var port = process.env.PORT || 3000;
-// app.engine('handlebars', exphbs.engine({
-//     defaultLayout: "main"
-// }))
-//app.set('view engine', 'handlebars')
+app.engine('handlebars', exphbs.engine({
+    defaultLayout: "main"
+}))
+app.set('view engine', 'handlebars')
 
 app.use(express.static('public'));
+app.get('/', function (req, res, next) {
+  var scenarioData = campaignData
+  console.log("== data ", scenarioData)
+
+  if (scenarioData) {
+    res.status(200).render('campaign-tracker', {
+      missions: scenarioData.scenarios,      
+    })
+    console.log("test")
+  } else {
+    next();
+  }
+});
 app.get('/data',function(req,res,next){
   var data=monsterData
   console.log("==request:", req)
@@ -59,6 +73,15 @@ app.get('/level/:n', function (req, res, next) {
   } else {
     next();
   }
+});
+app.get('/load/:n', function (req, res, next) {
+  var level = req.params.n;
+  console.log("== level", level)
+  res.status(200).render('index',{
+    levelName: level
+  })
+    //res.status(200).send(JSON.stringify(resData))
+  
 });
 // app.get('*', function (req, res) {
 //   res.status(404).render('404')

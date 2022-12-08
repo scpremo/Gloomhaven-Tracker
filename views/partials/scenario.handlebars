@@ -1,0 +1,17 @@
+{{#if example}}
+<div class = "scenario-example" id="scenario-example">
+    <!-- Needs 2 checkboxes and a name-->
+    <label class="scenario-found-example">🔍</label>
+    <label class="scenario-completed-example">❌</label>
+    <a href="#" target="_blank" class="scenario-label"></a>
+</div>
+{{else}}
+
+<div class="scenario" id="{{scenario-even/odd}}">
+    <!-- Needs 2 checkboxes and a name-->
+    <input type="checkbox" name="scenario-found" {{found}}>
+    <input type="checkbox" name="scenario-completed" {{completed}}>
+    <!-- <label class="scenario-label">Scenario 1</label> -->
+    <a href="/load/{{scenarioLocation}}" target="_blank" class="scenario-label">{{scenario}}</a>
+</div>
+{{/if}}
