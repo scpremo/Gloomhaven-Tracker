@@ -10,10 +10,17 @@
     "barrowLair":{
         "monsters":[
             "banditArcher",
-            "banditCommaner",
+            "banditCommander",
             "livingBones",
             "livingCorpse"
         ],
         "name":"Barrow Lair"
+    },
+    "inoxEncampment":{
+        "monsters":[
+            "inoxArcher",
+            "inoxGuard",
+            "inoxShaman"
+        ]
     }
 }
