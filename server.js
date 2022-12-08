@@ -19,6 +19,7 @@ app.get('/', function (req, res, next) {
 
   if (scenarioData) {
     res.status(200).render('campaign-tracker', {
+      layout:'campaign-layout',
       missions: scenarioData.scenarios,      
     })
     console.log("test")

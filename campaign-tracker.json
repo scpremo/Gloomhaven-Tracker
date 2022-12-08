@@ -1,7 +1,8 @@
 {
     "party-name": "",
-    "party-reputation": "0",
-    "player-character": [
+    "reputation": 0,
+    "shop-modifier": 0,
+    "player-characters": [
         {
             "name": "",
             "level": 0
@@ -19,13 +20,14 @@
             "level": 0
         }
     ],
-    "avg-level": {
-        "scenario-dificulty": "normal",
-        "scenario-level": 0
-    },
+    "player-count":0,
+    "average-level":0,
+    "dificulty":0,
+    "scenario-level":0,
     "scenarios": [
         {
-            "example": true
+            "example": true,
+            "scenario-even/odd": "scenario-odd"
         },
         {
             "scenario-even/odd": "scenario-odd",

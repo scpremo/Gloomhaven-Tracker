@@ -1,649 +1,676 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Gloomhaven Campaign Tracker</title>
-        <script src="campaign-tracker.js"></script>
-        <!--<link href="" rel="stylesheet">   Font Style-->
-        <link rel="stylesheet" href="style.css">
-        <!--js script-->
-    </head>
-    <body>
-        <header>
-            <!--<div class = "title">
+<header>
+    <!--<div class = "title">
                 <div class = "site-name">Gloomhaven Campaign Tracker</div>
                 <div class = "site-name">and Combat Simulator</div>
                 <div class = "credit">by Scott Premo and Zakarie Leskowsky</div>
             </div>-->
-            <div class = "party-info">
-                <fieldset class="party-name">
-                    <!-- Needs a value to store -->
-                    <label for="party-name-text" class="name-label">Party Name: </label>
-                    <input type="text" name="Party Name" class="party-name-text">
-                </fieldset>
-                <fieldset class="party-reputation">
-                    <!-- Needs the chart for how modifiers work, could be a js function (enter reputation, get modifier)?-->
-                    <label for="party-reputation-text" class="reputation-label">Reputation: </label>
-                    <input type="text" name="Party Reputation" class="party-reputation-text">
+    <div class="party-info">
+        <fieldset class="party-name">
+            <!-- Needs a value to store -->
+            <label for="party-name-text" class="name-label">Party Name: </label>
+            <input type="text" name="Party Name" class="party-name-text" id="party-name">
+        </fieldset>
+        <fieldset class="party-reputation">
+            <!-- Needs the chart for how modifiers work, could be a js function (enter reputation, get modifier)?-->
+            <label for="party-reputation-text" class="reputation-label">Reputation: </label>
+            <input type="number" name="Party Reputation" class="party-reputation-text" id="reputation">
 
-                    <label for="shop-modifier-text" class="modifier-label">Shop Modifier: </label>
+            <label for="shop-modifier-text" class="modifier-label">Shop Modifier: </label>
+            <label for="shop-modifier-text" id="modifier">0</label>
 
-                </fieldset>
-                <table class="player-characters">
-                    <!-- If JS function, then enters sum level of players and number of players, gets level-->
-                    <tr>
-                        <td> </td>
-                        <td><div>Party Member</div></td>
-                        <td><div>Level</div></td>
-                        <td> </td>
-                        <td><div>Party Member</div></td>
-                        <td><div>Level</div></td>
-                    </tr>
-                    <tr>
-                        <td><div>1</div></td>
-                        <td><input type="text" name="character-1" class="character"></td>
-                        <td><select class="player-level" name="player-1-level">
-                            <option selected value="">1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
-                            <option>9</option>
+        </fieldset>
+        <table class="player-characters">
+            <!-- If JS function, then enters sum level of players and number of players, gets level-->
+            <tr>
+                <td> </td>
+                <td>
+                    <div>Party Member</div>
+                </td>
+                <td>
+                    <div>Level</div>
+                </td>
+                <td> </td>
+                <td>
+                    <div>Party Member</div>
+                </td>
+                <td>
+                    <div>Level</div>
+                </td>
+            </tr>
+            <tr>
+                <div class="player-info">
+                    <td>
+                        <div>1</div>
+                    </td>
+                    <td><input type="text" name="character-1" class="character" id="player-name"></td>
+                    <td><select class="player-level" name="player-1-level">
+                            <option selected value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
                         </select></td>
-                        <td><div>2</div></td>
-                        <td><input type="text" name="character-2" class="character"></td>
-                        <td><select class="player-level" name="player-2-level">
-                            <option selected value="">1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
-                            <option>9</option>
+                </div>
+                <div class="player-info">
+                    <td>
+                        <div>2</div>
+                    </td>
+                    <td><input type="text" name="character-2" class="character"></td>
+                    <td><select class="player-level" name="player-2-level">
+                            <option selected value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
                         </select></td>
-                    </tr>
-                    <tr>
-                        <td><div>3</div></td>
-                        <td><input type="text" name="character-3" class="character"></td>
-                        <td><select class="player-level" name="player-3-level">
-                            <option selected value="">1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
-                            <option>9</option>
+                </div>
+            </tr>
+            <tr>
+                <div class="player-info">
+                    <td>
+                        <div>3</div>
+                    </td>
+                    <td><input type="text" name="character-3" class="character"></td>
+                    <td><select class="player-level" name="player-3-level">
+                            <option selected value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
                         </select></td>
-                        <td><div>4</div></td>
-                        <td><input type="text" name="character-4" class="character"></td>
-                        <td><select class="player-level" name="player-4-level">
-                            <option selected value="">1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
-                            <option>9</option>
+                </div>
+                <div class="player-info">
+                    <td>
+                        <div>4</div>
+                    </td>
+                    <td><input type="text" name="character-4" class="character"></td>
+                    <td><select class="player-level" name="player-4-level">
+                            <option selected value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
                         </select></td>
-                    </tr>
-                    <tr>
-                        <td><div> </div></td>
-                        <td><div>Average Party Level: </div></td>
-                        <td><div class = "avg-level"></div></td>
-                        <td><div> </div></td>
-                        <td>
-                            <div>   
-                                <select class="scenario-level" name="scenario-level">
-                                    <option selected value="">Normal</option>
-                                    <option>Easy</option>
-                                    <option>Hard</option>
-                                    <option>Very Hard</option>
-                                </select>
-                                <label for="scenario-level">Difficulty: </label>
-                            </div>
-                        </td>
-                        <td><div class = "scenario-level"></div></td>
-                    </tr>
-                </table>
-                <!-- Needs an Update Button -->
-                <button class = "update-button">Update Information</button>
+                </div>
+            </tr>
+            <tr>
+                <td>
+                    <div> </div>
+                </td>
+                <td>
+                    <div>Average Party Level: </div>
+                </td>
+                <td>
+                    <div class="avg-level" id="avg-level"></div>
+                </td>
+                <td>
+                    <div> </div>
+                </td>
+                <td>
+                    <div>
+                        <select class="scenario-level" name="scenario-level" id="dificulty">
+                            <option value="-1">Easy</option>
+                            <option selected value="0">Normal</option>
+                            <option value="1">Hard</option>
+                            <option value="2">Very Hard</option>
+                        </select>
+                        <label for="scenario-level">Scenario Level: </label>
+                    </div>
+                </td>
+                <td>
+                    <div class="scenario-level" id="scenario-level" ></div>
+                </td>
+            </tr>
+        </table>
+        <!-- Needs an Update Button -->
+        <button class="update-button" id="update-button">Update Information</button>
+    </div>
+</header>
+<main class="trackers">
+    <div class="tracker">
+        <fieldset class="scenarios">
+            <legend> Scenarios </legend>
+            {{!-- <div class="scenario-example" id="scenario-example">
+                <!-- Needs 2 checkboxes and a name-->
+                <label class="scenario-found-example">🔍</label>
+                <label class="scenario-completed-example">❌</label>
+                <a href="#" target="_blank" class="scenario-label"></a>
+            </div> --}}
+            {{#each missions}}
+            {{> scenario}}
+            {{/each}}
+        </fieldset>
+    </div>
+    <div class="tracker">
+        <div class="achievements">
+            <fieldset class="party-achievements">
+                <legend> Party Achievements</legend>
+                <div class="achievement">
+                    <!-- Needs 1 checkbox and a Name-->
+                    <input type="checkbox" name="achievement-completed" id="pa-1" value="">
+                    <label class="achievement-label">PA 1</label>
+                </div>
+                <div class="achievement">
+                    <!-- Needs 1 checkbox and a Name-->
+                    <input type="checkbox" name="achievement-completed" id="pa-2" value="">
+                    <label class="achievement-label">PA 2</label>
+                </div>
+                <div class="achievement">
+                    <!-- Needs 1 checkbox and a Name-->
+                    <input type="checkbox" name="achievement-completed" id="pa-3" value="">
+                    <label class="achievement-label">PA 3</label>
+                </div>
+                <div class="achievement">
+                    <!-- Needs 1 checkbox and a Name-->
+                    <input type="checkbox" name="achievement-completed" id="pa-4" value="">
+                    <label class="achievement-label">PA 4</label>
+                </div>
+                <div class="achievement">
+                    <!-- Needs 1 checkbox and a Name-->
+                    <input type="checkbox" name="achievement-completed" id="pa-5" value="">
+                    <label class="achievement-label">PA 5</label>
+                </div>
+                <div class="achievement">
+                    <!-- Needs 1 checkbox and a Name-->
+                    <input type="checkbox" name="achievement-completed" id="pa-6" value="">
+                    <label class="achievement-label">Dark Bounty</label>
+                </div>
+                <div class="achievement">
+                    <!-- Needs 1 checkbox and a Name-->
+                    <input type="checkbox" name="achievement-completed" id="pa-7" value="">
+                    <label class="achievement-label">PA 7</label>
+                </div>
+                <div class="achievement">
+                    <!-- Needs 1 checkbox and a Name-->
+                    <input type="checkbox" name="achievement-completed" id="pa-8" value="">
+                    <label class="achievement-label">PA 8</label>
+                </div>
+                <div class="achievement">
+                    <!-- Needs 1 checkbox and a Name-->
+                    <input type="checkbox" name="achievement-completed" id="pa-9" value="">
+                    <label class="achievement-label">PA 9</label>
+                </div>
+                <div class="achievement">
+                    <!-- Needs 1 checkbox and a Name-->
+                    <input type="checkbox" name="achievement-completed" id="pa-10" value="">
+                    <label class="achievement-label">PA 10</label>
+                </div>
+                <div class="achievement">
+                    <!-- Needs 1 checkbox and a Name-->
+                    <input type="checkbox" name="achievement-completed" id="pa-11" value="">
+                    <label class="achievement-label">PA 11</label>
+                </div>
+                <div class="achievement">
+                    <!-- Needs 1 checkbox and a Name-->
+                    <input type="checkbox" name="achievement-completed" id="pa-12" value="">
+                    <label class="achievement-label">PA 12</label>
+                </div>
+                <div class="achievement">
+                    <!-- Needs 1 checkbox and a Name-->
+                    <input type="checkbox" name="achievement-completed" id="pa-13" value="">
+                    <label class="achievement-label">PA 13</label>
+                </div>
+                <div class="achievement">
+                    <!-- Needs 1 checkbox and a Name-->
+                    <input type="checkbox" name="achievement-completed" id="pa-14" value="">
+                    <label class="achievement-label">PA 14</label>
+                </div>
+                <div class="achievement">
+                    <!-- Needs 1 checkbox and a Name-->
+                    <input type="checkbox" name="achievement-completed" id="pa-15" value="">
+                    <label class="achievement-label">PA 15</label>
+                </div>
+                <div class="achievement">
+                    <!-- Needs 1 checkbox and a Name-->
+                    <input type="checkbox" name="achievement-completed" id="pa-16" value="">
+                    <label class="achievement-label">PA 16</label>
+                </div>
+                <div class="achievement">
+                    <!-- Needs 1 checkbox and a Name-->
+                    <input type="checkbox" name="achievement-completed" id="pa-17" value="">
+                    <label class="achievement-label">PA 17</label>
+                </div>
+                <div class="achievement">
+                    <!-- Needs 1 checkbox and a Name-->
+                    <input type="checkbox" name="achievement-completed" id="pa-18" value="">
+                    <label class="achievement-label">PA 18</label>
+                </div>
+                <div class="achievement">
+                    <!-- Needs 1 checkbox and a Name-->
+                    <input type="checkbox" name="achievement-completed" id="pa-19" value="">
+                    <label class="achievement-label">PA 19</label>
+                </div>
+                <div class="achievement">
+                    <!-- Needs 1 checkbox and a Name-->
+                    <input type="checkbox" name="achievement-completed" id="pa-20" value="">
+                    <label class="achievement-label">The Scepter & The Voice</label>
+                </div>
+                <div class="achievement">
+                    <!-- Needs 1 checkbox and a Name-->
+                    <input type="checkbox" name="achievement-completed" id="pa-21" value="">
+                    <label class="achievement-label">PA 21</label>
+                </div>
+                <div class="achievement">
+                    <!-- Needs 1 checkbox and a Name-->
+                    <input type="checkbox" name="achievement-completed" id="pa-22" value="">
+                    <label class="achievement-label">PA 22</label>
+                </div>
+                <div class="achievement">
+                    <!-- Needs 1 checkbox and a Name-->
+                    <input type="checkbox" name="achievement-completed" id="pa-23" value="">
+                    <label class="achievement-label">PA 23</label>
+                </div>
+                <div class="achievement">
+                    <!-- Needs 1 checkbox and a Name-->
+                    <input type="checkbox" name="achievement-completed" id="pa-24" value="">
+                    <label class="achievement-label">PA 24</label>
+                </div>
+                <div class="achievement">
+                    <!-- Needs 1 checkbox and a Name-->
+                    <input type="checkbox" name="achievement-completed" id="pa-25" value="">
+                    <label class="achievement-label">PA 25</label>
+                </div>
+                <div class="achievement">
+                    <!-- Needs 1 checkbox and a Name-->
+                    <input type="checkbox" name="achievement-completed" id="pa-26" value="">
+                    <label class="achievement-label">PA 26</label>
+                </div>
+                <div class="achievement">
+                    <!-- Needs 1 checkbox and a Name-->
+                    <input type="checkbox" name="achievement-completed" id="pa-27" value="">
+                    <label class="achievement-label">PA 27</label>
+                </div>
+                <div class="achievement">
+                    <!-- Needs 1 checkbox and a Name-->
+                    <input type="checkbox" name="achievement-completed" id="pa-28" value="">
+                    <label class="achievement-label">PA 28</label>
+                </div>
+            </fieldset>
+            <fieldset class="global-achievements">
+                <legend> Global Achievements </legend>
+                <div class="global-achievement">
+                    <label class="artifact-label">Artifact: </label>
+                    <input type="checkbox" name="artifact-recovered" id="art-r" value="">
+                    <label class="artifact-label">Recovered</label>
+
+                    <input type="checkbox" name="artifact-lost" id="art-l" value="">
+                    <label class="artifact-label">Lost</label>
+
+                    <input type="checkbox" name="artifact-cleansed" id="art-c" value="">
+                    <label class="artifact-label">Cleansed</label>
+                </div>
+                <div class="global-achievement">
+                    <label class="city-label">City Rule: </label>
+                    <input type="checkbox" name="city-militaristic" id="city-m" value="">
+                    <label class="city-label">Militaristic</label>
+
+                    <input type="checkbox" name="city-economic" id="city-e" value="">
+                    <label class="city-label">Economic</label>
+
+                    <input type="checkbox" name="city-demonic" id="city-d" value="">
+                    <label class="city-label">Demonic</label>
+                </div>
+                <div class="global-achievement">
+                    <label class="drake-label">The Drake: </label>
+                    <input type="checkbox" name="drake-aided" id="drake-a" value="">
+                    <label class="drake-label">Aided</label>
+
+                    <input type="checkbox" name="drake-slain" id="drake-s" value="">
+                    <label class="drake-label">Slain</label>
+                </div>
+                <div class="global-achievement">
+                    <label class="voice-label">The Voice: </label>
+                    <input type="checkbox" name="voice-silenced" id="voice-s" value="">
+                    <label class="voice-label">Silenced</label>
+
+                    <input type="checkbox" name="voice-freed" id="voice-f" value="">
+                    <label class="voice-label">Freed</label>
+                </div>
+                <div class="global-achievement">
+                    <label class="at-label">Ancient Technology</label>
+                    <input type="checkbox" name="ancient-technology" id="at-1" value="">
+                    <input type="checkbox" name="ancient-technology" id="at-2" value="">
+                    <input type="checkbox" name="ancient-technology" id="at-3" value="">
+                    <input type="checkbox" name="ancient-technology" id="at-4" value="">
+                    <input type="checkbox" name="ancient-technology" id="at-5" value="">
+                </div>
+                <div class="global-achievement">
+                    <label class="corruption-label">End of Corruption</label>
+                    <input type="checkbox" name="end-of-corruption" id="eoc-1" value="">
+                    <input type="checkbox" name="end-of-corruption" id="eoc-2" value="">
+                    <input type="checkbox" name="end-of-corruption" id="eoc-3" value="">
+                </div>
+                <div class="global-achievement">
+                    <!-- Needs 1 checkbox and a Name-->
+                    <input type="checkbox" name="achievement-completed" id="ga-1" value="">
+                    <label class="achievement-label">GA 1</label>
+                </div>
+                <div class="global-achievement">
+                    <!-- Needs 1 checkbox and a Name-->
+                    <input type="checkbox" name="achievement-completed" id="ga-2" value="">
+                    <label class="achievement-label">GA 2</label>
+                </div>
+                <div class="global-achievement">
+                    <!-- Needs 1 checkbox and a Name-->
+                    <input type="checkbox" name="achievement-completed" id="ga-3" value="">
+                    <label class="achievement-label">GA 3</label>
+                </div>
+                <div class="global-achievement">
+                    <!-- Needs 1 checkbox and a Name-->
+                    <input type="checkbox" name="achievement-completed" id="ga-4" value="">
+                    <label class="achievement-label">GA 4</label>
+                </div>
+                <div class="global-achievement">
+                    <!-- Needs 1 checkbox and a Name-->
+                    <input type="checkbox" name="achievement-completed" id="ga-5" value="">
+                    <label class="achievement-label">GA 5</label>
+                </div>
+                <div class="global-achievement">
+                    <!-- Needs 1 checkbox and a Name-->
+                    <input type="checkbox" name="achievement-completed" id="ga-6" value="">
+                    <label class="achievement-label">GA 6</label>
+                </div>
+                <div class="global-achievement">
+                    <!-- Needs 1 checkbox and a Name-->
+                    <input type="checkbox" name="achievement-completed" id="ga-7" value="">
+                    <label class="achievement-label">GA 7</label>
+                </div>
+                <div class="global-achievement">
+                    <!-- Needs 1 checkbox and a Name-->
+                    <input type="checkbox" name="achievement-completed" id="ga-8" value="">
+                    <label class="achievement-label">GA 8</label>
+                </div>
+                <div class="global-achievement">
+                    <!-- Needs 1 checkbox and a Name-->
+                    <input type="checkbox" name="achievement-completed" id="ga-9" value="">
+                    <label class="achievement-label">GA 9</label>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+    <div class="tracker">
+        <fieldset class="prosperity">
+            <legend>Prosperity Level</legend>
+            <div class="prosperity-level" id="odd">
+                <label class="achievement-label">1 </label>
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <label class="prosperity-label">| Items 001-014</label>
             </div>
-        </header>
-        <main class = "trackers">
-            <div class="tracker">
-                <fieldset class = "scenarios">
-                    <legend> Scenarios </legend>
-                    {{!-- <div class = "scenario-example" id="scenario-example">
-                        <!-- Needs 2 checkboxes and a name-->
-                        <label class="scenario-found-example">🔍</label>
-                        <label class="scenario-completed-example">❌</label>
-                        <a href="#" target="_blank" class="scenario-label"></a>
-                    </div> --}}
-                    {{#each missions}}
-                    {{> scenario}}
-                    {{/each}}
-                </fieldset>
+            <div class="prosperity-level">
+                <label class="achievement-label">2 </label>
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <label class="prosperity-label">| Items 015-021</label>
             </div>
-            <div class = "tracker">
-                <div class = "achievements">
-                    <fieldset class = "party-achievements">
-                        <legend> Party Achievements</legend>
-                        <div class = "achievement">
-                            <!-- Needs 1 checkbox and a Name-->
-                            <input type="checkbox" name="achievement-completed" id="pa-1" value="">
-                            <label class="achievement-label">PA 1</label>
-                        </div>
-                        <div class = "achievement">
-                            <!-- Needs 1 checkbox and a Name-->
-                            <input type="checkbox" name="achievement-completed" id="pa-2" value="">
-                            <label class="achievement-label">PA 2</label>
-                        </div>
-                        <div class = "achievement">
-                            <!-- Needs 1 checkbox and a Name-->
-                            <input type="checkbox" name="achievement-completed" id="pa-3" value="">
-                            <label class="achievement-label">PA 3</label>
-                        </div>
-                        <div class = "achievement">
-                            <!-- Needs 1 checkbox and a Name-->
-                            <input type="checkbox" name="achievement-completed" id="pa-4" value="">
-                            <label class="achievement-label">PA 4</label>
-                        </div>
-                        <div class = "achievement">
-                            <!-- Needs 1 checkbox and a Name-->
-                            <input type="checkbox" name="achievement-completed" id="pa-5" value="">
-                            <label class="achievement-label">PA 5</label>
-                        </div>
-                        <div class = "achievement">
-                            <!-- Needs 1 checkbox and a Name-->
-                            <input type="checkbox" name="achievement-completed" id="pa-6" value="">
-                            <label class="achievement-label">Dark Bounty</label>
-                        </div>
-                        <div class = "achievement">
-                            <!-- Needs 1 checkbox and a Name-->
-                            <input type="checkbox" name="achievement-completed" id="pa-7" value="">
-                            <label class="achievement-label">PA 7</label>
-                        </div>
-                        <div class = "achievement">
-                            <!-- Needs 1 checkbox and a Name-->
-                            <input type="checkbox" name="achievement-completed" id="pa-8" value="">
-                            <label class="achievement-label">PA 8</label>
-                        </div>
-                        <div class = "achievement">
-                            <!-- Needs 1 checkbox and a Name-->
-                            <input type="checkbox" name="achievement-completed" id="pa-9" value="">
-                            <label class="achievement-label">PA 9</label>
-                        </div>
-                        <div class = "achievement">
-                            <!-- Needs 1 checkbox and a Name-->
-                            <input type="checkbox" name="achievement-completed" id="pa-10" value="">
-                            <label class="achievement-label">PA 10</label>
-                        </div>
-                        <div class = "achievement">
-                            <!-- Needs 1 checkbox and a Name-->
-                            <input type="checkbox" name="achievement-completed" id="pa-11" value="">
-                            <label class="achievement-label">PA 11</label>
-                        </div>
-                        <div class = "achievement">
-                            <!-- Needs 1 checkbox and a Name-->
-                            <input type="checkbox" name="achievement-completed" id="pa-12" value="">
-                            <label class="achievement-label">PA 12</label>
-                        </div>
-                        <div class = "achievement">
-                            <!-- Needs 1 checkbox and a Name-->
-                            <input type="checkbox" name="achievement-completed" id="pa-13" value="">
-                            <label class="achievement-label">PA 13</label>
-                        </div>
-                        <div class = "achievement">
-                            <!-- Needs 1 checkbox and a Name-->
-                            <input type="checkbox" name="achievement-completed" id="pa-14" value="">
-                            <label class="achievement-label">PA 14</label>
-                        </div>
-                        <div class = "achievement">
-                            <!-- Needs 1 checkbox and a Name-->
-                            <input type="checkbox" name="achievement-completed" id="pa-15" value="">
-                            <label class="achievement-label">PA 15</label>
-                        </div>
-                        <div class = "achievement">
-                            <!-- Needs 1 checkbox and a Name-->
-                            <input type="checkbox" name="achievement-completed" id="pa-16" value="">
-                            <label class="achievement-label">PA 16</label>
-                        </div>
-                        <div class = "achievement">
-                            <!-- Needs 1 checkbox and a Name-->
-                            <input type="checkbox" name="achievement-completed" id="pa-17" value="">
-                            <label class="achievement-label">PA 17</label>
-                        </div>
-                        <div class = "achievement">
-                            <!-- Needs 1 checkbox and a Name-->
-                            <input type="checkbox" name="achievement-completed" id="pa-18" value="">
-                            <label class="achievement-label">PA 18</label>
-                        </div>
-                        <div class = "achievement">
-                            <!-- Needs 1 checkbox and a Name-->
-                            <input type="checkbox" name="achievement-completed" id="pa-19" value="">
-                            <label class="achievement-label">PA 19</label>
-                        </div>
-                        <div class = "achievement">
-                            <!-- Needs 1 checkbox and a Name-->
-                            <input type="checkbox" name="achievement-completed" id="pa-20" value="">
-                            <label class="achievement-label">The Scepter & The Voice</label>
-                        </div>
-                        <div class = "achievement">
-                            <!-- Needs 1 checkbox and a Name-->
-                            <input type="checkbox" name="achievement-completed" id="pa-21" value="">
-                            <label class="achievement-label">PA 21</label>
-                        </div>
-                        <div class = "achievement">
-                            <!-- Needs 1 checkbox and a Name-->
-                            <input type="checkbox" name="achievement-completed" id="pa-22" value="">
-                            <label class="achievement-label">PA 22</label>
-                        </div>
-                        <div class = "achievement">
-                            <!-- Needs 1 checkbox and a Name-->
-                            <input type="checkbox" name="achievement-completed" id="pa-23" value="">
-                            <label class="achievement-label">PA 23</label>
-                        </div>
-                        <div class = "achievement">
-                            <!-- Needs 1 checkbox and a Name-->
-                            <input type="checkbox" name="achievement-completed" id="pa-24" value="">
-                            <label class="achievement-label">PA 24</label>
-                        </div>
-                        <div class = "achievement">
-                            <!-- Needs 1 checkbox and a Name-->
-                            <input type="checkbox" name="achievement-completed" id="pa-25" value="">
-                            <label class="achievement-label">PA 25</label>
-                        </div>
-                        <div class = "achievement">
-                            <!-- Needs 1 checkbox and a Name-->
-                            <input type="checkbox" name="achievement-completed" id="pa-26" value="">
-                            <label class="achievement-label">PA 26</label>
-                        </div>
-                        <div class = "achievement">
-                            <!-- Needs 1 checkbox and a Name-->
-                            <input type="checkbox" name="achievement-completed" id="pa-27" value="">
-                            <label class="achievement-label">PA 27</label>
-                        </div>
-                        <div class = "achievement">
-                            <!-- Needs 1 checkbox and a Name-->
-                            <input type="checkbox" name="achievement-completed" id="pa-28" value="">
-                            <label class="achievement-label">PA 28</label>
-                        </div>
-                    </fieldset>
-                    <fieldset class="global-achievements">
-                        <legend> Global Achievements </legend>
-                        <div class = "global-achievement">
-                            <label class="artifact-label">Artifact: </label>
-                            <input type="checkbox" name="artifact-recovered" id="art-r" value="">
-                            <label class="artifact-label">Recovered</label>
+            <div class="prosperity-level" id="odd">
+                <label class="achievement-label">3 </label>
+                <input type="checkbox" name="prosperity-check" id="p-check odd" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <label class="prosperity-label">| Items 022-028</label>
+            </div>
+            <div class="prosperity-level">
+                <label class="achievement-label">4 </label>
+                <input type="checkbox" name="prosperity-check" id="p-check odd" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <label class="prosperity-label">| Items 029-035</label>
+            </div>
+            <div class="prosperity-level" id="odd">
+                <label class="achievement-label">5 </label>
+                <input type="checkbox" name="prosperity-check" id="p-check odd" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <label class="prosperity-label">| Items 036-042</label>
+            </div>
+            <div class="prosperity-level">
+                <label class="achievement-label">6 </label>
+                <input type="checkbox" name="prosperity-check" id="p-check odd" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <label class="prosperity-label">| Items 043-049</label>
+            </div>
+            <div class="prosperity-level" id="odd">
+                <label class="achievement-label">7 </label>
+                <input type="checkbox" name="prosperity-check" id="p-check odd" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <label class="prosperity-label">| Items 050-056</label>
+            </div>
+            <div class="prosperity-level">
+                <label class="achievement-label">8 </label>
+                <input type="checkbox" name="prosperity-check" id="p-check odd" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <label class="prosperity-label">| Items 057-063</label>
+            </div>
+            <div class="prosperity-level" id="odd">
+                <label class="achievement-label">9 </label>
+                <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                <label class="prosperity-label">| Items 064-070</label>
+            </div>
+        </fieldset>
+    </div>
+    <div class="tracker">
+        <fieldset class="donations">
+            <!-- Checkboxes can come in multiples of 5 in order to maximize. Final box must be different background for prosperity-->
+            <legend>Sanctuary of the Great Oak</legend>
+            <div class="intro">
+                <label class="donation-label">Once pre visit to Gloomhaven, each player may donate 10 gold. For each
+                    donation, add two bless attack modifiers to the player's deck & check off a box.</label>
 
-                            <input type="checkbox" name= "artifact-lost" id="art-l" value="">
-                            <label class="artifact-label">Lost</label>
-
-                            <input type="checkbox" name="artifact-cleansed" id="art-c" value="">
-                            <label class="artifact-label">Cleansed</label>
-                        </div>
-                        <div class = "global-achievement">
-                            <label class="city-label">City Rule: </label>
-                            <input type="checkbox" name="city-militaristic" id="city-m" value="">
-                            <label class="city-label">Militaristic</label>
-
-                            <input type="checkbox" name="city-economic" id="city-e" value="">
-                            <label  class="city-label">Economic</label>
-
-                            <input type="checkbox" name="city-demonic" id="city-d" value="">
-                            <label class="city-label">Demonic</label>
-                        </div>
-                        <div class = "global-achievement">
-                            <label class="drake-label">The Drake: </label>
-                            <input type="checkbox" name="drake-aided" id="drake-a" value="">
-                            <label class="drake-label">Aided</label>
-
-                            <input type="checkbox" name="drake-slain" id="drake-s" value="">
-                            <label class="drake-label">Slain</label>
-                        </div>
-                        <div class = "global-achievement">
-                            <label class="voice-label">The Voice: </label>
-                            <input type="checkbox" name="voice-silenced" id="voice-s" value="">
-                            <label  class="voice-label">Silenced</label>
-
-                            <input type="checkbox" name="voice-freed" id="voice-f" value="">
-                            <label class="voice-label">Freed</label>
-                        </div>
-                        <div class = "global-achievement">
-                            <label class="at-label">Ancient Technology</label>
-                            <input type="checkbox" name="ancient-technology" id="at-1" value="">
-                            <input type="checkbox" name="ancient-technology" id="at-2" value="">
-                            <input type="checkbox" name="ancient-technology" id="at-3" value="">
-                            <input type="checkbox" name="ancient-technology" id="at-4" value="">
-                            <input type="checkbox" name="ancient-technology" id="at-5" value="">
-                        </div>  
-                        <div class = "global-achievement">
-                            <label class="corruption-label">End of Corruption</label>
-                            <input type="checkbox" name="end-of-corruption" id="eoc-1" value="">
-                            <input type="checkbox" name="end-of-corruption" id="eoc-2" value="">
-                            <input type="checkbox" name="end-of-corruption" id="eoc-3" value="">
-                        </div> 
-                        <div class = "global-achievement">
-                            <!-- Needs 1 checkbox and a Name-->
-                            <input type="checkbox" name="achievement-completed" id="ga-1" value="">
-                            <label class="achievement-label">GA 1</label>
-                        </div>
-                        <div class = "global-achievement">
-                            <!-- Needs 1 checkbox and a Name-->
-                            <input type="checkbox" name="achievement-completed" id="ga-2" value="">
-                            <label class="achievement-label">GA 2</label>
-                        </div>
-                        <div class = "global-achievement">
-                            <!-- Needs 1 checkbox and a Name-->
-                            <input type="checkbox" name="achievement-completed" id="ga-3" value="">
-                            <label class="achievement-label">GA 3</label>
-                        </div>
-                        <div class = "global-achievement">
-                            <!-- Needs 1 checkbox and a Name-->
-                            <input type="checkbox" name="achievement-completed" id="ga-4" value="">
-                            <label class="achievement-label">GA 4</label>
-                        </div>
-                        <div class = "global-achievement">
-                            <!-- Needs 1 checkbox and a Name-->
-                            <input type="checkbox" name="achievement-completed" id="ga-5" value="">
-                            <label class="achievement-label">GA 5</label>
-                        </div>
-                        <div class = "global-achievement">
-                            <!-- Needs 1 checkbox and a Name-->
-                            <input type="checkbox" name="achievement-completed" id="ga-6" value="">
-                            <label class="achievement-label">GA 6</label>
-                        </div>
-                        <div class = "global-achievement">
-                            <!-- Needs 1 checkbox and a Name-->
-                            <input type="checkbox" name="achievement-completed" id="ga-7" value="">
-                            <label class="achievement-label">GA 7</label>
-                        </div>
-                        <div class = "global-achievement">
-                            <!-- Needs 1 checkbox and a Name-->
-                            <input type="checkbox" name="achievement-completed" id="ga-8" value="">
-                            <label class="achievement-label">GA 8</label>
-                        </div>
-                        <div class = "global-achievement">
-                            <!-- Needs 1 checkbox and a Name-->
-                            <input type="checkbox" name="achievement-completed" id="ga-9" value="">
-                            <label class="achievement-label">GA 9</label>
-                        </div> 
-                    </fieldset>
+                <div class="donate-set">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" id="mid-point" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" id="end" value="">
                 </div>
             </div>
-            <div class = "tracker">
-                <fieldset class="prosperity">
-                    <legend>Prosperity Level</legend>
-                    <div class = "prosperity-level" id = "odd">
-                        <label class="achievement-label">1 </label>   
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <label class="prosperity-label">| Items 001-014</label>
-                    </div>
-                    <div class = "prosperity-level">
-                        <label class="achievement-label">2 </label>   
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <label class="prosperity-label">| Items 015-021</label>
-                    </div>
-                    <div class = "prosperity-level" id = "odd">
-                        <label class="achievement-label">3 </label>   
-                        <input type="checkbox" name="prosperity-check" id="p-check odd" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <label class="prosperity-label">| Items 022-028</label>
-                    </div>                    
-                    <div class = "prosperity-level">
-                        <label class="achievement-label">4 </label>   
-                        <input type="checkbox" name="prosperity-check" id="p-check odd" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <label class="prosperity-label">| Items 029-035</label>
-                    </div>                    
-                    <div class = "prosperity-level" id = "odd">
-                        <label class="achievement-label">5 </label>   
-                        <input type="checkbox" name="prosperity-check" id="p-check odd" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <label class="prosperity-label">| Items 036-042</label>
-                    </div>                    
-                    <div class = "prosperity-level">
-                        <label class="achievement-label">6 </label>   
-                        <input type="checkbox" name="prosperity-check" id="p-check odd" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <label class="prosperity-label">| Items 043-049</label>
-                    </div>                    
-                    <div class = "prosperity-level" id = "odd">
-                        <label class="achievement-label">7 </label>   
-                        <input type="checkbox" name="prosperity-check" id="p-check odd" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <label class="prosperity-label">| Items 050-056</label>
-                    </div>                    
-                    <div class = "prosperity-level">
-                        <label class="achievement-label">8 </label>   
-                        <input type="checkbox" name="prosperity-check" id="p-check odd" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <label class="prosperity-label">| Items 057-063</label>
-                    </div>                    
-                    <div class = "prosperity-level" id = "odd">
-                        <label class="achievement-label">9 </label>   
-                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
-                        <label class="prosperity-label">| Items 064-070</label>
-                    </div>
-                </fieldset>
+            <div class="donate-sets">
+                <div class="donate-set">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" id="end" value="">
+                </div>
+                <div class="donate-set">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" id="end" value="">
+                </div>
+                <div class="donate-set">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" id="end" value="">
+                </div>
+                <div class="donate-set">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" id="end" value="">
+                </div>
+                <div class="donate-set">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" id="end" value="">
+                </div>
+                <div class="donate-set">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" id="end" value="">
+                </div>
+                <div class="donate-set">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" id="end" value="">
+                </div>
+                <div class="donate-set">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" id="end" value="">
+                </div>
+                <div class="donate-set">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" id="end" value="">
+                </div>
+                <div class="donate-set">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" id="end" value="">
+                </div>
+                <div class="donate-set">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" id="end" value="">
+                </div>
+                <div class="donate-set">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" id="end" value="">
+                </div>
+                <div class="donate-set">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" id="end" value="">
+                </div>
+                <div class="donate-set">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" id="end" value="">
+                </div>
+                <div class="donate-set">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" id="end" value="">
+                </div>
+                <div class="donate-set">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" id="end" value="">
+                </div>
+                <div class="donate-set">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" id="end" value="">
+                </div>
+                <div class="donate-set">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" value="">
+                    <input type="checkbox" name="donation-check" class="d-check" id="end" value="">
+                </div>
             </div>
-            <div class = "tracker">
-                <fieldset class = "donations">
-                    <!-- Checkboxes can come in multiples of 5 in order to maximize. Final box must be different background for prosperity-->
-                    <legend>Sanctuary of the Great Oak</legend>
-                    <div class = "intro">
-                        <label class="donation-label">Once pre visit to Gloomhaven, each player may donate 10 gold. For each donation, add two bless attack modifiers to the player's deck & check off a box.</label>
-
-                        <div class = "donate-set">                    
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" id = "mid-point"  value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" id = "end" value="">
-                            </div>
-                    </div>
-                    <div class = "donate-sets">
-                        <div class = "donate-set">                    
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" id = "end" value="">
-                        </div>
-                        <div class = "donate-set">                    
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" id = "end" value="">
-                        </div>
-                        <div class = "donate-set">                    
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" id = "end" value="">
-                        </div>
-                        <div class = "donate-set">                    
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" id = "end" value="">
-                        </div>
-                        <div class = "donate-set">                    
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" id = "end" value="">
-                        </div>
-                        <div class = "donate-set">                    
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" id = "end" value="">
-                        </div>
-                        <div class = "donate-set">                    
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" id = "end" value="">
-                        </div>
-                        <div class = "donate-set">                    
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" id = "end" value="">
-                        </div>
-                        <div class = "donate-set">                    
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" id = "end" value="">
-                        </div>
-                        <div class = "donate-set">                    
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" id = "end" value="">
-                        </div>
-                        <div class = "donate-set">                    
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" id = "end" value="">
-                        </div>
-                        <div class = "donate-set">                    
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" id = "end" value="">
-                        </div>
-                        <div class = "donate-set">                    
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" id = "end" value="">
-                        </div>
-                        <div class = "donate-set">                    
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" id = "end" value="">
-                        </div>
-                        <div class = "donate-set">                    
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" id = "end" value="">
-                        </div>
-                        <div class = "donate-set">                    
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" id = "end" value="">
-                        </div>
-                        <div class = "donate-set">                    
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" id = "end" value="">
-                        </div>
-                        <div class = "donate-set">                    
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" value="">
-                            <input type="checkbox" name="donation-check" class="d-check" id = "end" value="">
-                        </div>
-                    </div>
-                </fieldset>
-            </div>
-        </main>
-    </body>
-</html>
+        </fieldset>
+    </div>
+</main>
