@@ -9,6 +9,11 @@
     </head>
     <body>
         <header>
+            <!--<div class = "title">
+                <div class = "site-name">Gloomhaven Campaign Tracker</div>
+                <div class = "site-name">and Combat Simulator</div>
+                <div class = "credit">by Scott Premo and Zakarie Leskowsky</div>
+            </div>-->
             <div class = "party-info">
                 <fieldset class="party-name">
                     <!-- Needs a value to store -->
@@ -23,18 +28,75 @@
                     <label for="shop-modifier-text" class="modifier-label">Shop Modifier: </label>
 
                 </fieldset>
-                <fieldset class=" scenario-level">
+                <table class="player-characters">
                     <!-- If JS function, then enters sum level of players and number of players, gets level-->
-                    <label for="num-players-text" class="scenario-label">Number of Players: </label>
-                    <input type="text" name="Num Players" class="num-players-text">
-
-                    <label for="sum-levels-text" class="scenario-label">Sum of Player Levels: </label>
-                    <input type="text" name="Sum Levels" class="sum-levels-text">
-                    
-                    <label for="scenario-level-text" class="scenario-level-label">Scenario Level: </label>
-                    <!-- Might need something to store scenario level -->
-                </fieldset>
+                    <tr>
+                        <td></td>
+                        <td><div>Party Member</div></td>
+                        <td><div>Level</div></td>
+                        <td></td>
+                        <td><div>Party Member</div></td>
+                        <td><div>Level</div></td>
+                    </tr>
+                    <tr>
+                        <td><div>1</div></td>
+                        <td><input type="text" name="character-1" class="character"></td>
+                        <td><select class="player-level" name="player-1-level">
+                            <option selected value="">1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                        </select></td>
+                        <td><div>2</div></td>
+                        <td><input type="text" name="character-2" class="character"></td>
+                        <td><select class="player-level" name="player-2-level">
+                            <option selected value="">1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><div>3</div></td>
+                        <td><input type="text" name="character-3" class="character"></td>
+                        <td><select class="player-level" name="player-3-level">
+                            <option selected value="">1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                        </select></td>
+                        <td><div>4</div></td>
+                        <td><input type="text" name="character-4" class="character"></td>
+                        <td><select class="player-level" name="player-4-level">
+                            <option selected value="">1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                        </select></td>
+                    </tr>
+                </table>
                 <!-- Needs an Update Button -->
+                <button class = "update-button">Update Information</button>
             </div>
         </header>
         <main class = "trackers">
@@ -615,8 +677,8 @@
             </div>
             <div class = "tracker">
                 <div class = "achievements">
-                    <fieldset class = "player-achievements">
-                        <legend> Player Achievements</legend>
+                    <fieldset class = "party-achievements">
+                        <legend> Party Achievements</legend>
                         <div class = "achievement">
                             <!-- Needs 1 checkbox and a Name-->
                             <input type="checkbox" name="achievement-completed" id="pa-1" value="">
@@ -645,7 +707,7 @@
                         <div class = "achievement">
                             <!-- Needs 1 checkbox and a Name-->
                             <input type="checkbox" name="achievement-completed" id="pa-6" value="">
-                            <label class="achievement-label">PA 6</label>
+                            <label class="achievement-label">Dark Bounty</label>
                         </div>
                         <div class = "achievement">
                             <!-- Needs 1 checkbox and a Name-->
@@ -715,7 +777,7 @@
                         <div class = "achievement">
                             <!-- Needs 1 checkbox and a Name-->
                             <input type="checkbox" name="achievement-completed" id="pa-20" value="">
-                            <label class="achievement-label">PA 20</label>
+                            <label class="achievement-label">The Scepter & The Voice</label>
                         </div>
                         <div class = "achievement">
                             <!-- Needs 1 checkbox and a Name-->
@@ -862,9 +924,102 @@
             </div>
             <div class = "tracker">
                 <fieldset class="prosperity">
-                    <legend>Prosperity</legend>
+                    <legend>Prosperity Level</legend>
                     <div class = "prosperity-level">
-
+                        <label class="achievement-label">1 </label>   
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                    </div>
+                    <div class = "prosperity-level">
+                        <label class="achievement-label">2 </label>   
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                    </div>
+                    <div class = "prosperity-level">
+                        <label class="achievement-label">3 </label>   
+                        <input type="checkbox" name="prosperity-check" id="p-check odd" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                    </div>                    
+                    <div class = "prosperity-level">
+                        <label class="achievement-label">4 </label>   
+                        <input type="checkbox" name="prosperity-check" id="p-check odd" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                    </div>                    
+                    <div class = "prosperity-level">
+                        <label class="achievement-label">5 </label>   
+                        <input type="checkbox" name="prosperity-check" id="p-check odd" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                    </div>                    
+                    <div class = "prosperity-level">
+                        <label class="achievement-label">6 </label>   
+                        <input type="checkbox" name="prosperity-check" id="p-check odd" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                    </div>                    
+                    <div class = "prosperity-level">
+                        <label class="achievement-label">7 </label>   
+                        <input type="checkbox" name="prosperity-check" id="p-check odd" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                    </div>                    
+                    <div class = "prosperity-level">
+                        <label class="achievement-label">8 </label>   
+                        <input type="checkbox" name="prosperity-check" id="p-check odd" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
+                    </div>                    
+                    <div class = "prosperity-level">
+                        <label class="achievement-label">9 </label>   
+                        <input type="checkbox" name="prosperity-check" id="p-check" value="">
                     </div>
                 </fieldset>
             </div>
