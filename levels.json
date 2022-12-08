@@ -15,5 +15,12 @@
             "livingCorpse"
         ],
         "name":"Barrow Lair"
+    },
+    "inoxEncampment":{
+        "monsters":[
+            "inoxArcher",
+            "inoxGuard",
+            "inoxShaman"
+        ]
     }
 }
