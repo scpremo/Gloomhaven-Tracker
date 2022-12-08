@@ -98,21 +98,43 @@ function update() {
             }
             index++
             scenarios.push(mission)
-        }
-        var levelData={
-            "party-name": partyName,
-            "reputaion": reputation,
-            "shop-modifier":shopModifier,
-            "player-characters":partyMembers,
-            "player-count":playerCount,
-            "average-level":averagePlayerLevel,
-            "dificulty":difficulty,
-            "scenario-level": scenarioLevel,
-            "scenarios":scenarios
-        }
-                
+        }                
     }
-    return levelData;
+    fetch("update/true",{
+        method: 'PUT',
+        body: JSON.stringify({
+            partyName: partyName,
+            reputaion: reputation,
+            shopModifier:shopModifier,
+            playerCharacters:partyMembers,
+            playerCount:playerCount,
+            averageLevel:averagePlayerLevel,
+            dificulty:difficulty,
+            scenarioLevel: scenarioLevel,
+            scenarios:scenarios
+        }),
+        headers: {
+            "Content-Type": "application/json"
+          }
+    }).then(function (res){
+        if(res.status===500)
+            alert("im not ready for this")
+        else if(res.status===200)
+            alert("success")
+        else 
+            alert("something wrong")
+    })
+    // return JSON.stringify({
+    //     partyName: partyName,
+    //     reputaion: reputation,
+    //     shopModifier:shopModifier,
+    //     playerCharacters:partyMembers,
+    //     playerCount:playerCount,
+    //     averageLevel:averagePlayerLevel,
+    //     dificulty:difficulty,
+    //     scenarioLevel: scenarioLevel,
+    //     scenarios:scenarios
+    // });
 
 
 
