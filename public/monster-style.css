@@ -1,4 +1,15 @@
+html {
+    background-color: burlywood;
+}
+
+.monsters {
+    display: flex;
+    position: relative;
+}
+
+
 .monster {
+    
     background-color: seagreen;
     display: flex;
     flex-direction: row;
@@ -80,7 +91,11 @@ button:hover {
 }
 
 .monster-image {
-    max-height: 118px;
+    max-height: 108px;
+}
+
+.monster-image-container {
+    max-height: 108px;
 }
 
 .monster-initiative-number {
@@ -95,4 +110,53 @@ button:hover {
 .monster-hp {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+}
+
+.plus-minus {
+    margin: auto;
+}
+
+.sidebar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+    border: 2px solid black;
+    margin-left: 5px;
+}
+
+.attack-modifiers {
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
+}
+
+.attack-modifier {
+    max-width: 150px;
+    min-width: 150px;
+    max-height: 100px;
+    min-height: 100px;
+    margin-top: 10px;
+    background-color: sandybrown;
+    border: 2px solid black;
+}
+
+.am-buttons {
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-count: 2;
+    justify-content: center;
+}
+
+.am-button {
+    max-width: fit-content;
+    margin-top: 5px;
+    border-radius: 5px;
 }
