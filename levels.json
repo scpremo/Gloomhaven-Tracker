@@ -461,5 +461,106 @@
             "theGloom"
         ],
         "name":"The Void"
+    },
+    "noxiousCellar":{
+        "monsters":[
+            "livingCorpse",
+            "ooze",
+            "spittingDrake",
+            "vermlingScout",
+            "vermlingShaman"
+        ],
+        "name":"Noxious Cellar"
+    },
+    "cryptBasement":{
+        "monsters":[
+            "giantViper",
+            "livingBones",
+            "livingCorpse",
+            "livingSpirit",
+            "ooze"
+        ],
+        "name":"Crypt Basement"
+    },
+    "palaceOfIce":{
+        "monsters":[
+            "caveBear",
+            "frostDemon",
+            "harrowerInfester",
+            "livingSpirit"
+        ],
+        "name":"Palace Of Ice"
+    },
+    "foggyThicket":{
+        "monsters":[
+            "banditArcher",
+            "banditGuard",
+            "caveBear",
+            "forestImp",
+            "giantViper",
+            "hound",
+            "inoxArcher",
+            "inoxGuard",
+            "inoxShaman",
+            "ooze",
+            "rendingDrake",
+            "spittingDrake",
+            "vermlingScout",
+            "vermlingShaman"
+        ],
+        "name":"Foggy Thicket"
+    },
+    "banditsWood":{
+        "monsters":[
+            "banditArcher",
+            "banditGuard",
+            "hound",
+            "rendingDrake"
+        ],
+        "name":"Bandit's Wood"
+    },
+    "investigation":{
+        "monsters":[
+            "cityArcher",
+            "cityGuard",
+            "hound"
+        ],
+        "name":"Investigation"
+    },
+    "bloodyShack":{
+        "monsters":[
+            "blackImp",
+            "cityGuard",
+            "earthDemon",
+            "harrowerInfester"
+        ],
+        "name":"Bloody Shack"
+    },
+    "forgottenGrove":{
+        "monsters":[
+            "caveBear",
+            "forestImp",
+            "hound"
+        ],
+        "name":"Forgotten Grove"
+    },
+    "alchemyLab":{
+        "monsters":[
+            "giantViper",
+            "hound",
+            "ooze",
+            "spittingDrake",
+            "rendingDrake"
+        ],
+        "name":"Alchemy Lab"
+    },
+    "fadingLighthouse":{
+        "monsters":[
+            "caveBear",
+            "frostDemon",
+            "harrowerInfester",
+            "livingSpirit"
+        ],
+        "name":"Palace Of Ice"
     }
 }
