@@ -11,7 +11,7 @@ function lessorequal(item1, item2) {
 }
 const Elite = "Elite"
 const Normal = "Normal"
-const DISCARD = "/images/discard.png"
+
 const BLESS = {
     "image": "images/attack-modifiers/monster-mod/gh-am-mm-01.png",
     "shuffle": false,
@@ -66,6 +66,11 @@ let Card = class {
         return this.initiative
     }
 }
+const DISCARD = new Card({
+    "image": "images/discard.png",
+    "shuffle": false,
+    "remove": false
+})
 let Deck = class {
     constructor(cards, cardBack) {
         this.size = cards.length
@@ -263,14 +268,16 @@ let levelControl = class {
         this.roundCards
         this.curse = 10
         this.bless = 10
-        this.discardPile = document.getElementById("am-drawn").src
-        this.discardPile= DISCARD
-        this.drawButton= document.getElementById("am-draw").src
-        this.drawButton.addEventListener('click', this.drawMod)
+        this.discardPile= document.getElementById("am-drawn")
+        this.discard= DISCARD
+        this.discardPile.src=this.discard.cardFront
+        drawButton= document.getElementById("am-draw")
+        drawButton.addEventListener('click',this.drawMod.bind(this))
         this.shuffle = false
 
     }
     drawMod() {
+        console.log(this)
         this.discard = this.attackMod.draw()
         if (this.discard.cardFront === "images/attack-modifiers/monster-mod/gh-am-mm-01.png") {
             this.curse++
@@ -282,6 +289,8 @@ let levelControl = class {
             this.shuffle = true;
         console.log(this.discard)
         console.log(this.shuffle)
+        this.discardPile= document.getElementById("am-drawn")
+        this.discardPile.src=this.discard.cardFront
     }
     addCurse() {
         if (this.curse > 0) {
@@ -362,7 +371,7 @@ var Datra
 levelData.then(function(levelData){
     Data=  levelData
 })
-
+var drawButton
 var arr = new Array()
 setTimeout(function () {
     // test code 
@@ -370,8 +379,9 @@ setTimeout(function () {
     // arr.push(Data.banditGuard)
     // arr.push(Data.livingBones)
     // arr.push(Data.banditArcher)
-
+    
     cat = new levelControl(Data.monsters, 5, 3, Data.attackMods)
+    
     cat.monsters[0].newMonster(Elite)
     cat.monsters[2].newMonster(Elite)
     cat.monsters[1].newMonster(Elite)
