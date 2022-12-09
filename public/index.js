@@ -211,6 +211,8 @@ let Monster = class {
             this.statCard = monsterData.statBack
         else
             this.statCard = monsterData.statFront
+
+
         this.sleeve = monsterData.sleeve
         this.image = monsterData.image
         this.health = monsterData.health[level]
@@ -247,6 +249,12 @@ let Monster = class {
         this.drawButton.addEventListener('click',this.startRound.bind(this))
         
         //this.statCardRotate.style.transform = 'rotate(90deg)'
+
+        
+        //ATTEMPTING ROTATION HERE
+        var statRotate = document.querySelector("img[src='" + this.statCard + "']")
+        console.log(statRotate)
+        statRotate.className += (" rotate" + this.rotation)
 
     }
     startRound() {

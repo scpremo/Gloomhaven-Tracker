@@ -8,8 +8,8 @@ templates['scenario'] = template({"1":function(container,depth0,helpers,partials
         return undefined
     };
 
-  return "<div class = \"scenario\" id=\""
-    + container.escapeExpression(((helper = (helper = lookupProperty(helpers,"scenarioEvenOdd") || (depth0 != null ? lookupProperty(depth0,"scenarioEvenOdd") : depth0)) != null ? helper : container.hooks.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"scenarioEvenOdd","hash":{},"data":data,"loc":{"start":{"line":2,"column":28},"end":{"line":2,"column":47}}}) : helper)))
+  return "<div class = \"scenario-example\" id=\""
+    + container.escapeExpression(((helper = (helper = lookupProperty(helpers,"scenarioEvenOdd") || (depth0 != null ? lookupProperty(depth0,"scenarioEvenOdd") : depth0)) != null ? helper : container.hooks.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"scenarioEvenOdd","hash":{},"data":data,"loc":{"start":{"line":2,"column":36},"end":{"line":2,"column":55}}}) : helper)))
     + "\">\r\n    <!-- Needs 2 checkboxes and a name-->\r\n    <label class=\"scenario-found-example\">🔍</label>\r\n    <label class=\"scenario-completed-example\">❌</label>\r\n    <a href=\"#\" target=\"_blank\" class=\"scenario-label\"></a>\r\n</div>\r\n";
 },"3":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {

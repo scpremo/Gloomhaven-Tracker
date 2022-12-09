@@ -108,7 +108,7 @@ button:hover {
 }
 
 #normal {
-    background-color: brown;
+    background-color: grey;
 }
 
 #boss {
@@ -194,3 +194,15 @@ button:hover {
     background-color: blanchedalmond;
     border: 2px dashed black;
 }
+
+/*Credit for rotation css to https://stackoverflow.com/questions/16794310/rotate-image-with-javascript*/
+
+.rotate90 {
+    transform: rotate(-90deg);
+  }
+.rotate180 {
+    transform: rotate(-180deg);
+  }
+.rotate270 {
+    transform: rotate(-270deg);
+  }

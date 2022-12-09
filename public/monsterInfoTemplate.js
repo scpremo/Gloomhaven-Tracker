@@ -8,8 +8,8 @@ templates['monsterInfo'] = template({"compiler":[8,">= 4.3.0"],"main":function(c
         return undefined
     };
 
-  return "<div class = \"monster\">\r\n    <div class=\"monster-info\">\r\n        <div class=\"stat-sheet\">\r\n            <img class=\"stat-img\" src=\""
-    + alias4(((helper = (helper = lookupProperty(helpers,"statSheet") || (depth0 != null ? lookupProperty(depth0,"statSheet") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"statSheet","hash":{},"data":data,"loc":{"start":{"line":4,"column":39},"end":{"line":4,"column":52}}}) : helper)))
+  return "<div class = \"monster\">\r\n    <div class=\"monster-info\">\r\n        <div class=\"stat-sheet\">\r\n            <img class=\"stat-img\" id=\"monster-stats\" src=\""
+    + alias4(((helper = (helper = lookupProperty(helpers,"statSheet") || (depth0 != null ? lookupProperty(depth0,"statSheet") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"statSheet","hash":{},"data":data,"loc":{"start":{"line":4,"column":58},"end":{"line":4,"column":71}}}) : helper)))
     + "\">\r\n            <img class=\"stat-img\" id=\"stat-overlay\" src=\""
     + alias4(((helper = (helper = lookupProperty(helpers,"statCover") || (depth0 != null ? lookupProperty(depth0,"statCover") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"statCover","hash":{},"data":data,"loc":{"start":{"line":5,"column":57},"end":{"line":5,"column":70}}}) : helper)))
     + "\">\r\n        </div>\r\n        <div class=\"battle-info\">\r\n            <img class=\"attack-card\" id=\"ac-deck\"\r\n                src=\""
