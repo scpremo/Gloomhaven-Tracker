@@ -414,6 +414,14 @@ let levelControl = class {
         for (let i = 0; i < this.size; i++) {
             if (this.monsters[i].getMonsterCount() > 0) {
                 this.monsters[i].startRound()
+                if(this.monsters[i].containsType("boss")){
+                    var init = {
+                        name: this.monsters[i].getName(),
+                        initiative: this.monsters[i].getInitiative(),
+                        elite: false
+                    }
+                    this.initiativeList.push(init)
+                }
                 if (this.monsters[i].containsType(Elite)) {
                     var init = {
                         name: this.monsters[i].getName(),
@@ -434,8 +442,35 @@ let levelControl = class {
             }
         }
         this.initiativeList = mergeSort(this.initiativeList)
+        this.drawList()
+    }
+    drawList(){
+        
+        for(let i=0; i<this.initiativeList.length;i++)
+        {
+            var drawnType = ""
+            if (this.initiativeList[i].elite)
+                drawnType = "Elite"
+            var init = Handlebars.templates.initList({
+                type: drawnType,
+                name: this.initiativeList[i].name,
+                init: this.initiativeList[i].initiative
+            })
+            console.log(init)
+            var initArea = document.getElementById("initiative-list")
+            initArea.insertAdjacentHTML("beforeend", init)
+            
+            
+        }
+
+          
     }
     endRound() {
+        var oldInits = document.getElementsByClassName("removeThisFlagInitiative")
+        while(oldInits.length>0)
+        {
+            oldInits[0].remove()
+        }
         for (let i = 0; i < this.size; i++) {
             this.monsters[i].endRound()
         }
