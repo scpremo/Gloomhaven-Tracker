@@ -1,16 +1,16 @@
 {
-  "partyName": "ABC's",
-  "reputation": 10,
-  "shopModifier": -2,
+  "partyName": "",
+  "reputation": 0,
+  "shopModifier": 0,
   "playerCharacters": [
     {
-      "name": "A",
-      "level": 6,
+      "name": "",
+      "level": 0,
       "index": 1
     },
     {
-      "name": "B",
-      "level": 2,
+      "name": "",
+      "level": 0,
       "index": 2
     },
     {
@@ -24,10 +24,10 @@
       "index": 4
     }
   ],
-  "playerCount": 2,
-  "averageLevel": 4,
+  "playerCount": 0,
+  "averageLevel": 0,
   "difficulty": 0,
-  "scenarioLevel": 2,
+  "scenarioLevel": 0,
   "scenarios": [
     {
       "example": true,
