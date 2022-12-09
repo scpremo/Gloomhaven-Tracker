@@ -165,8 +165,10 @@ let healthTracker = class {
             id:this.id
 
           })
-          this.monsterSection= document.getElementsByClassName("monster")[index]
+          this.monsterSection= document.getElementsByClassName("monster-area")[index]
           this.monsterSection.insertAdjacentHTML("beforeend", monsterTemplate)
+
+
           this.plusButton=document.getElementById("plus"+this.id)
           this.plusButton.addEventListener('click',this.increasHealth.bind(this))
           this.minusButton=document.getElementById("minus"+this.id)
