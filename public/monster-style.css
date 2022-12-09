@@ -10,6 +10,8 @@ html {
 .monsters {
     display: flex;
     flex-direction: column;
+
+    width: 100%;
 }
 
 .monster {
@@ -61,6 +63,12 @@ img.stat-img {
     border-radius: 5px;
 }
 
+.monster-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 button {
     background-color: saddlebrown;
     
@@ -76,7 +84,7 @@ button:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
+    width: 100%;
 }
 
 .monster-container {
@@ -92,6 +100,10 @@ button:hover {
 
 #normal {
     background-color: brown;
+}
+
+#boss {
+    background-color: red;
 }
 
 .monster-image {
@@ -122,11 +134,12 @@ button:hover {
 }
 
 .sidebar {
-    position: absolute;
+    /*position: absolute;
     top: 0;
-    right: 0;
+    right: 0;*/
     padding: 20px;
     
+    min-height: 100%;
 
     display: flex;
     flex-direction: column;
