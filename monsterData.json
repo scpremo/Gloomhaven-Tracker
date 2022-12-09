@@ -587,8 +587,8 @@
     "caveBear": {
         "name": "Cave Bear",
         "boss": false,
-        "statFront": "/images/monster-stat-cards/gh-living-bones-0.png",
-        "statBack": "/images/monster-stat-cards/gh-living-bones-4.png",
+        "statFront": "/images/monster-stat-cards/gh-cave-bear-0.png",
+        "statBack": "/images/monster-stat-cards/gh-cave-bear-4.png",
         "image": "/images/monster-standees/Cave-Bear.avif",
         "deck": [
             {
@@ -3769,8 +3769,8 @@
             }
         ],
         "cardBack": "/images/monster-ability-cards/vermling-scout/gh-ma-sc-back.png",
-        "sleeve": "/images/monster-stat-cards/gh-monster-stat-card-envelope-6.png",
-        "maxCount": 6
+        "sleeve": "/images/monster-stat-cards/gh-monster-stat-card-envelope-10.png",
+        "maxCount": 10
     },
     "vermlingShaman": {
         "name": "Vermling Shaman",
