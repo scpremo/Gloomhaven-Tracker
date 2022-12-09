@@ -1,16 +1,16 @@
 {
-  "partyName": "",
-  "reputation": 0,
-  "shopModifier": 0,
+  "partyName": "ABC's",
+  "reputation": 10,
+  "shopModifier": -2,
   "playerCharacters": [
     {
-      "name": "",
-      "level": 0,
+      "name": "A",
+      "level": 9,
       "index": 1
     },
     {
-      "name": "",
-      "level": 0,
+      "name": "B",
+      "level": 9,
       "index": 2
     },
     {
@@ -24,14 +24,14 @@
       "index": 4
     }
   ],
-  "playerCount": 0,
-  "averageLevel": 0,
+  "playerCount": 2,
+  "averageLevel": 9,
   "difficulty": 0,
-  "scenarioLevel": 0,
+  "scenarioLevel": 5,
   "scenarios": [
     {
       "example": true,
-      "scenarioEvenOdd": "scenario-odd"
+      "scenarioEvenOdd": "scenario-even"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -227,7 +227,7 @@
     },
     {
       "example": true,
-      "scenarioEvenOdd": "scenario-odd"
+      "scenarioEvenOdd": "scenario-even"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -423,7 +423,7 @@
     },
     {
       "example": true,
-      "scenarioEvenOdd": "scenario-odd"
+      "scenarioEvenOdd": "scenario-even"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -619,7 +619,7 @@
     },
     {
       "example": true,
-      "scenarioEvenOdd": "scenario-odd"
+      "scenarioEvenOdd": "scenario-even"
     },
     {
       "scenarioEvenOdd": "scenario-odd",

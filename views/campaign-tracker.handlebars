@@ -5,12 +5,12 @@
                 <div class = "credit">by Scott Premo and Zakarie Leskowsky</div>
             </div>-->
     <div class="party-info">
-        <fieldset class="party-name">
+        <div class="party-name">
             <!-- Needs a value to store -->
             <label for="party-name-text" class="name-label">Party Name: </label>
             <input type="text" name="Party Name" class="party-name-text" id="party-name" value="{{partyName}}">
-        </fieldset>
-        <fieldset class="party-reputation">
+        </div>
+        <div class="party-reputation">
             <!-- Needs the chart for how modifiers work, could be a js function (enter reputation, get modifier)?-->
             <label for="party-reputation-text" class="reputation-label">Reputation: </label>
             <input type="number" name="Party Reputation" class="party-reputation-text" id="reputation" value="{{reputation}}">
@@ -18,7 +18,7 @@
             <label for="shop-modifier-text" class="modifier-label">Shop Modifier: </label>
             <label for="shop-modifier-text" id="modifier">{{shopModifier}}</label>
 
-        </fieldset>
+        </div>
         <table class="player-characters">
             <!-- If JS function, then enters sum level of players and number of players, gets level-->
             <tr>
