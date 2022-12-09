@@ -11,7 +11,7 @@ function lessorequal(item1, item2) {
 }
 const Elite = "Elite"
 const Normal = "Normal"
-const DISCARD = null//put path to discard pile image here
+const DISCARD = "/images/discard.png"
 const BLESS = {
     "image": "images/attack-modifiers/monster-mod/gh-am-mm-01.png",
     "shuffle": false,
@@ -263,8 +263,12 @@ let levelControl = class {
         this.roundCards
         this.curse = 10
         this.bless = 10
-        this.discard = DISCARD
+        this.discardPile = document.getElementById("am-drawn").src
+        this.discardPile= DISCARD
+        this.drawButton= document.getElementById("am-draw").src
+        this.drawButton.addEventListener('click', this.drawMod)
         this.shuffle = false
+
     }
     drawMod() {
         this.discard = this.attackMod.draw()

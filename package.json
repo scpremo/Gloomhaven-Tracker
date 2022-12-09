@@ -4,7 +4,9 @@
     "start": "node server.js",
     "build": "handlebars views/partials/levelStarter.handlebars -f public/levelStarterTemplate.js",
     "prebuild":"handlebars views/partials/playerinfo.handlebars -f public/playerinfoTemplate.js",
-    "prebuild":"handlebars views/partials/scenario.handlebars -f public/scenarioTemplate.js",
+    "prebuild":"handlebars views/partials/scenario.handlebars -f public/scenarioTemplate.js",    
+    "prebuild":"handlebars views/partials/monsterInfo.handlebars -f public/monsterInfoTemplate.js",
+    "prebuild":"handlebars views/partials/monster.handlebars -f public/monsterTemplate.js",
     "prestart": "npm run build",
     "dev": "nodemon server.js"
     

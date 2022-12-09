@@ -1,2 +1,23 @@
-<h2>please wait as everything loads</h2>
-{{> levelStarter}}
+        <main class = "content">
+        <div class = monsters>
+            <h2>please wait as everything loads</h2>
+            {{> levelStarter}}
+            <div class = "monster">
+                
+            </div>
+            
+        </div>
+        <aside class = "sidebar">
+            <div class = "inititative-list" id = "initiative-list"></div>
+            <div class = "attack-modifiers">
+                <img class = "attack-modifier" id = "am-deck" src = "/images/attack-modifiers/monster/gh-am-m-back.png">
+                <img class = "attack-modifier" id = "am-drawn" src = "/images/discard.png">
+                <div class = "am-buttons">
+                    <button class = "am-button" id = "am-shuffle">Shuffle</button>
+                    <button class = "am-button" id = "am-draw">Draw</button>
+                    <button class = "am-button" id = "am-curse">Curse</button>
+                    <button class = "am-button" id = "am-bless">Bless</button>
+                </div>
+            </div>
+        </aside>
+    </main>
