@@ -1934,7 +1934,7 @@
         ],
         "cardBack": "/images/monster-ability-cards/boss/gh-ma-bo-back.png",
         "sleeve": "/images/monster-stat-cards/gh-monster-stat-card-envelope-6.png",
-        "maxCount": 1
+        "maxCount": 2
     },
     "inoxGuard": {
         "name": "Inox Guard",
