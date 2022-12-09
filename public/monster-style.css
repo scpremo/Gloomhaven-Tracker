@@ -190,7 +190,7 @@ button:hover {
 
 #initiative-list {
     width: 150px;
-    height: 120px;
+    min-height: 120px;
     background-color: blanchedalmond;
     border: 2px dashed black;
 }

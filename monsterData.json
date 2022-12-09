@@ -1514,6 +1514,264 @@
         "sleeve": "/images/monster-stat-cards/gh-monster-stat-card-envelope-6.png",
         "maxCount": 6
     },
+    "giantViper": {
+        "name": "Giant Viper",
+        "boss": false,
+        "statFront": "/images/monster-stat-cards/gh-giant-viper-0.png",
+        "statBack": "/images/monster-stat-cards/gh-giant-viper-4.png",
+        "image": "/images/monster-standees/Giant-Viper.avif",
+        "deck": [
+            {
+                "image": "/images/monster-ability-cards/giant-viper/gh-ma-gv-1.png",
+                "shuffle": "true",
+                "initiative": 32
+            },
+            {
+                "image": "/images/monster-ability-cards/giant-viper/gh-ma-gv-2.png",
+                "shuffle": "true",
+                "initiative": 32
+            },
+            {
+                "image": "/images/monster-ability-cards/giant-viper/gh-ma-gv-3.png",
+                "shuffle": "false",
+                "initiative": 11
+            },
+            {
+                "image": "/images/monster-ability-cards/giant-viper/gh-ma-gv-4.png",
+                "shuffle": "false",
+                "initiative": 43
+            },
+            {
+                "image": "/images/monster-ability-cards/giant-viper/gh-ma-gv-5.png",
+                "shuffle": "false",
+                "initiative": 58
+            },
+            {
+                "image": "/images/monster-ability-cards/giant-viper/gh-ma-gv-6.png",
+                "shuffle": "false",
+                "initiative": 58
+            },
+            {
+                "image": "/images/monster-ability-cards/giant-viper/gh-ma-gv-7.png",
+                "shuffle": "false",
+                "initiative": 43
+            },
+            {
+                "image": "/images/monster-ability-cards/giant-viper/gh-ma-gv-8.png",
+                "shuffle": "false",
+                "initiative": 23
+            }
+        ],
+        "health": [
+            {
+                "normal": "2",
+                "elite": "3"
+            },
+            {
+                "normal": "3",
+                "elite": "5"
+            },
+            {
+                "normal": "4",
+                "elite": "7"
+            },
+            {
+                "normal": "4",
+                "elite": "8"
+            },
+            {
+                "normal": "6",
+                "elite": "11"
+            },
+            {
+                "normal": "7",
+                "elite": "13"
+            },
+            {
+                "normal": "8",
+                "elite": "14"
+            },
+            {
+                "normal": "10",
+                "elite": "17"
+            }
+        ],
+        "cardBack": "/images/monster-ability-cards/giant-viper/gh-ma-gv-back.png",
+        "sleeve": "/images/monster-stat-cards/gh-monster-stat-card-envelope-6.png",
+        "maxCount": 6
+    },
+    "harrowerInfester": {
+        "name": "Harrower Infester",
+        "boss": false,
+        "statFront": "/images/monster-stat-cards/gh-harrower-infester-0.png",
+        "statBack": "/images/monster-stat-cards/gh-harrower-infester-4.png",
+        "image": "/images/monster-standees/Harrower-Infester.avif",
+        "deck": [
+            {
+                "image": "/images/monster-ability-cards/harrower-infester/gh-ma-hi-1.png",
+                "shuffle": "false",
+                "initiative": 38
+            },
+            {
+                "image": "/images/monster-ability-cards/harrower-infester/gh-ma-hi-2.png",
+                "shuffle": "false",
+                "initiative": 7
+            },
+            {
+                "image": "/images/monster-ability-cards/harrower-infester/gh-ma-hi-3.png",
+                "shuffle": "false",
+                "initiative": 16
+            },
+            {
+                "image": "/images/monster-ability-cards/harrower-infester/gh-ma-hi-4.png",
+                "shuffle": "false",
+                "initiative": 16
+            },
+            {
+                "image": "/images/monster-ability-cards/harrower-infester/gh-ma-hi-5.png",
+                "shuffle": "true",
+                "initiative": 2
+            },
+            {
+                "image": "/images/monster-ability-cards/harrower-infester/gh-ma-hi-6.png",
+                "shuffle": "false",
+                "initiative": 30
+            },
+            {
+                "image": "/images/monster-ability-cards/harrower-infester/gh-ma-hi-7.png",
+                "shuffle": "false",
+                "initiative": 38
+            },
+            {
+                "image": "/images/monster-ability-cards/harrower-infester/gh-ma-hi-8.png",
+                "shuffle": "true",
+                "initiative": 7
+            }
+        ],
+        "health": [
+            {
+                "normal": "6",
+                "elite": "12"
+            },
+            {
+                "normal": "7",
+                "elite": "12"
+            },
+            {
+                "normal": "8",
+                "elite": "14"
+            },
+            {
+                "normal": "10",
+                "elite": "17"
+            },
+            {
+                "normal": "12",
+                "elite": "19"
+            },
+            {
+                "normal": "12",
+                "elite": "21"
+            },
+            {
+                "normal": "15",
+                "elite": "22"
+            },
+            {
+                "normal": "17",
+                "elite": "26"
+            }
+        ],
+        "cardBack": "/images/monster-ability-cards/harrower-infester/gh-ma-hi-back.png",
+        "sleeve": "/images/monster-stat-cards/gh-monster-stat-card-envelope-6.png",
+        "maxCount": 6
+    },
+    "hound": {
+        "name": "Hound",
+        "boss": false,
+        "statFront": "/images/monster-stat-cards/gh-hound-0.png",
+        "statBack": "/images/monster-stat-cards/gh-hound-4.png",
+        "image": "/images/monster-standees/Hound.avif",
+        "deck": [
+            {
+                "image": "/images/monster-ability-cards/hound/gh-ma-ho-1.png",
+                "shuffle": "false",
+                "initiative": 6
+            },
+            {
+                "image": "/images/monster-ability-cards/hound/gh-ma-ho-2.png",
+                "shuffle": "false",
+                "initiative": 7
+            },
+            {
+                "image": "/images/monster-ability-cards/hound/gh-ma-ho-3.png",
+                "shuffle": "true",
+                "initiative": 19
+            },
+            {
+                "image": "/images/monster-ability-cards/hound/gh-ma-ho-4.png",
+                "shuffle": "true",
+                "initiative": 19
+            },
+            {
+                "image": "/images/monster-ability-cards/hound/gh-ma-ho-5.png",
+                "shuffle": "false",
+                "initiative": 26
+            },
+            {
+                "image": "/images/monster-ability-cards/hound/gh-ma-ho-6.png",
+                "shuffle": "false",
+                "initiative": 26
+            },
+            {
+                "image": "/images/monster-ability-cards/hound/gh-ma-ho-7.png",
+                "shuffle": "false",
+                "initiative": 83
+            },
+            {
+                "image": "/images/monster-ability-cards/hound/gh-ma-ho-8.png",
+                "shuffle": "false",
+                "initiative": 72
+            }
+        ],
+        "health": [
+            {
+                "normal": "4",
+                "elite": "6"
+            },
+            {
+                "normal": "4",
+                "elite": "6"
+            },
+            {
+                "normal": "6",
+                "elite": "7"
+            },
+            {
+                "normal": "8",
+                "elite": "8"
+            },
+            {
+                "normal": "8",
+                "elite": "11"
+            },
+            {
+                "normal": "9",
+                "elite": "12"
+            },
+            {
+                "normal": "11",
+                "elite": "15"
+            },
+            {
+                "normal": "15",
+                "elite": "15"
+            }
+        ],
+        "cardBack": "/images/monster-ability-cards/hound/gh-ma-ho-back.png",
+        "sleeve": "/images/monster-stat-cards/gh-monster-stat-card-envelope-6.png",
+        "maxCount": 6
+    },
     "livingBones": {
         "name": "Living Bones",
         "boss": false,
