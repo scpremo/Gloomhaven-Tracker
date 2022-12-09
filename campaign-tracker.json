@@ -5,7 +5,7 @@
   "playerCharacters": [
     {
       "name": "A",
-      "level": 2,
+      "level": 6,
       "index": 1
     },
     {
@@ -25,8 +25,8 @@
     }
   ],
   "playerCount": 2,
-  "averageLevel": 2,
-  "difficulty": 1,
+  "averageLevel": 4,
+  "difficulty": 0,
   "scenarioLevel": 2,
   "scenarios": [
     {

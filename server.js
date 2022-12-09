@@ -58,6 +58,7 @@ app.put('/update/:update', function (req, res, next) {
           res.status(500).send("Error writing to db")
         } else {
           res.status(200).send("Campaign successfully updated!!!!!")
+          campaignData=campaignInfo
         }
       }
     )
