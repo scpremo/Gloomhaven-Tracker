@@ -2,11 +2,15 @@ html {
     background-color: burlywood;
 }
 
-.monsters {
+.content {
     display: flex;
     position: relative;
 }
 
+.monsters {
+    display: flex;
+    flex-direction: column;
+}
 
 .monster {
     
@@ -122,6 +126,7 @@ button:hover {
     top: 0;
     right: 0;
     padding: 20px;
+    
 
     display: flex;
     flex-direction: column;
