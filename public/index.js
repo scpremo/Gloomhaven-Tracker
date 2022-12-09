@@ -206,22 +206,36 @@ let Monster = class {
         //console.log("monsterTemplate: "+ monsterTemplate)
         this.monsterSection= document.getElementById("monsters")
         this.monsterSection.insertAdjacentHTML("beforeend", monsterTemplate)
-        this.statCardRotate=document.getElementsByClassName("stat-img")
-        console.log(this.statCardRotate[index*2])
-        this.statCardRotate.style.transform = 'rotate(90deg)'
+        //this.statCardRotate=document.getElementsByClassName("stat-img")
+        this.normalButton= document.getElementsByClassName("add-monster")[index*2]
+        this.normalButton.addEventListener('click',function(){
+            this.newMonster("normal")
+        }.bind(this))
+        this.elteButton= document.getElementsByClassName("add-monster")[index*2+1]
+        this.elteButton.addEventListener('click',function(){
+            this.newMonster("normal")
+        }.bind(this))
+        
+        //this.statCardRotate.style.transform = 'rotate(90deg)'
 
     }
     startRound() {
         if (this.currentCount != 0) {
             this.discard = this.deck.draw()
             console.log(this.discard)
+            var discard=document.getElementsByClassName("attack-card-discard")[this.index]
+            discard.src=this.discard.cardFront
             return this.discard
         }
     }
     endRound() {
         if (this.discard) {
             if (this.discard.cardShuffle() === 'true')
+            {
                 this.deck.shuffle()
+                var discard=document.getElementsByClassName("attack-card-discard")[this.index]
+                discard.src=DISCARD.cardFront
+            }
             this.discard = null
         }
     }
@@ -418,15 +432,16 @@ setTimeout(function () {
     levelRem.remove()
     cat = new levelControl(Data.monsters, 5, 3, Data.attackMods)
     
-    cat.monsters[0].newMonster(Elite)
-    cat.monsters[2].newMonster(Elite)
-    cat.monsters[1].newMonster(Elite)
-    cat.monsters[0].newMonster(Normal)
-    cat.monsters[2].newMonster(Normal)
-    cat.monsters[1].newMonster(Normal)
-    cat.monsters[0].newMonster(Normal)
-    cat.monsters[2].newMonster(Normal)
-    cat.monsters[1].newMonster(Normal)
+    // cat.monsters[0].newMonster(Elite)
+    // cat.monsters[2].newMonster(Elite)
+    // cat.monsters[1].newMonster(Elite)
+    // cat.monsters[0].newMonster(Normal)
+    // cat.monsters[2].newMonster(Normal)
+    // cat.monsters[1].newMonster(Normal)
+    // cat.monsters[0].newMonster(Normal)
+    // cat.monsters[2].newMonster(Normal)
+    // cat.monsters[1].newMonster(Normal)
+    
 }, 500);
 
 

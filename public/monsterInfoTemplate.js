@@ -14,8 +14,8 @@ templates['monsterInfo'] = template({"compiler":[8,">= 4.3.0"],"main":function(c
     + alias4(((helper = (helper = lookupProperty(helpers,"statCover") || (depth0 != null ? lookupProperty(depth0,"statCover") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"statCover","hash":{},"data":data,"loc":{"start":{"line":5,"column":57},"end":{"line":5,"column":70}}}) : helper)))
     + "\">\r\n        </div>\r\n        <div class=\"battle-info\">\r\n            <img class=\"attack-card\" id=\"ac-deck\"\r\n                src=\""
     + alias4(((helper = (helper = lookupProperty(helpers,"cardBack") || (depth0 != null ? lookupProperty(depth0,"cardBack") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"cardBack","hash":{},"data":data,"loc":{"start":{"line":9,"column":21},"end":{"line":9,"column":33}}}) : helper)))
-    + "\">\r\n            <img class=\"attack-card\" id=\"ac-drawn\" src=\""
-    + alias4(((helper = (helper = lookupProperty(helpers,"discard") || (depth0 != null ? lookupProperty(depth0,"discard") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"discard","hash":{},"data":data,"loc":{"start":{"line":10,"column":56},"end":{"line":10,"column":67}}}) : helper)))
+    + "\">\r\n            <img class=\"attack-card-discard\" id=\"ac-drawn\" src=\""
+    + alias4(((helper = (helper = lookupProperty(helpers,"discard") || (depth0 != null ? lookupProperty(depth0,"discard") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"discard","hash":{},"data":data,"loc":{"start":{"line":10,"column":64},"end":{"line":10,"column":75}}}) : helper)))
     + "\">\r\n            <div class=\"monster-buttons\">\r\n                <button class=\"add-monster\" id=\"add-normal\">Add Normal</button>\r\n                <button class=\"add-monster\" id=\"add-elite\">Add Elite</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>";
 },"useData":true});
 })();
