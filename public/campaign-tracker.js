@@ -144,5 +144,5 @@ function update() {
 window.addEventListener('DOMContentLoaded', function () {
 
     var button = document.getElementById("update-button")
-    button.addEventListener('clcik', update)
+    button.addEventListener('click', update)
 })
