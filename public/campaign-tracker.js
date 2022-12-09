@@ -33,7 +33,7 @@ function update() {
         var playerInfo={
             name:name,
             level:level,
-            index:i
+            index:i+1
         }
         partyMembers.push(playerInfo)
         // playerInfo={
@@ -42,7 +42,11 @@ function update() {
     }
     console.log("==total player levels:"+total)
     console.log("==player count:"+playerCount)
-    var averagePlayerLevel = (total/playerCount)
+    var averagePlayerLevel
+    if(playerCount!=0)
+        averagePlayerLevel = (total/playerCount)
+    else
+        averagePlayerLevel=0
     document.getElementById("avg-level").textContent=averagePlayerLevel
     console.log("==Average Player Level: "+averagePlayerLevel)
     var difficulty=parseInt(document.getElementById("dificulty").value)
@@ -61,7 +65,7 @@ function update() {
         {
             var mission={
                 "example": true,
-                "scenarioEvenOddd": "scenario-odd"
+                "scenarioEvenOdd": "scenario-odd"
             }
             scenarios.push(mission)
         }
@@ -91,7 +95,7 @@ function update() {
             var missionName=link.substring(link.lastIndexOf('/')+1,link.length)
             var scenario =scenarioLabels[i].textContent
             var mission={
-                "scenarioEvenOddd": evenOrOdd,
+                "scenarioEvenOdd": evenOrOdd,
                 "found": found,
                 "example": false,
                 "completed": completed,

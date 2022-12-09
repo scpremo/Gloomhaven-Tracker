@@ -452,7 +452,7 @@ setTimeout(function () {
     // arr.push(Data.banditArcher)
     levelRem=document.getElementById("level")
     levelRem.remove()
-    cat = new levelControl(Data.monsters, 5, 3, Data.attackMods)
+    cat = new levelControl(Data.monsters, Data.scenarioLevel, Data.playerCount, Data.attackMods)
     
     // cat.monsters[0].newMonster(Elite)
     // cat.monsters[2].newMonster(Elite)
