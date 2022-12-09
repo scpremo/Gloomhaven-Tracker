@@ -9,6 +9,8 @@
     "build3":"handlebars views/partials/levelStarter.handlebars -f public/levelStarterTemplate.js",
     "prebuild3":"npm run build4",
     "build4":"handlebars views/partials/monster.handlebars -f public/monsterTemplate.js",
+    "prebuild4":"npm run build5",
+    "build5": "handlebars views/partials/initList.handlebars -f public/initListTemplate.js",
     "prestart": "npm run build1",
     "dev": "nodemon server.js"
     

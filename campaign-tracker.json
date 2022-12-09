@@ -5,12 +5,12 @@
   "playerCharacters": [
     {
       "name": "A",
-      "level": 9,
+      "level": 6,
       "index": 1
     },
     {
       "name": "B",
-      "level": 9,
+      "level": 2,
       "index": 2
     },
     {
@@ -25,13 +25,13 @@
     }
   ],
   "playerCount": 2,
-  "averageLevel": 9,
+  "averageLevel": 4,
   "difficulty": 0,
-  "scenarioLevel": 5,
+  "scenarioLevel": 2,
   "scenarios": [
     {
       "example": true,
-      "scenarioEvenOdd": "scenario-even"
+      "scenarioEvenOdd": "scenario-odd"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -227,7 +227,7 @@
     },
     {
       "example": true,
-      "scenarioEvenOdd": "scenario-even"
+      "scenarioEvenOdd": "scenario-odd"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -423,7 +423,7 @@
     },
     {
       "example": true,
-      "scenarioEvenOdd": "scenario-even"
+      "scenarioEvenOdd": "scenario-odd"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -619,7 +619,7 @@
     },
     {
       "example": true,
-      "scenarioEvenOdd": "scenario-even"
+      "scenarioEvenOdd": "scenario-odd"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
