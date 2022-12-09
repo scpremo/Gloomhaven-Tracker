@@ -1694,42 +1694,42 @@
         "image": "/images/monster-standees/Living-Spirit.avif",
         "deck": [
             {
-                "image": "/images/monster-ability-cards/living-spirit/gh-ma-lc-1.png",
+                "image": "/images/monster-ability-cards/living-spirit/gh-ma-ls-1.png",
                 "shuffle": "true",
                 "initiative": 22
             },
             {
-                "image": "/images/monster-ability-cards/living-spirit/gh-ma-lc-2.png",
+                "image": "/images/monster-ability-cards/living-spirit/gh-ma-ls-2.png",
                 "shuffle": "true",
                 "initiative": 33
             },
             {
-                "image": "/images/monster-ability-cards/living-spirit/gh-ma-lc-3.png",
+                "image": "/images/monster-ability-cards/living-spirit/gh-ma-ls-3.png",
                 "shuffle": "false",
                 "initiative": 48
             },
             {
-                "image": "/images/monster-ability-cards/living-spirit/gh-ma-lc-4.png",
+                "image": "/images/monster-ability-cards/living-spirit/gh-ma-ls-4.png",
                 "shuffle": "false",
                 "initiative": 48
             },
             {
-                "image": "/images/monster-ability-cards/living-spirit/gh-ma-lc-5.png",
+                "image": "/images/monster-ability-cards/living-spirit/gh-ma-ls-5.png",
                 "shuffle": "false",
                 "initiative": 61
             },
             {
-                "image": "/images/monster-ability-cards/living-spirit/gh-ma-lc-6.png",
+                "image": "/images/monster-ability-cards/living-spirit/gh-ma-ls-6.png",
                 "shuffle": "false",
                 "initiative": 75
             },
             {
-                "image": "/images/monster-ability-cards/living-spirit/gh-ma-lc-7.png",
+                "image": "/images/monster-ability-cards/living-spirit/gh-ma-ls-7.png",
                 "shuffle": "false",
                 "initiative": 55
             },
             {
-                "image": "/images/monster-ability-cards/living-spirit/gh-ma-lc-8.png",
+                "image": "/images/monster-ability-cards/living-spirit/gh-ma-ls-8.png",
                 "shuffle": "false",
                 "initiative": 67
             }
@@ -1768,7 +1768,7 @@
                 "elite": "9"
             }
         ],
-        "cardBack": "/images/monster-ability-cards/living-spirit/gh-ma-lc-back.png",
+        "cardBack": "/images/monster-ability-cards/living-spirit/gh-ma-ls-back.png",
         "sleeve": "/images/monster-stat-cards/gh-monster-stat-card-envelope-6.png",
         "maxCount": 6
     },
@@ -1780,42 +1780,42 @@
         "image": "/images/monster-standees/Lurker.avif",
         "deck": [
             {
-                "image": "/images/monster-ability-cards/lurker/gh-ma-lc-1.png",
+                "image": "/images/monster-ability-cards/lurker/gh-ma-lu-1.png",
                 "shuffle": "true",
                 "initiative": 11
             },
             {
-                "image": "/images/monster-ability-cards/lurker/gh-ma-lc-2.png",
+                "image": "/images/monster-ability-cards/lurker/gh-ma-lu-2.png",
                 "shuffle": "false",
                 "initiative": 28
             },
             {
-                "image": "/images/monster-ability-cards/lurker/gh-ma-lc-3.png",
+                "image": "/images/monster-ability-cards/lurker/gh-ma-lu-3.png",
                 "shuffle": "false",
                 "initiative": 38
             },
             {
-                "image": "/images/monster-ability-cards/lurker/gh-ma-lc-4.png",
+                "image": "/images/monster-ability-cards/lurker/gh-ma-lu-4.png",
                 "shuffle": "false",
                 "initiative": 38
             },
             {
-                "image": "/images/monster-ability-cards/lurker/gh-ma-lc-5.png",
+                "image": "/images/monster-ability-cards/lurker/gh-ma-lu-5.png",
                 "shuffle": "false",
                 "initiative": 61
             },
             {
-                "image": "/images/monster-ability-cards/lurker/gh-ma-lc-6.png",
+                "image": "/images/monster-ability-cards/lurker/gh-ma-lu-6.png",
                 "shuffle": "false",
                 "initiative": 64
             },
             {
-                "image": "/images/monster-ability-cards/lurker/gh-ma-lc-7.png",
+                "image": "/images/monster-ability-cards/lurker/gh-ma-lu-7.png",
                 "shuffle": "false",
                 "initiative": 41
             },
             {
-                "image": "/images/monster-ability-cards/lurker/gh-ma-lc-8.png",
+                "image": "/images/monster-ability-cards/lurker/gh-ma-lu-8.png",
                 "shuffle": "true",
                 "initiative": 23
             }
@@ -1854,7 +1854,7 @@
                 "elite": "18"
             }
         ],
-        "cardBack": "/images/monster-ability-cards/lurker/gh-ma-lc-back.png",
+        "cardBack": "/images/monster-ability-cards/lurker/gh-ma-lu-back.png",
         "sleeve": "/images/monster-stat-cards/gh-monster-stat-card-envelope-6.png",
         "maxCount": 6
     },
@@ -1944,42 +1944,42 @@
         "image": "/images/monster-standees/Night-Demon.avif",
         "deck": [
             {
-                "image": "/images/monster-ability-cards/night-demon/gh-ma-lc-1.png",
+                "image": "/images/monster-ability-cards/night-demon/gh-ma-nd-1.png",
                 "shuffle": "false",
                 "initiative": 4
             },
             {
-                "image": "/images/monster-ability-cards/night-demon/gh-ma-lc-2.png",
+                "image": "/images/monster-ability-cards/night-demon/gh-ma-nd-2.png",
                 "shuffle": "false",
                 "initiative": 7
             },
             {
-                "image": "/images/monster-ability-cards/night-demon/gh-ma-lc-3.png",
+                "image": "/images/monster-ability-cards/night-demon/gh-ma-nd-3.png",
                 "shuffle": "false",
                 "initiative": 22
             },
             {
-                "image": "/images/monster-ability-cards/night-demon/gh-ma-lc-4.png",
+                "image": "/images/monster-ability-cards/night-demon/gh-ma-nd-4.png",
                 "shuffle": "false",
                 "initiative": 26
             },
             {
-                "image": "/images/monster-ability-cards/night-demon/gh-ma-lc-5.png",
+                "image": "/images/monster-ability-cards/night-demon/gh-ma-nd-5.png",
                 "shuffle": "true",
                 "initiative": 46
             },
             {
-                "image": "/images/monster-ability-cards/night-demon/gh-ma-lc-6.png",
+                "image": "/images/monster-ability-cards/night-demon/gh-ma-nd-6.png",
                 "shuffle": "true",
                 "initiative": 41
             },
             {
-                "image": "/images/monster-ability-cards/night-demon/gh-ma-lc-7.png",
+                "image": "/images/monster-ability-cards/night-demon/gh-ma-nd-7.png",
                 "shuffle": "false",
                 "initiative": 35
             },
             {
-                "image": "/images/monster-ability-cards/night-demon/gh-ma-lc-8.png",
+                "image": "/images/monster-ability-cards/night-demon/gh-ma-nd-8.png",
                 "shuffle": "false",
                 "initiative": 15
             }
@@ -2018,7 +2018,7 @@
                 "elite": "21"
             }
         ],
-        "cardBack": "/images/monster-ability-cards/night-demon/gh-ma-lc-back.png",
+        "cardBack": "/images/monster-ability-cards/night-demon/gh-ma-nd-back.png",
         "sleeve": "/images/monster-stat-cards/gh-monster-stat-card-envelope-6.png",
         "maxCount": 6
     },
@@ -2030,42 +2030,42 @@
         "image": "/images/monster-standees/Ooze.avif",
         "deck": [
             {
-                "image": "/images/monster-ability-cards/ooze/gh-ma-lc-1.png",
+                "image": "/images/monster-ability-cards/ooze/gh-ma-oo-1.png",
                 "shuffle": "false",
                 "initiative": 36
             },
             {
-                "image": "/images/monster-ability-cards/ooze/gh-ma-lc-2.png",
+                "image": "/images/monster-ability-cards/ooze/gh-ma-oo-2.png",
                 "shuffle": "false",
                 "initiative": 57
             },
             {
-                "image": "/images/monster-ability-cards/ooze/gh-ma-lc-3.png",
+                "image": "/images/monster-ability-cards/ooze/gh-ma-oo-3.png",
                 "shuffle": "false",
                 "initiative": 59
             },
             {
-                "image": "/images/monster-ability-cards/ooze/gh-ma-lc-4.png",
+                "image": "/images/monster-ability-cards/ooze/gh-ma-oo-4.png",
                 "shuffle": "false",
                 "initiative": 66
             },
             {
-                "image": "/images/monster-ability-cards/ooze/gh-ma-lc-5.png",
+                "image": "/images/monster-ability-cards/ooze/gh-ma-oo-5.png",
                 "shuffle": "true",
                 "initiative": 94
             },
             {
-                "image": "/images/monster-ability-cards/ooze/gh-ma-lc-6.png",
+                "image": "/images/monster-ability-cards/ooze/gh-ma-oo-6.png",
                 "shuffle": "true",
                 "initiative": 94
             },
             {
-                "image": "/images/monster-ability-cards/ooze/gh-ma-lc-7.png",
+                "image": "/images/monster-ability-cards/ooze/gh-ma-oo-7.png",
                 "shuffle": "false",
                 "initiative": 66
             },
             {
-                "image": "/images/monster-ability-cards/ooze/gh-ma-lc-8.png",
+                "image": "/images/monster-ability-cards/ooze/gh-ma-oo-8.png",
                 "shuffle": "false",
                 "initiative": 85
             }
@@ -2104,7 +2104,7 @@
                 "elite": "18"
             }
         ],
-        "cardBack": "/images/monster-ability-cards/ooze/gh-ma-lc-back.png",
+        "cardBack": "/images/monster-ability-cards/ooze/gh-ma-oo-back.png",
         "sleeve": "/images/monster-stat-cards/gh-monster-stat-card-envelope-10.png",
         "maxCount": 10
     },
@@ -2194,42 +2194,42 @@
         "image": "/images/monster-standees/Rending-Drake.avif",
         "deck": [
             {
-                "image": "/images/monster-ability-cards/rending-drake/gh-ma-lc-1.png",
+                "image": "/images/monster-ability-cards/rending-drake/gh-ma-rd-1.png",
                 "shuffle": "false",
                 "initiative": 12
             },
             {
-                "image": "/images/monster-ability-cards/rending-drake/gh-ma-lc-2.png",
+                "image": "/images/monster-ability-cards/rending-drake/gh-ma-rd-2.png",
                 "shuffle": "true",
                 "initiative": 13
             },
             {
-                "image": "/images/monster-ability-cards/rending-drake/gh-ma-lc-3.png",
+                "image": "/images/monster-ability-cards/rending-drake/gh-ma-rd-3.png",
                 "shuffle": "false",
                 "initiative": 25
             },
             {
-                "image": "/images/monster-ability-cards/rending-drake/gh-ma-lc-4.png",
+                "image": "/images/monster-ability-cards/rending-drake/gh-ma-rd-4.png",
                 "shuffle": "false",
                 "initiative": 39
             },
             {
-                "image": "/images/monster-ability-cards/rending-drake/gh-ma-lc-5.png",
+                "image": "/images/monster-ability-cards/rending-drake/gh-ma-rd-5.png",
                 "shuffle": "false",
                 "initiative": 54
             },
             {
-                "image": "/images/monster-ability-cards/rending-drake/gh-ma-lc-6.png",
+                "image": "/images/monster-ability-cards/rending-drake/gh-ma-rd-6.png",
                 "shuffle": "false",
                 "initiative": 59
             },
             {
-                "image": "/images/monster-ability-cards/rending-drake/gh-ma-lc-7.png",
+                "image": "/images/monster-ability-cards/rending-drake/gh-ma-rd-7.png",
                 "shuffle": "true",
                 "initiative": 72
             },
             {
-                "image": "/images/monster-ability-cards/rending-drake/gh-ma-lc-8.png",
+                "image": "/images/monster-ability-cards/rending-drake/gh-ma-rd-8.png",
                 "shuffle": "false",
                 "initiative": 6
             }
@@ -2268,7 +2268,7 @@
                 "elite": "18"
             }
         ],
-        "cardBack": "/images/monster-ability-cards/rending-drake/gh-ma-lc-back.png",
+        "cardBack": "/images/monster-ability-cards/rending-drake/gh-ma-rd-back.png",
         "sleeve": "/images/monster-stat-cards/gh-monster-stat-card-envelope-6.png",
         "maxCount": 6
     },
@@ -2280,42 +2280,42 @@
         "image": "/images/monster-standees/Savvas-Icestorm.avif",
         "deck": [
             {
-                "image": "/images/monster-ability-cards/savvas-icestorm/gh-ma-lc-1.png",
+                "image": "/images/monster-ability-cards/savvas-icestorm/gh-ma-si-1.png",
                 "shuffle": "false",
                 "initiative": 70
             },
             {
-                "image": "/images/monster-ability-cards/savvas-icestorm/gh-ma-lc-2.png",
+                "image": "/images/monster-ability-cards/savvas-icestorm/gh-ma-si-2.png",
                 "shuffle": "false",
                 "initiative": 98
             },
             {
-                "image": "/images/monster-ability-cards/savvas-icestorm/gh-ma-lc-3.png",
+                "image": "/images/monster-ability-cards/savvas-icestorm/gh-ma-si-3.png",
                 "shuffle": "false",
                 "initiative": 98
             },
             {
-                "image": "/images/monster-ability-cards/savvas-icestorm/gh-ma-lc-4.png",
+                "image": "/images/monster-ability-cards/savvas-icestorm/gh-ma-si-4.png",
                 "shuffle": "false",
                 "initiative": 19
             },
             {
-                "image": "/images/monster-ability-cards/savvas-icestorm/gh-ma-lc-5.png",
+                "image": "/images/monster-ability-cards/savvas-icestorm/gh-ma-si-5.png",
                 "shuffle": "false",
                 "initiative": 14
             },
             {
-                "image": "/images/monster-ability-cards/savvas-icestorm/gh-ma-lc-6.png",
+                "image": "/images/monster-ability-cards/savvas-icestorm/gh-ma-si-6.png",
                 "shuffle": "false",
                 "initiative": 14
             },
             {
-                "image": "/images/monster-ability-cards/savvas-icestorm/gh-ma-lc-7.png",
+                "image": "/images/monster-ability-cards/savvas-icestorm/gh-ma-si-7.png",
                 "shuffle": "true",
                 "initiative": 47
             },
             {
-                "image": "/images/monster-ability-cards/savvas-icestorm/gh-ma-lc-8.png",
+                "image": "/images/monster-ability-cards/savvas-icestorm/gh-ma-si-8.png",
                 "shuffle": "true",
                 "initiative": 35
             }
@@ -2354,7 +2354,7 @@
                 "elite": "24"
             }
         ],
-        "cardBack": "/images/monster-ability-cards/savvas-icestorm/gh-ma-lc-back.png",
+        "cardBack": "/images/monster-ability-cards/savvas-icestorm/gh-ma-si-back.png",
         "sleeve": "/images/monster-stat-cards/gh-monster-stat-card-envelope-6.png",
         "maxCount": 4
     },
@@ -2366,42 +2366,42 @@
         "image": "/images/monster-standees/Savvas-Lavaflow.avif",
         "deck": [
             {
-                "image": "/images/monster-ability-cards/savvas-lavaflow/gh-ma-lc-1.png",
+                "image": "/images/monster-ability-cards/savvas-lavaflow/gh-ma-sl-1.png",
                 "shuffle": "false",
                 "initiative": 97
             },
             {
-                "image": "/images/monster-ability-cards/savvas-lavaflow/gh-ma-lc-2.png",
+                "image": "/images/monster-ability-cards/savvas-lavaflow/gh-ma-sl-2.png",
                 "shuffle": "false",
                 "initiative": 97
             },
             {
-                "image": "/images/monster-ability-cards/savvas-lavaflow/gh-ma-lc-3.png",
+                "image": "/images/monster-ability-cards/savvas-lavaflow/gh-ma-sl-3.png",
                 "shuffle": "false",
                 "initiative": 22
             },
             {
-                "image": "/images/monster-ability-cards/savvas-lavaflow/gh-ma-lc-4.png",
+                "image": "/images/monster-ability-cards/savvas-lavaflow/gh-ma-sl-4.png",
                 "shuffle": "true",
                 "initiative": 68
             },
             {
-                "image": "/images/monster-ability-cards/savvas-lavaflow/gh-ma-lc-5.png",
+                "image": "/images/monster-ability-cards/savvas-lavaflow/gh-ma-sl-5.png",
                 "shuffle": "false",
                 "initiative": 41
             },
             {
-                "image": "/images/monster-ability-cards/savvas-lavaflow/gh-ma-lc-6.png",
+                "image": "/images/monster-ability-cards/savvas-lavaflow/gh-ma-sl-6.png",
                 "shuffle": "false",
                 "initiative": 51
             },
             {
-                "image": "/images/monster-ability-cards/savvas-lavaflow/gh-ma-lc-7.png",
+                "image": "/images/monster-ability-cards/savvas-lavaflow/gh-ma-sl-7.png",
                 "shuffle": "false",
                 "initiative": 31
             },
             {
-                "image": "/images/monster-ability-cards/savvas-lavaflow/gh-ma-lc-8.png",
+                "image": "/images/monster-ability-cards/savvas-lavaflow/gh-ma-sl-8.png",
                 "shuffle": "true",
                 "initiative": 68
             }
@@ -2440,7 +2440,7 @@
                 "elite": "35"
             }
         ],
-        "cardBack": "/images/monster-ability-cards/savvas-lavaflow/gh-ma-lc-back.png",
+        "cardBack": "/images/monster-ability-cards/savvas-lavaflow/gh-ma-sl-back.png",
         "sleeve": "/images/monster-stat-cards/gh-monster-stat-card-envelope-6.png",
         "maxCount": 4
     },
@@ -2452,42 +2452,42 @@
         "image": "/images/monster-standees/Spitting-Drake.avif",
         "deck": [
             {
-                "image": "/images/monster-ability-cards/spitting-drake/gh-ma-lc-1.png",
+                "image": "/images/monster-ability-cards/spitting-drake/gh-ma-spd-1.png",
                 "shuffle": "false",
                 "initiative": 32
             },
             {
-                "image": "/images/monster-ability-cards/spitting-drake/gh-ma-lc-2.png",
+                "image": "/images/monster-ability-cards/spitting-drake/gh-ma-spd-2.png",
                 "shuffle": "false",
                 "initiative": 52
             },
             {
-                "image": "/images/monster-ability-cards/spitting-drake/gh-ma-lc-3.png",
+                "image": "/images/monster-ability-cards/spitting-drake/gh-ma-spd-3.png",
                 "shuffle": "true",
                 "initiative": 57
             },
             {
-                "image": "/images/monster-ability-cards/spitting-drake/gh-ma-lc-4.png",
+                "image": "/images/monster-ability-cards/spitting-drake/gh-ma-spd-4.png",
                 "shuffle": "false",
                 "initiative": 27
             },
             {
-                "image": "/images/monster-ability-cards/spitting-drake/gh-ma-lc-5.png",
+                "image": "/images/monster-ability-cards/spitting-drake/gh-ma-spd-5.png",
                 "shuffle": "false",
                 "initiative": 87
             },
             {
-                "image": "/images/monster-ability-cards/spitting-drake/gh-ma-lc-6.png",
+                "image": "/images/monster-ability-cards/spitting-drake/gh-ma-spd-6.png",
                 "shuffle": "false",
                 "initiative": 89
             },
             {
-                "image": "/images/monster-ability-cards/spitting-drake/gh-ma-lc-7.png",
+                "image": "/images/monster-ability-cards/spitting-drake/gh-ma-spd-7.png",
                 "shuffle": "false",
                 "initiative": 6
             },
             {
-                "image": "/images/monster-ability-cards/spitting-drake/gh-ma-lc-8.png",
+                "image": "/images/monster-ability-cards/spitting-drake/gh-ma-spd-8.png",
                 "shuffle": "true",
                 "initiative": 89
             }
@@ -2526,7 +2526,7 @@
                 "elite": "21"
             }
         ],
-        "cardBack": "/images/monster-ability-cards/spitting-drake/gh-ma-lc-back.png",
+        "cardBack": "/images/monster-ability-cards/spitting-drake/gh-ma-spd-back.png",
         "sleeve": "/images/monster-stat-cards/gh-monster-stat-card-envelope-6.png",
         "maxCount": 6
     },
@@ -2538,42 +2538,42 @@
         "image": "/images/monster-standees/Stone-Golem.avif",
         "deck": [
             {
-                "image": "/images/monster-ability-cards/stone-golem/gh-ma-lc-1.png",
+                "image": "/images/monster-ability-cards/stone-golem/gh-ma-sg-1.png",
                 "shuffle": "false",
                 "initiative": 11
             },
             {
-                "image": "/images/monster-ability-cards/stone-golem/gh-ma-lc-2.png",
+                "image": "/images/monster-ability-cards/stone-golem/gh-ma-sg-2.png",
                 "shuffle": "false",
                 "initiative": 28
             },
             {
-                "image": "/images/monster-ability-cards/stone-golem/gh-ma-lc-3.png",
+                "image": "/images/monster-ability-cards/stone-golem/gh-ma-sg-3.png",
                 "shuffle": "true",
                 "initiative": 51
             },
             {
-                "image": "/images/monster-ability-cards/stone-golem/gh-ma-lc-4.png",
+                "image": "/images/monster-ability-cards/stone-golem/gh-ma-sg-4.png",
                 "shuffle": "false",
                 "initiative": 65
             },
             {
-                "image": "/images/monster-ability-cards/stone-golem/gh-ma-lc-5.png",
+                "image": "/images/monster-ability-cards/stone-golem/gh-ma-sg-5.png",
                 "shuffle": "false",
                 "initiative": 72
             },
             {
-                "image": "/images/monster-ability-cards/stone-golem/gh-ma-lc-6.png",
+                "image": "/images/monster-ability-cards/stone-golem/gh-ma-sg-6.png",
                 "shuffle": "true",
                 "initiative": 90
             },
             {
-                "image": "/images/monster-ability-cards/stone-golem/gh-ma-lc-7.png",
+                "image": "/images/monster-ability-cards/stone-golem/gh-ma-sg-7.png",
                 "shuffle": "false",
                 "initiative": 83
             },
             {
-                "image": "/images/monster-ability-cards/stone-golem/gh-ma-lc-8.png",
+                "image": "/images/monster-ability-cards/stone-golem/gh-ma-sg-8.png",
                 "shuffle": "false",
                 "initiative": 28
             }
@@ -2612,7 +2612,7 @@
                 "elite": "21"
             }
         ],
-        "cardBack": "/images/monster-ability-cards/stone-golem/gh-ma-lc-back.png",
+        "cardBack": "/images/monster-ability-cards/stone-golem/gh-ma-sg-back.png",
         "sleeve": "/images/monster-stat-cards/gh-monster-stat-card-envelope-6.png",
         "maxCount": 6
     },
@@ -2624,42 +2624,42 @@
         "image": "/images/monster-standees/Sun-Demon.avif",
         "deck": [
             {
-                "image": "/images/monster-ability-cards/sun-demon/gh-ma-lc-1.png",
+                "image": "/images/monster-ability-cards/sun-demon/gh-ma-sud-1.png",
                 "shuffle": "true",
                 "initiative": 17
             },
             {
-                "image": "/images/monster-ability-cards/sun-demon/gh-ma-lc-2.png",
+                "image": "/images/monster-ability-cards/sun-demon/gh-ma-sud-2.png",
                 "shuffle": "false",
                 "initiative": 36
             },
             {
-                "image": "/images/monster-ability-cards/sun-demon/gh-ma-lc-3.png",
+                "image": "/images/monster-ability-cards/sun-demon/gh-ma-sud-3.png",
                 "shuffle": "false",
                 "initiative": 36
             },
             {
-                "image": "/images/monster-ability-cards/sun-demon/gh-ma-lc-4.png",
+                "image": "/images/monster-ability-cards/sun-demon/gh-ma-sud-4.png",
                 "shuffle": "false",
                 "initiative": 68
             },
             {
-                "image": "/images/monster-ability-cards/sun-demon/gh-ma-lc-5.png",
+                "image": "/images/monster-ability-cards/sun-demon/gh-ma-sud-5.png",
                 "shuffle": "true",
                 "initiative": 73
             },
             {
-                "image": "/images/monster-ability-cards/sun-demon/gh-ma-lc-6.png",
+                "image": "/images/monster-ability-cards/sun-demon/gh-ma-sud-6.png",
                 "shuffle": "false",
                 "initiative": 95
             },
             {
-                "image": "/images/monster-ability-cards/sun-demon/gh-ma-lc-7.png",
+                "image": "/images/monster-ability-cards/sun-demon/gh-ma-sud-7.png",
                 "shuffle": "false",
                 "initiative": 88
             },
             {
-                "image": "/images/monster-ability-cards/sun-demon/gh-ma-lc-8.png",
+                "image": "/images/monster-ability-cards/sun-demon/gh-ma-sud-8.png",
                 "shuffle": "false",
                 "initiative": 50
             }
@@ -2698,7 +2698,7 @@
                 "elite": "22"
             }
         ],
-        "cardBack": "/images/monster-ability-cards/sun-demon/gh-ma-lc-back.png",
+        "cardBack": "/images/monster-ability-cards/sun-demon/gh-ma-sud-back.png",
         "sleeve": "/images/monster-stat-cards/gh-monster-stat-card-envelope-6.png",
         "maxCount": 6
     },
@@ -3022,42 +3022,42 @@
         "image": "/images/monster-standees/Vermling-Scout.avif",
         "deck": [
             {
-                "image": "/images/monster-ability-cards/vermling-scout/gh-ma-lc-1.png",
+                "image": "/images/monster-ability-cards/vermling-scout/gh-ma-sc-1.png",
                 "shuffle": "false",
                 "initiative": 29
             },
             {
-                "image": "/images/monster-ability-cards/vermling-scout/gh-ma-lc-2.png",
+                "image": "/images/monster-ability-cards/vermling-scout/gh-ma-sc-2.png",
                 "shuffle": "false",
                 "initiative": 40
             },
             {
-                "image": "/images/monster-ability-cards/vermling-scout/gh-ma-lc-3.png",
+                "image": "/images/monster-ability-cards/vermling-scout/gh-ma-sc-3.png",
                 "shuffle": "false",
                 "initiative": 53
             },
             {
-                "image": "/images/monster-ability-cards/vermling-scout/gh-ma-lc-4.png",
+                "image": "/images/monster-ability-cards/vermling-scout/gh-ma-sc-4.png",
                 "shuffle": "false",
                 "initiative": 54
             },
             {
-                "image": "/images/monster-ability-cards/vermling-scout/gh-ma-lc-5.png",
+                "image": "/images/monster-ability-cards/vermling-scout/gh-ma-sc-5.png",
                 "shuffle": "false",
                 "initiative": 69
             },
             {
-                "image": "/images/monster-ability-cards/vermling-scout/gh-ma-lc-6.png",
+                "image": "/images/monster-ability-cards/vermling-scout/gh-ma-sc-6.png",
                 "shuffle": "true",
                 "initiative": 92
             },
             {
-                "image": "/images/monster-ability-cards/vermling-scout/gh-ma-lc-7.png",
+                "image": "/images/monster-ability-cards/vermling-scout/gh-ma-sc-7.png",
                 "shuffle": "false",
                 "initiative": 79
             },
             {
-                "image": "/images/monster-ability-cards/vermling-scout/gh-ma-lc-8.png",
+                "image": "/images/monster-ability-cards/vermling-scout/gh-ma-sc-8.png",
                 "shuffle": "true",
                 "initiative": 35
             }
@@ -3096,7 +3096,7 @@
                 "elite": "15"
             }
         ],
-        "cardBack": "/images/monster-ability-cards/vermling-scout/gh-ma-lc-back.png",
+        "cardBack": "/images/monster-ability-cards/vermling-scout/gh-ma-sc-back.png",
         "sleeve": "/images/monster-stat-cards/gh-monster-stat-card-envelope-6.png",
         "maxCount": 6
     },
@@ -3108,42 +3108,42 @@
         "image": "/images/monster-standees/Vermling-Shaman.avif",
         "deck": [
             {
-                "image": "/images/monster-ability-cards/vermling-shaman/gh-ma-lc-1.png",
+                "image": "/images/monster-ability-cards/vermling-shaman/gh-ma-sh-1.png",
                 "shuffle": "false",
                 "initiative": 8
             },
             {
-                "image": "/images/monster-ability-cards/vermling-shaman/gh-ma-lc-2.png",
+                "image": "/images/monster-ability-cards/vermling-shaman/gh-ma-sh-2.png",
                 "shuffle": "false",
                 "initiative": 8
             },
             {
-                "image": "/images/monster-ability-cards/vermling-shaman/gh-ma-lc-3.png",
+                "image": "/images/monster-ability-cards/vermling-shaman/gh-ma-sh-3.png",
                 "shuffle": "true",
                 "initiative": 23
             },
             {
-                "image": "/images/monster-ability-cards/vermling-shaman/gh-ma-lc-4.png",
+                "image": "/images/monster-ability-cards/vermling-shaman/gh-ma-sh-4.png",
                 "shuffle": "true",
                 "initiative": 23
             },
             {
-                "image": "/images/monster-ability-cards/vermling-shaman/gh-ma-lc-5.png",
+                "image": "/images/monster-ability-cards/vermling-shaman/gh-ma-sh-5.png",
                 "shuffle": "false",
                 "initiative": 62
             },
             {
-                "image": "/images/monster-ability-cards/vermling-shaman/gh-ma-lc-6.png",
+                "image": "/images/monster-ability-cards/vermling-shaman/gh-ma-sh-6.png",
                 "shuffle": "false",
                 "initiative": 74
             },
             {
-                "image": "/images/monster-ability-cards/vermling-shaman/gh-ma-lc-7.png",
+                "image": "/images/monster-ability-cards/vermling-shaman/gh-ma-sh-7.png",
                 "shuffle": "false",
                 "initiative": 89
             },
             {
-                "image": "/images/monster-ability-cards/vermling-shaman/gh-ma-lc-8.png",
+                "image": "/images/monster-ability-cards/vermling-shaman/gh-ma-sh-8.png",
                 "shuffle": "false",
                 "initiative": 9
             }
@@ -3182,7 +3182,7 @@
                 "elite": "8"
             }
         ],
-        "cardBack": "/images/monster-ability-cards/vermling-shaman/gh-ma-lc-back.png",
+        "cardBack": "/images/monster-ability-cards/vermling-shaman/gh-ma-sh-back.png",
         "sleeve": "/images/monster-stat-cards/gh-monster-stat-card-envelope-6.png",
         "maxCount": 6
     },
@@ -3194,42 +3194,42 @@
         "image": "/images/monster-standees/Wind-Demon.avif",
         "deck": [
             {
-                "image": "/images/monster-ability-cards/wind-demon/gh-ma-lc-1.png",
+                "image": "/images/monster-ability-cards/wind-demon/gh-ma-wd-1.png",
                 "shuffle": "false",
                 "initiative": 9
             },
             {
-                "image": "/images/monster-ability-cards/wind-demon/gh-ma-lc-2.png",
+                "image": "/images/monster-ability-cards/wind-demon/gh-ma-wd-2.png",
                 "shuffle": "true",
                 "initiative": 21
             },
             {
-                "image": "/images/monster-ability-cards/wind-demon/gh-ma-lc-3.png",
+                "image": "/images/monster-ability-cards/wind-demon/gh-ma-wd-3.png",
                 "shuffle": "true",
                 "initiative": 21
             },
             {
-                "image": "/images/monster-ability-cards/wind-demon/gh-ma-lc-4.png",
+                "image": "/images/monster-ability-cards/wind-demon/gh-ma-wd-4.png",
                 "shuffle": "false",
                 "initiative": 29
             },
             {
-                "image": "/images/monster-ability-cards/wind-demon/gh-ma-lc-5.png",
+                "image": "/images/monster-ability-cards/wind-demon/gh-ma-wd-5.png",
                 "shuffle": "false",
                 "initiative": 37
             },
             {
-                "image": "/images/monster-ability-cards/wind-demon/gh-ma-lc-6.png",
+                "image": "/images/monster-ability-cards/wind-demon/gh-ma-wd-6.png",
                 "shuffle": "false",
                 "initiative": 43
             },
             {
-                "image": "/images/monster-ability-cards/wind-demon/gh-ma-lc-7.png",
+                "image": "/images/monster-ability-cards/wind-demon/gh-ma-wd-7.png",
                 "shuffle": "false",
                 "initiative": 43
             },
             {
-                "image": "/images/monster-ability-cards/wind-demon/gh-ma-lc-8.png",
+                "image": "/images/monster-ability-cards/wind-demon/gh-ma-wd-8.png",
                 "shuffle": "false",
                 "initiative": 2
             }
@@ -3268,7 +3268,7 @@
                 "elite": "13"
             }
         ],
-        "cardBack": "/images/monster-ability-cards/wind-demon/gh-ma-lc-back.png",
+        "cardBack": "/images/monster-ability-cards/wind-demon/gh-ma-wd-back.png",
         "sleeve": "/images/monster-stat-cards/gh-monster-stat-card-envelope-6.png",
         "maxCount": 6
     },
