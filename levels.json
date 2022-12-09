@@ -556,11 +556,312 @@
     },
     "fadingLighthouse":{
         "monsters":[
-            "caveBear",
+            "flameDemon",
             "frostDemon",
-            "harrowerInfester",
+            "giantViper",
+            "ooze"
+        ],
+        "name":"Fading Lighthouse"
+    },
+    "pitOfSouls":{
+        "monsters":[
+            "livingBones",
             "livingSpirit"
         ],
-        "name":"Palace Of Ice"
+        "name":"Pit Of Souls"
+    },
+    "magmaPit":{
+        "monsters":[
+            "inoxArcher",
+            "inoxGuard",
+            "vermlingScout"
+        ],
+        "name":"Magma Pit"
+    },
+    "underwaterLagoon":{
+        "monsters":[
+            "forestImp",
+            "ooze",
+            "rendingDrake"
+        ],
+        "name":"Underwater Lagoon"
+    },
+    "sulfurMine":{
+        "monsters":[
+            "hound",
+            "inoxShaman",
+            "vermlingScout"
+        ],
+        "name":"Sulfur Mine"
+    },
+    "clockworkCove":{
+        "monsters":[
+            "ancientArtillery",
+            "livingSpirit",
+            "ooze",
+            "stoneGolem"
+        ],
+        "name":"Clockwork Cove"
+    },
+    "arcaneLibrary":{
+        "monsters":[
+            "caveBear",
+            "forestImp",
+            "stoneGolem"
+        ],
+        "name":"Arcane Library"
+    },
+    "toxicMoor":{
+        "monsters":[
+            "blackImp",
+            "giantViper",
+            "livingCorpse",
+            "rendingDrake"
+        ],
+        "name":"Toxic Moor"
+    },
+    "wellOfTheUnfortunate":{
+        "monsters":[
+            "forestImp",
+            "livingSpirit",
+            "stoneGolem",
+            "vermlingScout",
+            "vermlingShaman"
+        ],
+        "name":"Well Of The Unfortunate"
+    },
+    "chainedIsle":{
+        "monsters":[
+            "livingSpirit",
+            "nightDemon",
+            "windDemon"
+        ],
+        "name":"Chained Isle"
+    },
+    "windsweptHighlands":{
+        "monsters":[
+            "spittingDrake",
+            "sunDemon",
+            "windDemon"
+        ],
+        "name":"Windswept Highlands"
+    },
+    "oozingGrove":{
+        "monsters":[
+            "forestImp",
+            "giantViper",
+            "ooze"
+        ],
+        "name":"Oozing Grove"
+    },
+    "rockslideRidge":{
+        "monsters":[
+            "ancientArtillery",
+            "hound",
+            "inoxArcher",
+            "inoxGuard",
+            "inoxShaman"
+        ],
+        "name":"Rockslide Ridge"
+    },
+    "merchantShip":{
+        "monsters":[
+            "banditArcher",
+            "banditGuard",
+            "deepTerror",
+            "lurker"
+        ],
+        "name":"Merchant Ship"
+    },
+    "overgrownGraveyard":{
+        "monsters":[
+            "livingBones",
+            "livingCorpse",
+            "livingSpirit"
+        ],
+        "name":"Overgrown Graveyard"
+    },
+    "harrowerHive":{
+        "monsters":[
+            "giantViper",
+            "harrowerInfester",
+            "livingBones",
+            "nightDemon"
+        ],
+        "name":"Harrower Hive"
+    },
+    "vaultOfSecrets":{
+        "monsters":[
+            "cityArcher",
+            "cityGuard",
+            "hound",
+            "stoneGolem"
+        ],
+        "name":"Vault Of Secrets"
+    },
+    "sacrificePit":{
+        "monsters":[
+            "banditArcher",
+            "banditGuard",
+            "blackImp",
+            "cultist",
+            "livingBones"
+        ],
+        "name":"Sacrifice Pit"
+    },
+    "lostTemple":{
+        "monsters":[
+            "giantViper",
+            "stoneGolem",
+            "theBetrayer"
+        ],
+        "name":"Lost Temple"
+    },
+    "vigilKeep":{
+        "monsters":[
+            "ancientArtillery",
+            "cityArcher",
+            "cityGuard",
+            "hound"
+        ],
+        "name":"Vigil Keep"
+    },
+    "templeOfTheEclipse":{
+        "monsters":[
+            "ancientArtillery",
+            "nightDemon",
+            "stoneGolem",
+            "sunDemon",
+            "theColorless"
+        ],
+        "name":"Temple Of The Eclipse"
+    },
+    "burningMountain":{
+        "monsters":[
+            "earthDemon",
+            "flameDemon",
+            "stoneGolem"
+        ],
+        "name":"Burning Mountain"
+    },
+    "shadowsWithin":{
+        "monsters":[
+            "cultist",
+            "flameDemon",
+            "hound",
+            "livingBones",
+            "livingSpirit"
+        ],
+        "name":"Shadows Within"
+    },
+    "crystallineCave":{
+        "monsters":[
+            "earthDemon",
+            "flameDemon",
+            "frostDemon"
+        ],
+        "name":"Crystalline Cave"
+    },
+    "sunTemple":{
+        "monsters":[
+            "blackImp",
+            "hound",
+            "nightDemon",
+            "sunDemon"
+        ],
+        "name":"Sun Temple"
+    },
+    "harriedVillage":{
+        "monsters":[
+            "caveBear",
+            "lurker",
+            "vermlingScout",
+            "vermlingShaman"
+        ],
+        "name":"Harried Village"
+    },
+    "corruptedCove":{
+        "monsters":[
+            "blackImp",
+            "deepTerror",
+            "lurker",
+            "ooze"
+        ],
+        "name":"Corrupted Cove"
+    },
+    "planeOfWater":{
+        "monsters":[
+            "frostDemon",
+            "lurker",
+            "ooze"
+        ],
+        "name":"Plane Of Water"
+    },
+    "syndicateHideout":{
+        "monsters":[
+            "banditArcher",
+            "banditGuard",
+            "cultist",
+            "giantViper"
+        ],
+        "name":"Syndicate Hideout"
+    },
+    "demonicRift":{
+        "monsters":[
+            "earthDemon",
+            "nightDemon",
+            "livingSpirit",
+            "windDemon"
+        ],
+        "name":"Demonic Rift"
+    },
+    "wildMelee":{
+        "monsters":[
+            "banditArcher",
+            "banditGuard",
+            "caveBear",
+            "hound",
+            "livingSpirit"
+        ],
+        "name":"Wild Melee"
+    },
+    "backAlleyBrawl":{
+        "monsters":[
+            "banditArcher",
+            "banditGuard",
+            "cityArcher",
+            "cityGuard",
+            "earthDemon",
+            "flameDemon",
+            "inoxGuard",
+            "savvasLavaflow"
+        ],
+        "name":"Back Alley Brawl"
+    },
+    "sunkenVessel":{
+        "monsters":[
+            "frostDemon",
+            "livingSpirit",
+            "lurker"
+        ],
+        "name":"Sunken Vessel"
+    },
+    "vermlingNest":{
+        "monsters":[
+            "caveBear",
+            "hound",
+            "vermlingScout",
+            "vermlingShaman"
+        ],
+        "name":"Vermling Nest"
+    },
+    "paymentDue":{
+        "monsters":[
+            "deepTerror",
+            "earthDemon",
+            "flameDemon",
+            "savvasLavaflow"
+        ],
+        "name":"Payment Due"
     }
 }
