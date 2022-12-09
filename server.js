@@ -19,9 +19,9 @@ app.set('view engine', 'handlebars')
 app.use(express.json())
 
 
-const bodyParser = require('body-parser');
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+// const bodyParser = require('body-parser');
+// app.use(bodyParser.urlencoded({ extended: false }));
+// app.use(bodyParser.json());
 app.use(express.static('public'));
 
 
