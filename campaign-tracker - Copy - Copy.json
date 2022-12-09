@@ -39,7 +39,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "blackBarrow",
-      "scenario": "Black Barrow"
+      "scenario": "1-Black Barrow"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -47,7 +47,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "barrowLair",
-      "scenario": "Barrow Lair"
+      "scenario": "2-Barrow Lair"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -55,7 +55,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "inoxEncampment",
-      "scenario": "Inox Encampment"
+      "scenario": "3-Inox Encampment"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -63,7 +63,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "cryptOfTheDamned",
-      "scenario": "Crypt Of The Damned"
+      "scenario": "4-Crypt Of The Damned"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -71,7 +71,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "ruinousCrypt",
-      "scenario": "Ruinous Crypt"
+      "scenario": "5-Ruinous Crypt"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -79,7 +79,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "decayingCrypt",
-      "scenario": "Decaying Crypt"
+      "scenario": "6-Decaying Crypt"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -87,7 +87,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "vibrantGrotto",
-      "scenario": "Vibrant Grotto"
+      "scenario": "7-Vibrant Grotto"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -95,7 +95,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "gloomhavenWarehouse",
-      "scenario": "Gloomhaven Warehouse"
+      "scenario": "8-Gloomhaven Warehouse"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -103,7 +103,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "diamondMine",
-      "scenario": "Diamond Mine"
+      "scenario": "9-Diamond Mine"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -111,7 +111,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "planeOfElementalPower",
-      "scenario": "Plane Of Elemental Power"
+      "scenario": "10-Plane Of Elemental Power"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -119,7 +119,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "gloomhavenSquareA",
-      "scenario": "Gloomhaven Square A"
+      "scenario": "11-Gloomhaven Square A"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -127,7 +127,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "gloomhavenSquareB",
-      "scenario": "Gloomhaven Square B"
+      "scenario": "12-Gloomhaven Square B"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -135,7 +135,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "templeOfTheSeer",
-      "scenario": "Temple Of The Seer"
+      "scenario": "13-Temple Of The Seer"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -143,7 +143,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "frozenHollow",
-      "scenario": "Frozen Hollow"
+      "scenario": "14-Frozen Hollow"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -151,7 +151,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "shrineOfStrength",
-      "scenario": "Shrine Of Strength"
+      "scenario": "15-Shrine Of Strength"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -159,7 +159,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "mountainPass",
-      "scenario": "Mountain Pass"
+      "scenario": "16-Mountain Pass"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -167,7 +167,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "lostIsland",
-      "scenario": "Lost Island"
+      "scenario": "17-Lost Island"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -175,7 +175,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "abandonedSewers",
-      "scenario": "Abandoned Sewers"
+      "scenario": "18-Abandoned Sewers"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -183,7 +183,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "forgottenCrypt",
-      "scenario": "Forgotten Crypt"
+      "scenario": "19-Forgotten Crypt"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -191,7 +191,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "necromancersSanctum",
-      "scenario": "Necromancer's Sanctum"
+      "scenario": "20-Necromancer's Sanctum"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -199,7 +199,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "infernalThrone",
-      "scenario": "Infernal Throne"
+      "scenario": "21-Infernal Throne"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -207,7 +207,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "templeOfTheElements",
-      "scenario": "Temple Of The Elements"
+      "scenario": "22-Temple Of The Elements"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -215,7 +215,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "deepRuins",
-      "scenario": "Deep Ruins"
+      "scenario": "23-Deep Ruins"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -223,7 +223,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "echoChamber",
-      "scenario": "Echo Chamber"
+      "scenario": "24-Echo Chamber"
     },
     {
       "example": true,
@@ -235,7 +235,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "icecragAscent",
-      "scenario": "Icecrag Ascent"
+      "scenario": "25-Icecrag Ascent"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -243,7 +243,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "ancientCistern",
-      "scenario": "Ancient Cistern"
+      "scenario": "26-Ancient Cistern"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -251,7 +251,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "ruinousRift",
-      "scenario": "Ruinous Rift"
+      "scenario": "27-Ruinous Rift"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -259,7 +259,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "outerRitualChamber",
-      "scenario": "Outer Ritual Chamber"
+      "scenario": "28-Outer Ritual Chamber"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -267,7 +267,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "sanctuaryOfGloom",
-      "scenario": "Sanctuary Of Gloom"
+      "scenario": "29-Sanctuary Of Gloom"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -275,7 +275,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "shrineOfTheDepths",
-      "scenario": "Shrine Of The Depths"
+      "scenario": "30-Shrine Of The Depths"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -283,7 +283,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "planeOfNight",
-      "scenario": "Plane Of Night"
+      "scenario": "31-Plane Of Night"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -291,7 +291,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "decrepitWood",
-      "scenario": "Decrepit Wood"
+      "scenario": "32-Decrepit Wood"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -299,7 +299,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "savvasArmory",
-      "scenario": "Savvas Armory"
+      "scenario": "33-Savvas Armory"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -307,7 +307,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "scorchedSummit",
-      "scenario": "Scorched Summit"
+      "scenario": "34-Scorched Summit"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -315,7 +315,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "gloomhavenBattlementsA",
-      "scenario": "Gloomhaven Battlements A"
+      "scenario": "35-Gloomhaven Battlements A"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -323,7 +323,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "gloomhavenBattlementsB",
-      "scenario": "Gloomhaven Battlements B"
+      "scenario": "36-Gloomhaven Battlements B"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -331,7 +331,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "doomTrench",
-      "scenario": "Doom Trench"
+      "scenario": "37-Doom Trench"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -339,7 +339,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "slavePens",
-      "scenario": "Slave Pens"
+      "scenario": "38-Slave Pens"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -347,7 +347,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "treacherousDivide",
-      "scenario": "Treacherous Divide"
+      "scenario": "39-Treacherous Divide"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -355,7 +355,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "ancientDefenseNetwork",
-      "scenario": "Ancient Defense Network"
+      "scenario": "40-Ancient Defense Network"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -363,7 +363,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "timewornTomb",
-      "scenario": "Timeworn Tomb"
+      "scenario": "41-Timeworn Tomb"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -371,7 +371,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "realmOfTheVoice",
-      "scenario": "Realm Of The Voice"
+      "scenario": "42-Realm Of The Voice"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -379,7 +379,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "drakeNest",
-      "scenario": "Drake Nest"
+      "scenario": "43-Drake Nest"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -387,7 +387,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "tribalAssault",
-      "scenario": "Tribal Assault"
+      "scenario": "44-Tribal Assault"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -395,7 +395,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "rebelSwamp",
-      "scenario": "Rebel Swamp"
+      "scenario": "45-Rebel Swamp"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -403,7 +403,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "nightmarePeak",
-      "scenario": "Nightmare Peak"
+      "scenario": "46-Nightmare Peak"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -411,7 +411,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "lairOfTheUnseeingEye",
-      "scenario": "Lair Of The Unseeing Eye"
+      "scenario": "47-Lair Of The Unseeing Eye"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -419,7 +419,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "shadowWeald",
-      "scenario": "Shadow Weald"
+      "scenario": "48-Shadow Weald"
     },
     {
       "example": true,
@@ -431,7 +431,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "rebelsStand",
-      "scenario": "Rebel's Stand"
+      "scenario": "49-Rebel's Stand"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -439,7 +439,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "ghostFortress",
-      "scenario": "Ghost Fortress"
+      "scenario": "50-Ghost Fortress"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -447,7 +447,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "theVoid",
-      "scenario": "The Void"
+      "scenario": "51-The Void"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -455,7 +455,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "noxiousCellar",
-      "scenario": "Noxious Cellar"
+      "scenario": "52-Noxious Cellar"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -463,7 +463,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "cryptBasement",
-      "scenario": "Crypt Basement"
+      "scenario": "53-Crypt Basement"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -471,7 +471,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "palaceOfIce",
-      "scenario": "Palace Of Ice"
+      "scenario": "54-Palace Of Ice"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -479,7 +479,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "foggyThicket",
-      "scenario": "Foggy Thicket"
+      "scenario": "55-Foggy Thicket"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -487,7 +487,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "banditsWood",
-      "scenario": "Bandit's Wood"
+      "scenario": "56-Bandit's Wood"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -495,7 +495,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "investigation",
-      "scenario": "Investigation"
+      "scenario": "57-Investigation"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -503,7 +503,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "bloodyShack",
-      "scenario": "Bloody Shack"
+      "scenario": "58-Bloody Shack"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -511,7 +511,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "forgottenGrove",
-      "scenario": "Forgotten Grove"
+      "scenario": "59-Forgotten Grove"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -519,7 +519,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "alchemyLab",
-      "scenario": "Alchemy Lab"
+      "scenario": "60-Alchemy Lab"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -527,7 +527,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "fadingLighthouse",
-      "scenario": "Fading Lighthouse"
+      "scenario": "61-Fading Lighthouse"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -535,7 +535,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "pitOfSouls",
-      "scenario": "Pit Of Souls"
+      "scenario": "62-Pit Of Souls"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -543,7 +543,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "magmaPit",
-      "scenario": "Magma Pit"
+      "scenario": "63-Magma Pit"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -551,7 +551,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "underwaterLagoon",
-      "scenario": "Underwater Lagoon"
+      "scenario": "64-Underwater Lagoon"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -559,7 +559,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "sulfurMine",
-      "scenario": "Sulfur Mine"
+      "scenario": "65-Sulfur Mine"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -567,7 +567,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "clockworkCove",
-      "scenario": "Clockwork Cove"
+      "scenario": "66-Clockwork Cove"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -575,7 +575,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "arcaneLibrary",
-      "scenario": "Arcane Library"
+      "scenario": "67-Arcane Library"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -583,7 +583,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "toxicMoor",
-      "scenario": "Toxic Moor"
+      "scenario": "68-Toxic Moor"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -591,7 +591,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "wellOfTheUnfortunate",
-      "scenario": "Well Of The Unfortunate"
+      "scenario": "69-Well Of The Unfortunate"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -599,7 +599,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "chainedIsle",
-      "scenario": "Chained Isle"
+      "scenario": "70-Chained Isle"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -607,7 +607,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "windsweptHighlands",
-      "scenario": "Windswept Highlands"
+      "scenario": "71-Windswept Highlands"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -615,7 +615,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "oozingGrove",
-      "scenario": "Oozing Grove"
+      "scenario": "72-Oozing Grove"
     },
     {
       "example": true,
@@ -627,7 +627,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "rockslideRidge",
-      "scenario": "Rockslide Ridge"
+      "scenario": "73-Rockslide Ridge"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -635,7 +635,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "merchantShip",
-      "scenario": "Merchant Ship"
+      "scenario": "74-Merchant Ship"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -643,7 +643,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "overgrownGraveyard",
-      "scenario": "Overgrown Graveyard"
+      "scenario": "75-Overgrown Graveyard"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -651,7 +651,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "harrowerHive",
-      "scenario": "Harrower Hive"
+      "scenario": "76-Harrower Hive"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -659,7 +659,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "vaultOfSecrets",
-      "scenario": "Vault Of Secrets"
+      "scenario": "77-Vault Of Secrets"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -667,7 +667,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "sacrificePit",
-      "scenario": "Sacrifice Pit"
+      "scenario": "78-Sacrifice Pit"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -675,7 +675,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "lostTemple",
-      "scenario": "Lost Temple"
+      "scenario": "79-Lost Temple"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -683,7 +683,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "vigilKeep",
-      "scenario": "Vigil Keep"
+      "scenario": "80-Vigil Keep"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -691,7 +691,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "templeOfTheEclipse",
-      "scenario": "Temple Of The Eclipse"
+      "scenario": "81-Temple Of The Eclipse"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -699,7 +699,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "burningMountain",
-      "scenario": "Burning Mountain"
+      "scenario": "82-Burning Mountain"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -707,7 +707,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "shadowsWithin",
-      "scenario": "Shadows Within"
+      "scenario": "83-Shadows Within"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -715,7 +715,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "crystallineCave",
-      "scenario": "Crystalline Cave"
+      "scenario": "84-Crystalline Cave"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -723,7 +723,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "sunTemple",
-      "scenario": "Sun Temple"
+      "scenario": "85-Sun Temple"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -731,7 +731,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "harriedVillage",
-      "scenario": "Harried Village"
+      "scenario": "86-Harried Village"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -739,7 +739,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "corruptedCove",
-      "scenario": "Corrupted Cove"
+      "scenario": "87-Corrupted Cove"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -747,7 +747,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "planeOfWater",
-      "scenario": "Plane of Water"
+      "scenario": "88-Plane of Water"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -755,7 +755,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "syndicateHideout",
-      "scenario": "Syndicate Hideout"
+      "scenario": "89-Syndicate Hideout"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -763,7 +763,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "demonicRift",
-      "scenario": "Demonic Rift"
+      "scenario": "90-Demonic Rift"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -771,7 +771,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "wildMelee",
-      "scenario": "Wild Melee"
+      "scenario": "91-Wild Melee"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -779,7 +779,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "backAlleyBrawl",
-      "scenario": "Back Alley Brawl"
+      "scenario": "92-Back Alley Brawl"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -787,7 +787,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "sunkenVessel",
-      "scenario": "Sunken Vessel"
+      "scenario": "93-Sunken Vessel"
     },
     {
       "scenarioEvenOdd": "scenario-even",
@@ -795,7 +795,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "vermlingNest",
-      "scenario": "Vermling Nest"
+      "scenario": "94-Vermling Nest"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
@@ -803,7 +803,7 @@
       "example": false,
       "completed": "",
       "scenarioLocation": "paymentDue",
-      "scenario": "Payment Due"
+      "scenario": "95-Payment Due"
     }
   ]
 }
