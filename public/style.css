@@ -92,7 +92,7 @@
     flex-wrap: wrap;
 }
 
-.scenario:hover:not() {
+.scenario:hover {
     background-color: saddlebrown;
 }
 

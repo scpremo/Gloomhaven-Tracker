@@ -21,6 +21,445 @@
             "inoxArcher",
             "inoxGuard",
             "inoxShaman"
-        ]
+        ],
+        "name":"Inox Encampment"
+    },
+    "cryptOfTheDamned":{
+        "monsters":[
+            "banditArcher",
+            "cultist",
+            "earthDemon",
+            "livingBones",
+            "windDemon"
+        ],
+        "name":"Crypt Of The Damned"
+    },
+    "ruinousCrypt":{
+        "monsters":[
+            "cultist",
+            "flameDemon",
+            "frostDemon",
+            "livingBones",
+            "nightDemon"
+        ],
+        "name":"Ruinous Crypt"
+    },
+    "decayingCrypt":{
+        "monsters":[
+            "livingBones",
+            "livingCorpse",
+            "livingSpirit"
+        ],
+        "name":"Decaying Crypt"
+    },
+    "vibrantGrotto":{
+        "monsters":[
+            "caveBear",
+            "earthDemon",
+            "inoxShaman",
+            "forestImp"
+        ],
+        "name":"Vibrant Grotto"
+    },
+    "gloomhavenWarehouse":{
+        "monsters":[
+            "inoxBodyguard",
+            "livingBones",
+            "livingCorpse"
+        ],
+        "name":"Gloomhaven Warehouse"
+    },
+    "diamondMine":{
+        "monsters":[
+            "hound",
+            "mercilessOverseer",
+            "vermlingScout"
+        ],
+        "name":"Diamond Mine"
+    },
+    "planeOfElementalPower":{
+        "monsters":[
+            "earthDemon",
+            "flameDemon",
+            "sunDemon"
+        ],
+        "name":"Plane Of Elemental Power"
+    },
+    "gloomhavenSquareA":{
+        "monsters":[
+            "captainOfTheGuard",
+            "cityArcher",
+            "cityGuard",
+            "livingBones",
+            "livingCorpse"
+        ],
+        "name":"Gloomhaven Square A"
+    },
+    "gloomhavenSquareB":{
+        "monsters":[
+            "cityArcher",
+            "cityGuard",
+            "cultist",
+            "jekserah",
+            "livingBones",
+            "livingCorpse"
+        ],
+        "name":"Gloomhaven Square B"
+    },
+    "templeOfTheSeer":{
+        "monsters":[
+            "caveBear",
+            "livingSpirit",
+            "spittingDrake",
+            "stoneGolem"
+        ],
+        "name":"Temple Of The Seer"
+    },
+    "frozenHollow":{
+        "monsters":[
+            "frostDemon",
+            "hound",
+            "livingSpirit"
+        ],
+        "name":"Frozen Hollow"
+    },
+    "shrineOfStrength":{
+        "monsters":[
+            "frostDemon",
+            "harrowerInfester",
+            "savvasIcestorm",
+            "stoneGolem",
+            "windDemon"
+        ],
+        "name":"Shrine Of Strength"
+    },
+    "mountainPass":{
+        "monsters":[
+            "earthDemon",
+            "inoxArcher",
+            "inoxGuard",
+            "windDemon"
+        ],
+        "name":"Mountain Pass"
+    },
+    "lostIsland":{
+        "monsters":[
+            "caveBear",
+            "vermlingScout",
+            "vermlingShaman"
+        ],
+        "name":"Lost Island"
+    },
+    "abandonedSewers":{
+        "monsters":[
+            "giantViper",
+            "ooze",
+            "vermlingScout"
+        ],
+        "name":"Abandoned Sewers"
+    },
+    "forgottenCrypt":{
+        "monsters":[
+            "cultist",
+            "livingBones",
+            "livingCorpse",
+            "livingSpirit"
+        ],
+        "name":"Forgotten Crypt"
+    },
+    "necromancersSanctum":{
+        "monsters":[
+            "cultist",
+            "jekserah",
+            "livingBones",
+            "livingCorpse",
+            "nightDemon"
+        ],
+        "name":"Necromancer's Sanctum"
+    },
+    "infernalThrone":{
+        "monsters":[
+            "earthDemon",
+            "flameDemon",
+            "frostDemon",
+            "nightDemon",
+            "primeDemon",
+            "sunDemon",
+            "windDemon"
+        ],
+        "name":"Infernal Throne"
+    },
+    "templeOfTheElements":{
+        "monsters":[
+            "cultist",
+            "earthDemon",
+            "flameDemon",
+            "frostDemon",
+            "livingBones",
+            "windDemon"
+        ],
+        "name":"Temple Of The Elements"
+    },
+    "deepRuins":{
+        "monsters":[
+            "ancientArtillery",
+            "livingBones",
+            "livingSpirit",
+            "stoneGolem"
+        ],
+        "name":"Deep Ruins"
+    },
+    "echoChamber":{
+        "monsters":[
+            "livingSpirit",
+            "ooze",
+            "rendingDrake"
+        ],
+        "name":"Echo Chamber"
+    },
+    "icecragAscent":{
+        "monsters":[
+            "hound",
+            "rendingDrake",
+            "spittingDrake"
+        ],
+        "name":"Icecrag Ascent"
+    },
+    "ancientCistern":{
+        "monsters":[
+            "blackImp",
+            "livingCorpse",
+            "nightDemon",
+            "ooze"
+        ],
+        "name":"Ancient Cistern"
+    },
+    "ruinousRift":{
+        "monsters":[
+            "earthDemon",
+            "flameDemon",
+            "frostDemon",
+            "nightDemon",
+            "sunDemon",
+            "windDemon"
+        ],
+        "name":"Ruinous Rift"
+    },
+    "outerRitualChamber":{
+        "monsters":[
+            "cultist",
+            "livingBones",
+            "livingCorpse",
+            "nightDemon",
+            "sunDemon"
+        ],
+        "name":"Outer Ritual Chamber"
+    },
+    "sanctuaryOfGloom":{
+        "monsters":[
+            "blackImp",
+            "livingBones",
+            "livingCorpse",
+            "livingSpirit"
+        ],
+        "name":"Sanctuary Of Gloom"
+    },
+    "shrineOfTheDepths":{
+        "monsters":[
+            "deepTerror",
+            "lurker",
+            "ooze"
+        ],
+        "name":"Shrine Of The Depths"
+    },
+    "planeOfNight":{
+        "monsters":[
+            "blackImp",
+            "deepTerror",
+            "nightDemon"
+        ],
+        "name":"Plane Of Night"
+    },
+    "decrepitWood":{
+        "monsters":[
+            "blackImp",
+            "deepTerror",
+            "giantViper",
+            "harrowerInfester"
+        ],
+        "name":"Decrepit Wood"
+    },
+    "savvasArmory":{
+        "monsters":[
+            "earthDemon",
+            "flameDemon",
+            "frostDemon",
+            "savvasIcestorm",
+            "savvasLavaflow",
+            "windDemon"
+        ],
+        "name":"Savvas Armory"
+    },
+    "scorchedSummit":{
+        "monsters":[
+            "elderDrake",
+            "rendingDrake",
+            "spittingDrake"
+        ],
+        "name":"Scorched Summit"
+    },
+    "gloomhavenBattlementsA":{
+        "monsters":[
+            "captainOfTheGuard",
+            "cityArcher",
+            "cityGuard",
+            "earthDemon",
+            "flameDemon",
+            "frostDemon",
+            "windDemon"
+        ],
+        "name":"Gloomhaven Battlements A"
+    },
+    "gloomhavenBattlementsB":{
+        "monsters":[
+            "cityArcher",
+            "earthDemon",
+            "flameDemon",
+            "frostDemon",
+            "primeDemon",
+            "windDemon"
+        ],
+        "name":"Gloomhaven Battlements B"
+    },
+    "doomTrench":{
+        "monsters":[
+            "deepTerror",
+            "harrowerInfester",
+            "lurker"
+        ],
+        "name":"Doom Trench"
+    },
+    "slavePens":{
+        "monsters":[
+            "inoxArcher",
+            "inoxGuard",
+            "inoxShaman",
+            "stoneGolem"
+        ],
+        "name":"Slave Pens"
+    },
+    "treacherousDivide":{
+        "monsters":[
+            "caveBear",
+            "cultist",
+            "frostDemon",
+            "livingBones",
+            "spittingDrake"
+        ],
+        "name":"Treacherous Divide"
+    },
+    "ancientDefenseNetwork":{
+        "monsters":[
+            "caveBear",
+            "flameDemon",
+            "forestImp",
+            "livingCorpse",
+            "stoneGolem"
+        ],
+        "name":"Ancient Defense Network"
+    },
+    "timewornTomb":{
+        "monsters":[
+            "ancientArtillery",
+            "livingCorpse",
+            "livingSpirit",
+            "stoneGolem"
+        ],
+        "name":"Timeworn Tomb"
+    },
+    "realmOfTheVoice":{
+        "monsters":[
+            "livingSpirit",
+            "nightDemon",
+            "windDemon"
+        ],
+        "name":"Realm Of The Voice"
+    },
+    "drakeNest":{
+        "monsters":[
+            "flameDemon",
+            "rendingDrake",
+            "spittingDrake"
+        ],
+        "name":"Drake Nest"
+    },
+    "tribalAssault":{
+        "monsters":[
+            "hound",
+            "inoxArcher",
+            "inoxGuard",
+            "inoxShaman"
+        ],
+        "name":"Tribal Assault"
+    },
+    "rebelSwamp":{
+        "monsters":[
+            "cityArcher",
+            "cityGuard",
+            "hound"
+        ],
+        "name":"Rebel Swamp"
+    },
+    "nightmarePeak":{
+        "monsters":[
+            "frostDemon",
+            "nightDemon",
+            "savvasIcestorm",
+            "windDemon",
+            "wingedHorror"
+        ],
+        "name":"Nightmare Peak"
+    },
+    "lairOfTheUnseeingEye":{
+        "monsters":[
+            "deepTerror",
+            "harrowerInfester",
+            "lurker",
+            "theSightlessEye"
+        ],
+        "name":"Lair Of The Unseeing Eye"
+    },
+    "shadowWeald":{
+        "monsters":[
+            "darkRider",
+            "earthDemon",
+            "forestImp",
+            "harrowerInfester"
+        ],
+        "name":"Shadow Weald"
+    },
+    "rebelsStand":{
+        "monsters":[
+            "ancientArtillery",
+            "cityArcher",
+            "cityGuard",
+            "giantViper"
+        ],
+        "name":"Rebel's Stand"
+    },
+    "ghostFortress":{
+        "monsters":[
+            "earthDemon",
+            "nightDemon",
+            "sunDemon",
+            "windDemon"
+        ],
+        "name":"Ghost Fortress"
+    },
+    "theVoid":{
+        "monsters":[
+            "theGloom"
+        ],
+        "name":"The Void"
     }
 }
