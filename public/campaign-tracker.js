@@ -32,7 +32,8 @@ function update() {
         }
         var playerInfo={
             name:name,
-            level:level
+            level:level,
+            index:i
         }
         partyMembers.push(playerInfo)
         // playerInfo={
@@ -87,32 +88,55 @@ function update() {
                 completed="checked"
             }
             var link=scenarioLabels[i].href
+            var missionName=link.substring(link.lastIndexOf('/')+1,link.length)
             var scenario =scenarioLabels[i].textContent
             var mission={
                 "scenario-even/odd": evenOrOdd,
                 "found": found,
                 "example": false,
                 "completed": completed,
-                "scenarioLocation": link,
+                "scenarioLocation": missionName,
                 "scenario": scenario
             }
             index++
             scenarios.push(mission)
-        }
-        var levelData={
-            "party-name": partyName,
-            "reputaion": reputation,
-            "shop-modifier":shopModifier,
-            "player-characters":partyMembers,
-            "player-count":playerCount,
-            "average-level":averagePlayerLevel,
-            "dificulty":difficulty,
-            "scenario-level": scenarioLevel,
-            "scenarios":scenarios
-        }
-                
+        }                
     }
-    return levelData;
+    fetch("update/true",{
+        method: 'PUT',
+        body: JSON.stringify({
+            partyName: partyName,
+            reputation: reputation,
+            shopModifier:shopModifier,
+            playerCharacters:partyMembers,
+            playerCount:playerCount,
+            averageLevel:averagePlayerLevel,
+            difficulty:difficulty,
+            scenarioLevel: scenarioLevel,
+            scenarios:scenarios
+        }),
+        headers: {
+            "Content-Type": "application/json"
+          }
+    }).then(function (res){
+        if(res.status===500)
+            alert("im not ready for this")
+        else if(res.status===200)
+            alert("success")
+        else 
+            alert("something wrong")
+    })
+    // return JSON.stringify({
+    //     partyName: partyName,
+    //     reputaion: reputation,
+    //     shopModifier:shopModifier,
+    //     playerCharacters:partyMembers,
+    //     playerCount:playerCount,
+    //     averageLevel:averagePlayerLevel,
+    //     dificulty:difficulty,
+    //     scenarioLevel: scenarioLevel,
+    //     scenarios:scenarios
+    // });
 
 
 
@@ -120,5 +144,5 @@ function update() {
 window.addEventListener('DOMContentLoaded', function () {
 
     var button = document.getElementById("update-button")
-    button.addEventListener('clcik', update)
+    button.addEventListener('click', update)
 })
