@@ -191,6 +191,12 @@ let healthTracker = class {
         console.log(health)
         health.textContent=this.health
     }
+    getHealth(){
+        return this.health
+    }
+    getId(){
+        return this.id
+    }
 }
 let Monster = class {
     constructor(monsterData, level, playerCount, index) {
@@ -236,6 +242,9 @@ let Monster = class {
         this.elteButton.addEventListener('click',function(){
             this.newMonster("elite")
         }.bind(this))
+        this.drawButton= document.getElementsByClassName("draw-attack")[this.index]
+        console.log("drawButton:"+ this.drawButton)
+        this.drawButton.addEventListener('click',this.startRound.bind(this))
         
         //this.statCardRotate.style.transform = 'rotate(90deg)'
 
@@ -283,6 +292,22 @@ let Monster = class {
         this.monsters[index].monster = "null"
         this.monsters[index].filled = false
         this.currentCount--
+    }
+    clean(){
+        for(let i=0;i<this.maxCount;i++)
+        {
+            if(this.monsters[i].filled===true)
+            {
+                if(this.monsters[i].monster.getHealth()<=0)
+                {
+                    var delId=this.monsters[i].monster.getId()
+                    var delitem=document.getElementById(delId)
+                    console.log(delitem)
+                    delitem.remove()
+                    this.deleteMonster(i)
+                }
+            }
+        }
     }
     getInitiative() {
         if (this.discard) {
@@ -336,6 +361,8 @@ let levelControl = class {
         this.startButton.addEventListener('click',this.startRound.bind(this))
         this.endButton= document.getElementById("round-end")
         this.endButton.addEventListener('click',this.endRound.bind(this))
+        this.cleanButton= document.getElementById("kill-monsters")
+        this.cleanButton.addEventListener('click',this.cleanup.bind(this))
         this.shuffle = false
 
     }
@@ -408,6 +435,13 @@ let levelControl = class {
             this.attackMod.shuffle()
             this.discard= DISCARD
             this.discardPile.src=this.discard.cardFront
+        }
+    }
+    cleanup(){
+        for (let i = 0; i < this.size; i++) {
+            if (this.monsters[i].getMonsterCount() > 0) {
+                this.monsters[i].clean()
+            }
         }
     }
 
