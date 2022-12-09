@@ -178,3 +178,10 @@ button:hover {
     margin-top: 5px;
     border-radius: 5px;
 }
+
+#initiative-list {
+    width: 150px;
+    height: 120px;
+    background-color: blanchedalmond;
+    border: 2px dashed black;
+}
