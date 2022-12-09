@@ -1,4 +1,4 @@
-<div class="monster-area">
+<div class="monster-area" id="{{id}}">
     <div class="monster-container" id="{{type}}">
         <!-- Monster Image -->
         <div class="monster-image-container">
@@ -8,9 +8,9 @@
         <div class="monster-initiative-number">{{number}}</div>
         <!-- Monster HP -->
         <div class="monster-hp">
-            <button class="plus-minus" id="plus">+</button>
-            <div class="hp-value">{{hp}}</div>
-            <button class="plus-minus" id="minus">-</button>
+            <button class="plus-minus" id="plus{{id}}">+</button>
+            <div class="hp-value" id="hp{{id}}">{{hp}}</div>
+            <button class="plus-minus" id="minus{{id}}">-</button>
         </div>
     </div>
 </div>

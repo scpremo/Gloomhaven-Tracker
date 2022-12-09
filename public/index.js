@@ -9,8 +9,8 @@ function lessorequal(item1, item2) {
     }
     return false
 }
-const Elite = "Elite"
-const Normal = "Normal"
+const Elite = "elite"
+const Normal = "normal"
 
 const CURSE = {
     "image": "/images/attack-modifiers/monster-mod/gh-am-mm-01.png",
@@ -141,9 +141,10 @@ let Deck = class {
 
 }
 let healthTracker = class {
-    constructor(health, type, playerCount, number) {
-        this.mumber = number
+    constructor(health, type, playerCount, number,index, standee,name) {
+        this.number = number+1
         this.type = type
+        this.id=""+name+""+this.number
         if (type === Elite) {
             this.health = health.elite
             this.max = health.elite
@@ -156,6 +157,21 @@ let healthTracker = class {
             this.health = health.normal
             this.max = health.normal
         }
+        var monsterTemplate=Handlebars.templates.monster({
+            type:this.type,
+            standee: standee,
+            number: number+1,
+            hp:this.health,
+            id:this.id
+
+          })
+          this.monsterSection= document.getElementsByClassName("monster")[index]
+          this.monsterSection.insertAdjacentHTML("beforeend", monsterTemplate)
+          this.plusButton=document.getElementById("plus"+this.id)
+          this.plusButton.addEventListener('click',this.increasHealth.bind(this))
+          this.minusButton=document.getElementById("minus"+this.id)
+          console.log(this.minusButton)
+          this.minusButton.addEventListener('click',this.lowerHealth.bind(this))
     }
     lowerHealth() {
         this.health--
@@ -163,12 +179,17 @@ let healthTracker = class {
             //delete stuff
             this.health = 0
         }
+        var health=document.getElementById("hp"+this.id)
+        health.textContent=this.health
     }
     increasHealth() {
         this.health++
         if (this.health > this.max) {
             this.health = this.max
         }
+        var health=document.getElementById("hp"+this.id)
+        console.log(health)
+        health.textContent=this.health
     }
 }
 let Monster = class {
@@ -207,13 +228,13 @@ let Monster = class {
         this.monsterSection= document.getElementById("monsters")
         this.monsterSection.insertAdjacentHTML("beforeend", monsterTemplate)
         //this.statCardRotate=document.getElementsByClassName("stat-img")
-        this.normalButton= document.getElementsByClassName("add-monster")[index*2]
+        this.normalButton= document.getElementsByClassName("add-monster")[this.index*2]
         this.normalButton.addEventListener('click',function(){
             this.newMonster("normal")
         }.bind(this))
-        this.elteButton= document.getElementsByClassName("add-monster")[index*2+1]
+        this.elteButton= document.getElementsByClassName("add-monster")[this.index*2+1]
         this.elteButton.addEventListener('click',function(){
-            this.newMonster("normal")
+            this.newMonster("elite")
         }.bind(this))
         
         //this.statCardRotate.style.transform = 'rotate(90deg)'
@@ -246,11 +267,12 @@ let Monster = class {
                 var numb = Math.floor(Math.random() * this.maxCount)
             }
             if(this.boss)
-                this.monsters[numb].monster = new healthTracker(this.health, "boss", this.playerCount, numb)
+                this.monsters[numb].monster = new healthTracker(this.health, "boss", this.playerCount, numb,this.index, this.image,this.name)
             else
-                this.monsters[numb].monster = new healthTracker(this.health, type, this.playerCount, numb)
+                this.monsters[numb].monster = new healthTracker(this.health, type, this.playerCount, numb,this.index, this.image,this.name)
             this.monsters[numb].filled = true
             this.currentCount++
+
         }
         else {
             //display already at max

@@ -6,11 +6,6 @@
     {
       "name": "",
       "level": 0,
-      "index": 0
-    },
-    {
-      "name": "",
-      "level": 0,
       "index": 1
     },
     {
@@ -22,6 +17,11 @@
       "name": "",
       "level": 0,
       "index": 3
+    },
+    {
+      "name": "",
+      "level": 0,
+      "index": 4
     }
   ],
   "playerCount": 0,
