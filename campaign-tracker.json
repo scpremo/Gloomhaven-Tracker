@@ -1,16 +1,16 @@
 {
-  "partyName": "The Baked Bean",
-  "reputation": 20,
-  "shopModifier": -5,
+  "partyName": "",
+  "reputation": 0,
+  "shopModifier": 0,
   "playerCharacters": [
     {
-      "name": "Beegus",
-      "level": 3,
+      "name": "",
+      "level": 0,
       "index": 1
     },
     {
-      "name": "Dan",
-      "level": 5,
+      "name": "",
+      "level": 0,
       "index": 2
     },
     {
@@ -24,10 +24,10 @@
       "index": 4
     }
   ],
-  "playerCount": 2,
-  "averageLevel": 4,
-  "difficulty": -1,
-  "scenarioLevel": 1,
+  "playerCount": 0,
+  "averageLevel": 0,
+  "difficulty": 0,
+  "scenarioLevel": 0,
   "scenarios": [
     {
       "example": true,
@@ -35,41 +35,41 @@
     },
     {
       "scenarioEvenOdd": "scenario-odd",
-      "found": "checked",
+      "found": "",
       "example": false,
-      "completed": "checked",
+      "completed": "",
       "scenarioLocation": "blackBarrow",
       "scenario": "Black Barrow"
     },
     {
       "scenarioEvenOdd": "scenario-even",
-      "found": "checked",
+      "found": "",
       "example": false,
-      "completed": "checked",
+      "completed": "",
       "scenarioLocation": "barrowLair",
       "scenario": "Barrow Lair"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
-      "found": "checked",
+      "found": "",
       "example": false,
-      "completed": "checked",
+      "completed": "",
       "scenarioLocation": "inoxEncampment",
       "scenario": "Inox Encampment"
     },
     {
       "scenarioEvenOdd": "scenario-even",
-      "found": "checked",
+      "found": "",
       "example": false,
-      "completed": "checked",
+      "completed": "",
       "scenarioLocation": "cryptOfTheDamned",
       "scenario": "Crypt Of The Damned"
     },
     {
       "scenarioEvenOdd": "scenario-odd",
-      "found": "checked",
+      "found": "",
       "example": false,
-      "completed": "checked",
+      "completed": "",
       "scenarioLocation": "ruinousCrypt",
       "scenario": "Ruinous Crypt"
     },
@@ -427,9 +427,9 @@
     },
     {
       "scenarioEvenOdd": "scenario-odd",
-      "found": "checked",
+      "found": "",
       "example": false,
-      "completed": "checked",
+      "completed": "",
       "scenarioLocation": "rebelsStand",
       "scenario": "Rebel's Stand"
     },
@@ -647,7 +647,7 @@
     },
     {
       "scenarioEvenOdd": "scenario-even",
-      "found": "checked",
+      "found": "",
       "example": false,
       "completed": "",
       "scenarioLocation": "harrowerHive",
