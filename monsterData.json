@@ -1772,6 +1772,420 @@
         "sleeve": "/images/monster-stat-cards/gh-monster-stat-card-envelope-6.png",
         "maxCount": 6
     },
+    "inoxArcher": {
+        "name": "Inox Archer",
+        "boss": false,
+        "statFront": "/images/monster-stat-cards/gh-inox-archer-0.png",
+        "statBack": "/images/monster-stat-cards/gh-inox-archer-4.png",
+        "image": "/images/monster-standees/Inox-Archer.avif",
+        "deck": [
+            {
+                "image": "/images/monster-ability-cards/archer/gh-ma-ar-1.png",
+                "shuffle": "false",
+                "initiative": 16
+            },
+            {
+                "image": "/images/monster-ability-cards/archer/gh-ma-ar-2.png",
+                "shuffle": "false",
+                "initiative": 31
+            },
+            {
+                "image": "/images/monster-ability-cards/archer/gh-ma-ar-3.png",
+                "shuffle": "false",
+                "initiative": 32
+            },
+            {
+                "image": "/images/monster-ability-cards/archer/gh-ma-ar-4.png",
+                "shuffle": "false",
+                "initiative": 44
+            },
+            {
+                "image": "/images/monster-ability-cards/archer/gh-ma-ar-5.png",
+                "shuffle": "false",
+                "initiative": 56
+            },
+            {
+                "image": "/images/monster-ability-cards/archer/gh-ma-ar-6.png",
+                "shuffle": "true",
+                "initiative": 69
+            },
+            {
+                "image": "/images/monster-ability-cards/archer/gh-ma-ar-7.png",
+                "shuffle": "false",
+                "initiative": 14
+            },
+            {
+                "image": "/images/monster-ability-cards/archer/gh-ma-ar-8.png",
+                "shuffle": "true",
+                "initiative": 29
+            }
+        ],
+        "health": [
+            {
+                "normal": "5",
+                "elite": "7"
+            },
+            {
+                "normal": "6",
+                "elite": "8"
+            },
+            {
+                "normal": "8",
+                "elite": "11"
+            },
+            {
+                "normal": "9",
+                "elite": "13"
+            },
+            {
+                "normal": "10",
+                "elite": "14"
+            },
+            {
+                "normal": "12",
+                "elite": "17"
+            },
+            {
+                "normal": "12",
+                "elite": "19"
+            },
+            {
+                "normal": "15",
+                "elite": "23"
+            }
+        ],
+        "cardBack": "/images/monster-ability-cards/archer/gh-ma-ar-back.png",
+        "sleeve": "/images/monster-stat-cards/gh-monster-stat-card-envelope-6.png",
+        "maxCount": 6
+    },
+    "inoxBodyguard": {
+        "name": "Inox Bodyguard",
+        "boss": true,
+        "statFront": "/images/monster-stat-cards/gh-inox-bodyguard-0.png",
+        "statBack": "/images/monster-stat-cards/gh-inox-bodyguard-4.png",
+        "image": "/images/monster-standees/Inox-Bodyguard.avif",
+        "deck": [
+            {
+                "image": "/images/monster-ability-cards/boss/gh-ma-bo-1.png",
+                "shuffle": "false",
+                "initiative": 11
+            },
+            {
+                "image": "/images/monster-ability-cards/boss/gh-ma-bo-2.png",
+                "shuffle": "false",
+                "initiative": 14
+            },
+            {
+                "image": "/images/monster-ability-cards/boss/gh-ma-bo-3.png",
+                "shuffle": "true",
+                "initiative": 17
+            },
+            {
+                "image": "/images/monster-ability-cards/boss/gh-ma-bo-4.png",
+                "shuffle": "true",
+                "initiative": 85
+            },
+            {
+                "image": "/images/monster-ability-cards/boss/gh-ma-bo-5.png",
+                "shuffle": "false",
+                "initiative": 79
+            },
+            {
+                "image": "/images/monster-ability-cards/boss/gh-ma-bo-6.png",
+                "shuffle": "false",
+                "initiative": 73
+            },
+            {
+                "image": "/images/monster-ability-cards/boss/gh-ma-bo-7.png",
+                "shuffle": "false",
+                "initiative": 36
+            },
+            {
+                "image": "/images/monster-ability-cards/boss/gh-ma-bo-8.png",
+                "shuffle": "false",
+                "initiative": 52
+            }
+        ],
+        "health": [
+            {
+                "boss":6
+            },
+            {
+                "boss":7
+            },
+            {
+                "boss":9
+            },
+            {
+                "boss":10
+            },
+            {
+                "boss":11
+            },
+            {
+                "boss":13
+            },
+            {
+                "boss":15
+            },
+            {
+                "boss":17
+            }
+        ],
+        "cardBack": "/images/monster-ability-cards/boss/gh-ma-bo-back.png",
+        "sleeve": "/images/monster-stat-cards/gh-monster-stat-card-envelope-6.png",
+        "maxCount": 1
+    },
+    "inoxGuard": {
+        "name": "Inox Guard",
+        "boss": false,
+        "statFront": "/images/monster-stat-cards/gh-inox-guard-0.png",
+        "statBack": "/images/monster-stat-cards/gh-inox-guard-4.png",
+        "image": "/images/monster-standees/Inox-Guard.avif",
+        "deck": [
+            {
+                "image": "/images/monster-ability-cards/guard/gh-ma-gu-1.png",
+                "shuffle": "true",
+                "initiative": 15
+            },
+            {
+                "image": "/images/monster-ability-cards/guard/gh-ma-gu-2.png",
+                "shuffle": "false",
+                "initiative": 30
+            },
+            {
+                "image": "/images/monster-ability-cards/guard/gh-ma-gu-3.png",
+                "shuffle": "false",
+                "initiative": 35
+            },
+            {
+                "image": "/images/monster-ability-cards/guard/gh-ma-gu-4.png",
+                "shuffle": "false",
+                "initiative": 50
+            },
+            {
+                "image": "/images/monster-ability-cards/guard/gh-ma-gu-5.png",
+                "shuffle": "false",
+                "initiative": 50
+            },
+            {
+                "image": "/images/monster-ability-cards/guard/gh-ma-gu-6.png",
+                "shuffle": "false",
+                "initiative": 70
+            },
+            {
+                "image": "/images/monster-ability-cards/guard/gh-ma-gu-7.png",
+                "shuffle": "false",
+                "initiative": 55
+            },
+            {
+                "image": "/images/monster-ability-cards/guard/gh-ma-gu-8.png",
+                "shuffle": "true",
+                "initiative": 15
+            }
+        ],
+        "health": [
+            {
+                "normal": "5",
+                "elite": "9"
+            },
+            {
+                "normal": "8",
+                "elite": "10"
+            },
+            {
+                "normal": "9",
+                "elite": "12"
+            },
+            {
+                "normal": "11",
+                "elite": "15"
+            },
+            {
+                "normal": "12",
+                "elite": "17"
+            },
+            {
+                "normal": "13",
+                "elite": "19"
+            },
+            {
+                "normal": "16",
+                "elite": "21"
+            },
+            {
+                "normal": "19",
+                "elite": "23"
+            }
+        ],
+        "cardBack": "/images/monster-ability-cards/guard/gh-ma-gu-back.png",
+        "sleeve": "/images/monster-stat-cards/gh-monster-stat-card-envelope-6.png",
+        "maxCount": 6
+    },
+    "inoxShaman": {
+        "name": "Inox Shaman",
+        "boss": false,
+        "statFront": "/images/monster-stat-cards/gh-inox-shaman-0.png",
+        "statBack": "/images/monster-stat-cards/gh-inox-shaman-4.png",
+        "image": "/images/monster-standees/Inox-Shaman.avif",
+        "deck": [
+            {
+                "image": "/images/monster-ability-cards/shaman/gh-ma-sh-1.png",
+                "shuffle": "false",
+                "initiative": 8
+            },
+            {
+                "image": "/images/monster-ability-cards/shaman/gh-ma-sh-2.png",
+                "shuffle": "false",
+                "initiative": 8
+            },
+            {
+                "image": "/images/monster-ability-cards/shaman/gh-ma-sh-3.png",
+                "shuffle": "true",
+                "initiative": 23
+            },
+            {
+                "image": "/images/monster-ability-cards/shaman/gh-ma-sh-4.png",
+                "shuffle": "true",
+                "initiative": 23
+            },
+            {
+                "image": "/images/monster-ability-cards/shaman/gh-ma-sh-5.png",
+                "shuffle": "false",
+                "initiative": 62
+            },
+            {
+                "image": "/images/monster-ability-cards/shaman/gh-ma-sh-6.png",
+                "shuffle": "false",
+                "initiative": 74
+            },
+            {
+                "image": "/images/monster-ability-cards/shaman/gh-ma-sh-7.png",
+                "shuffle": "false",
+                "initiative": 89
+            },
+            {
+                "image": "/images/monster-ability-cards/shaman/gh-ma-sh-8.png",
+                "shuffle": "false",
+                "initiative": 9
+            }
+        ],
+        "health": [
+            {
+                "normal": "4",
+                "elite": "6"
+            },
+            {
+                "normal": "6",
+                "elite": "9"
+            },
+            {
+                "normal": "7",
+                "elite": "11"
+            },
+            {
+                "normal": "9",
+                "elite": "14"
+            },
+            {
+                "normal": "10",
+                "elite": "16"
+            },
+            {
+                "normal": "13",
+                "elite": "20"
+            },
+            {
+                "normal": "15",
+                "elite": "24"
+            },
+            {
+                "normal": "16",
+                "elite": "27"
+            }
+        ],
+        "cardBack": "/images/monster-ability-cards/shaman/gh-ma-sh-back.png",
+        "sleeve": "/images/monster-stat-cards/gh-monster-stat-card-envelope-6.png",
+        "maxCount": 4
+    },
+    "jekserah": {
+        "name": "Jekserah",
+        "boss": true,
+        "statFront": "/images/monster-stat-cards/gh-jekserah-0.png",
+        "statBack": "/images/monster-stat-cards/gh-jekserah-4.png",
+        "image": "/images/monster-standees/Jekserah.avif",
+        "deck": [
+            {
+                "image": "/images/monster-ability-cards/boss/gh-ma-bo-1.png",
+                "shuffle": "false",
+                "initiative": 11
+            },
+            {
+                "image": "/images/monster-ability-cards/boss/gh-ma-bo-2.png",
+                "shuffle": "false",
+                "initiative": 14
+            },
+            {
+                "image": "/images/monster-ability-cards/boss/gh-ma-bo-3.png",
+                "shuffle": "true",
+                "initiative": 17
+            },
+            {
+                "image": "/images/monster-ability-cards/boss/gh-ma-bo-4.png",
+                "shuffle": "true",
+                "initiative": 85
+            },
+            {
+                "image": "/images/monster-ability-cards/boss/gh-ma-bo-5.png",
+                "shuffle": "false",
+                "initiative": 79
+            },
+            {
+                "image": "/images/monster-ability-cards/boss/gh-ma-bo-6.png",
+                "shuffle": "false",
+                "initiative": 73
+            },
+            {
+                "image": "/images/monster-ability-cards/boss/gh-ma-bo-7.png",
+                "shuffle": "false",
+                "initiative": 36
+            },
+            {
+                "image": "/images/monster-ability-cards/boss/gh-ma-bo-8.png",
+                "shuffle": "false",
+                "initiative": 52
+            }
+        ],
+        "health": [
+            {
+                "boss":6
+            },
+            {
+                "boss":7
+            },
+            {
+                "boss":9
+            },
+            {
+                "boss":12
+            },
+            {
+                "boss":13
+            },
+            {
+                "boss":15
+            },
+            {
+                "boss":18
+            },
+            {
+                "boss":22
+            }
+        ],
+        "cardBack": "/images/monster-ability-cards/boss/gh-ma-bo-back.png",
+        "sleeve": "/images/monster-stat-cards/gh-monster-stat-card-envelope-6.png",
+        "maxCount": 1
+    },
     "livingBones": {
         "name": "Living Bones",
         "boss": false,
@@ -3366,42 +3780,42 @@
         "image": "/images/monster-standees/Vermling-Shaman.avif",
         "deck": [
             {
-                "image": "/images/monster-ability-cards/vermling-shaman/gh-ma-sh-1.png",
+                "image": "/images/monster-ability-cards/shaman/gh-ma-sh-1.png",
                 "shuffle": "false",
                 "initiative": 8
             },
             {
-                "image": "/images/monster-ability-cards/vermling-shaman/gh-ma-sh-2.png",
+                "image": "/images/monster-ability-cards/shaman/gh-ma-sh-2.png",
                 "shuffle": "false",
                 "initiative": 8
             },
             {
-                "image": "/images/monster-ability-cards/vermling-shaman/gh-ma-sh-3.png",
+                "image": "/images/monster-ability-cards/shaman/gh-ma-sh-3.png",
                 "shuffle": "true",
                 "initiative": 23
             },
             {
-                "image": "/images/monster-ability-cards/vermling-shaman/gh-ma-sh-4.png",
+                "image": "/images/monster-ability-cards/shaman/gh-ma-sh-4.png",
                 "shuffle": "true",
                 "initiative": 23
             },
             {
-                "image": "/images/monster-ability-cards/vermling-shaman/gh-ma-sh-5.png",
+                "image": "/images/monster-ability-cards/shaman/gh-ma-sh-5.png",
                 "shuffle": "false",
                 "initiative": 62
             },
             {
-                "image": "/images/monster-ability-cards/vermling-shaman/gh-ma-sh-6.png",
+                "image": "/images/monster-ability-cards/shaman/gh-ma-sh-6.png",
                 "shuffle": "false",
                 "initiative": 74
             },
             {
-                "image": "/images/monster-ability-cards/vermling-shaman/gh-ma-sh-7.png",
+                "image": "/images/monster-ability-cards/shaman/gh-ma-sh-7.png",
                 "shuffle": "false",
                 "initiative": 89
             },
             {
-                "image": "/images/monster-ability-cards/vermling-shaman/gh-ma-sh-8.png",
+                "image": "/images/monster-ability-cards/shaman/gh-ma-sh-8.png",
                 "shuffle": "false",
                 "initiative": 9
             }
@@ -3440,7 +3854,7 @@
                 "elite": "8"
             }
         ],
-        "cardBack": "/images/monster-ability-cards/vermling-shaman/gh-ma-sh-back.png",
+        "cardBack": "/images/monster-ability-cards/shaman/gh-ma-sh-back.png",
         "sleeve": "/images/monster-stat-cards/gh-monster-stat-card-envelope-6.png",
         "maxCount": 6
     },
