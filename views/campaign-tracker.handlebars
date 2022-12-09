@@ -13,7 +13,7 @@
         <fieldset class="party-reputation">
             <!-- Needs the chart for how modifiers work, could be a js function (enter reputation, get modifier)?-->
             <label for="party-reputation-text" class="reputation-label">Reputation: </label>
-            <input type="number" name="Party Reputation" class="party-reputation-text" id="reputation" value="{{reputation}}">
+            <input type="number" name="Party Reputation" class="party-reputation-text" id="reputation" value="{{eputation}}">
 
             <label for="shop-modifier-text" class="modifier-label">Shop Modifier: </label>
             <label for="shop-modifier-text" id="modifier">{{shopModifier}}</label>
@@ -38,80 +38,14 @@
                 </td>
             </tr>
             <tr>
-                <div class="player-info">
-                    <td>
-                        <div>1</div>
-                    </td>
-                    <td><input type="text" name="character-1" class="character" id="player-name"></td>
-                    <td><select class="player-level" name="player-1-level">
-                            <option selected value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                        </select></td>
-                </div>
-                <div class="player-info">
-                    <td>
-                        <div>2</div>
-                    </td>
-                    <td><input type="text" name="character-2" class="character"></td>
-                    <td><select class="player-level" name="player-2-level">
-                            <option selected value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                        </select></td>
-                </div>
+                {{#each playerData1To2}}
+                {{> playerinfo}}
+                {{/each}}
             </tr>
             <tr>
-                <div class="player-info">
-                    <td>
-                        <div>3</div>
-                    </td>
-                    <td><input type="text" name="character-3" class="character"></td>
-                    <td><select class="player-level" name="player-3-level">
-                            <option selected value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                        </select></td>
-                </div>
-                <div class="player-info">
-                    <td>
-                        <div>4</div>
-                    </td>
-                    <td><input type="text" name="character-4" class="character"></td>
-                    <td><select class="player-level" name="player-4-level">
-                            <option selected value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                        </select></td>
-                </div>
+                {{#each playerData3To4}}
+                {{> playerinfo}}
+                {{/each}}
             </tr>
             <tr>
                 <td>

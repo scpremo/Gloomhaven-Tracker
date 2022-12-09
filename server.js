@@ -71,16 +71,21 @@ app.put('/update/:update', function (req, res, next) {
 app.get('/', function (req, res, next) {
   var scenarioData = campaignData
   //console.log("== data ", scenarioData)
-
+  // console.log("players 1 and 2:"+ JSON.stringify(scenarioData.playerCharacters.splice(0,2)))
+  // console.log("players 3 and 4:"+ JSON.stringify(scenarioData.playerCharacters.splice(0,2)))
+  var levels= [...scenarioData.playerCharacters]
   if (scenarioData) {
-    res.status(200).render('campaign-tracker', {
+    res.status(200).render('campaign-tracker', {  
       layout: 'campaign-layout',
       missions: scenarioData.scenarios,
       partyName: scenarioData.partyName,
       reputation: scenarioData.reputation,
       shopModifier: scenarioData.shopModifier,
       averageLevel:scenarioData.averageLevel,
-      scenarioLevel:scenarioData.scenarioLevel
+      scenarioLevel:scenarioData.scenarioLevel,
+      playerData1To2: levels.splice(0,2),
+      playerData3To4: levels.splice(0,2)
+
     })
   } else {
     next();

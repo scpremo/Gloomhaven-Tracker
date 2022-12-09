@@ -32,7 +32,8 @@ function update() {
         }
         var playerInfo={
             name:name,
-            level:level
+            level:level,
+            index:i
         }
         partyMembers.push(playerInfo)
         // playerInfo={
@@ -87,13 +88,14 @@ function update() {
                 completed="checked"
             }
             var link=scenarioLabels[i].href
+            var missionName=link.substring(link.lastIndexOf('/')+1,link.length)
             var scenario =scenarioLabels[i].textContent
             var mission={
                 "scenario-even/odd": evenOrOdd,
                 "found": found,
                 "example": false,
                 "completed": completed,
-                "scenarioLocation": link,
+                "scenarioLocation": missionName,
                 "scenario": scenario
             }
             index++
