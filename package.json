@@ -2,12 +2,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "build": "handlebars views/partials/monsterInfo.handlebars -f public/monsterInfoTemplate.js",
-    "prebuild":"handlebars views/partials/playerinfo.handlebars -f public/playerinfoTemplate.js",
-    "prebuild":"handlebars views/partials/scenario.handlebars -f public/scenarioTemplate.js",    
-    "prebuild":"handlebars views/partials/levelStarter.handlebars -f public/levelStarterTemplate.js",
-    "prebuild":"handlebars views/partials/monster.handlebars -f public/monsterTemplate.js",
-    "prestart": "npm run build",
+    "build1": "handlebars views/partials/monsterInfo.handlebars -f public/monsterInfoTemplate.js",
+    "prebuild1":"npm run build2",
+    "build2":"handlebars views/partials/scenario.handlebars -f public/scenarioTemplate.js",  
+    "prebuild2":"npm run build3",  
+    "build3":"handlebars views/partials/levelStarter.handlebars -f public/levelStarterTemplate.js",
+    "prebuild3":"npm run build4",
+    "build4":"handlebars views/partials/monster.handlebars -f public/monsterTemplate.js",
+    "prestart": "npm run build1",
     "dev": "nodemon server.js"
     
   },
