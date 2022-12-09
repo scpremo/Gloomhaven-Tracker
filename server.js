@@ -19,9 +19,9 @@ app.set('view engine', 'handlebars')
 app.use(express.json())
 
 
-// const bodyParser = require('body-parser');
-// app.use(bodyParser.urlencoded({ extended: false }));
-// app.use(bodyParser.json());
+const bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 app.use(express.static('public'));
 
 
@@ -73,6 +73,7 @@ app.get('/', function (req, res, next) {
   //console.log("== data ", scenarioData)
   // console.log("players 1 and 2:"+ JSON.stringify(scenarioData.playerCharacters.splice(0,2)))
   // console.log("players 3 and 4:"+ JSON.stringify(scenarioData.playerCharacters.splice(0,2)))
+  console.log(scenarioData.reputation)
   var levels= [...scenarioData.playerCharacters]
   if (scenarioData) {
     res.status(200).render('campaign-tracker', {  
@@ -128,10 +129,13 @@ app.get('/level/:n', function (req, res, next) {
     for (let i = 0; i < levelDat.monsters.length; i++) {
       monsterArray.push(monsterData[levelDat.monsters[i]])
     }
+    console.log("player count:"+campaignData.playerCount  )
     resData = {
       "monsters": monsterArray,
       "LevelName": levelDat.name,
-      "attackMods": monsterData.attackMods
+      "attackMods": monsterData.attackMods,
+      "playerCount":campaignData.playerCount,
+      "scenarioLevel":campaignData.scenarioLevel
     }
     res.status(200).send(JSON.stringify(resData))
     //res.status(200).send(JSON.stringify(resData))
