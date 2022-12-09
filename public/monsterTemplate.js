@@ -8,8 +8,8 @@ templates['monster'] = template({"compiler":[8,">= 4.3.0"],"main":function(conta
         return undefined
     };
 
-  return "<div class=\"monster-area\" id=\""
-    + alias4(((helper = (helper = lookupProperty(helpers,"id") || (depth0 != null ? lookupProperty(depth0,"id") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"id","hash":{},"data":data,"loc":{"start":{"line":1,"column":30},"end":{"line":1,"column":36}}}) : helper)))
+  return "<div class=\"monster-stuff\" id=\""
+    + alias4(((helper = (helper = lookupProperty(helpers,"id") || (depth0 != null ? lookupProperty(depth0,"id") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"id","hash":{},"data":data,"loc":{"start":{"line":1,"column":31},"end":{"line":1,"column":37}}}) : helper)))
     + "\">\r\n    <div class=\"monster-container\" id=\""
     + alias4(((helper = (helper = lookupProperty(helpers,"type") || (depth0 != null ? lookupProperty(depth0,"type") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"type","hash":{},"data":data,"loc":{"start":{"line":2,"column":39},"end":{"line":2,"column":47}}}) : helper)))
     + "\">\r\n        <!-- Monster Image -->\r\n        <div class=\"monster-image-container\">\r\n            <img class=\"monster-image\" src=\""
