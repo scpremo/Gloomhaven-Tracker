@@ -12,13 +12,13 @@ function lessorequal(item1, item2) {
 const Elite = "Elite"
 const Normal = "Normal"
 
-const BLESS = {
-    "image": "images/attack-modifiers/monster-mod/gh-am-mm-01.png",
+const CURSE = {
+    "image": "/images/attack-modifiers/monster-mod/gh-am-mm-01.png",
     "shuffle": false,
     "remove": true
 }
-const CURSE = {
-    "image": "images/attack-modifiers/monster-mod/gh-am-pm-11.png",
+const BLESS = {
+    "image": "/images/attack-modifiers/monster-mod/gh-am-pm-11.png",
     "shuffle": false,
     "remove": true
 }
@@ -67,7 +67,7 @@ let Card = class {
     }
 }
 const DISCARD = new Card({
-    "image": "images/discard.png",
+    "image": "/images/discard.png",
     "shuffle": false,
     "remove": false
 })
@@ -96,6 +96,8 @@ let Deck = class {
     }
     draw() {
         this.removeCardAt(this.index)
+        if(this.index+1>this.size)
+            this.shuffle()
         this.recentCard = this.deck[this.index]
         this.index = this.index + 1
         return this.recentCard
@@ -170,8 +172,9 @@ let healthTracker = class {
     }
 }
 let Monster = class {
-    constructor(monsterData, level, playerCount) {
+    constructor(monsterData, level, playerCount, index) {
         this.boss=monsterData.boss
+        this.index=index
         this.name = monsterData.name
         this.playerCount = playerCount
         this.rotation = 90 * (level % 4)
@@ -194,6 +197,19 @@ let Monster = class {
             }
         }
         this.currentCount = 0
+        var monsterTemplate=Handlebars.templates.monsterInfo({
+            statSheet: this.statCard,
+            statCover: this.sleeve,
+            cardBack: monsterData.cardBack,
+            discard: DISCARD.cardFront
+          })
+        //console.log("monsterTemplate: "+ monsterTemplate)
+        this.monsterSection= document.getElementById("monsters")
+        this.monsterSection.insertAdjacentHTML("beforeend", monsterTemplate)
+        this.statCardRotate=document.getElementsByClassName("stat-img")
+        console.log(this.statCardRotate[index*2])
+        this.statCardRotate.style.transform = 'rotate(90deg)'
+
     }
     startRound() {
         if (this.currentCount != 0) {
@@ -257,10 +273,11 @@ let Monster = class {
 }
 let levelControl = class {
     constructor(monsterData, level, playerCount, attackMods) {
+        
         this.size = monsterData.length
         this.monsters = new Array(this.size)
         for (let index = 0; index < this.size; index++) {
-            this.monsters[index] = new Monster(monsterData[index], level, playerCount)
+            this.monsters[index] = new Monster(monsterData[index], level, playerCount,index)
         }
         this.attackMod = new Deck(attackMods.deck, attackMods.cardBack)
         this.attackMod.shuffle()
@@ -271,10 +288,26 @@ let levelControl = class {
         this.discardPile= document.getElementById("am-drawn")
         this.discard= DISCARD
         this.discardPile.src=this.discard.cardFront
-        drawButton= document.getElementById("am-draw")
-        drawButton.addEventListener('click',this.drawMod.bind(this))
+        this.drawButton= document.getElementById("am-draw")
+        this.drawButton.addEventListener('click',this.drawMod.bind(this))
+        this.curseButton= document.getElementById("am-curse")
+        this.curseButton.addEventListener('click',this.addCurse.bind(this))
+        this.blessButton= document.getElementById("am-bless")
+        this.blessButton.addEventListener('click',this.addBless.bind(this))
+        this.shuffleButton= document.getElementById("am-shuffle")
+        this.shuffleButton.addEventListener('click',this.shuffleMod .bind(this))
+        this.startButton= document.getElementById("round-start")
+        this.startButton.addEventListener('click',this.startRound.bind(this))
+        this.endButton= document.getElementById("round-end")
+        this.endButton.addEventListener('click',this.endRound.bind(this))
         this.shuffle = false
 
+    }
+    shuffleMod()
+    {
+        this.attackMod.shuffle()
+        this.discard= DISCARD
+        this.discardPile.src=this.discard.cardFront
     }
     drawMod() {
         console.log(this)
@@ -337,6 +370,8 @@ let levelControl = class {
         }
         if (this.shuffle) {
             this.attackMod.shuffle()
+            this.discard= DISCARD
+            this.discardPile.src=this.discard.cardFront
         }
     }
 
@@ -371,7 +406,7 @@ var Datra
 levelData.then(function(levelData){
     Data=  levelData
 })
-var drawButton
+
 var arr = new Array()
 setTimeout(function () {
     // test code 
@@ -379,7 +414,8 @@ setTimeout(function () {
     // arr.push(Data.banditGuard)
     // arr.push(Data.livingBones)
     // arr.push(Data.banditArcher)
-    
+    levelRem=document.getElementById("level")
+    levelRem.remove()
     cat = new levelControl(Data.monsters, 5, 3, Data.attackMods)
     
     cat.monsters[0].newMonster(Elite)

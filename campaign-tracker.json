@@ -1,33 +1,33 @@
 {
-  "partyName": "Tank",
-  "reputation": 20,
-  "shopModifier": -5,
+  "partyName": "",
+  "reputation": 0,
+  "shopModifier": 0,
   "playerCharacters": [
     {
-      "name": "Cat",
-      "level": 4,
+      "name": "",
+      "level": 0,
       "index": 0
     },
     {
-      "name": "Corn",
-      "level": 5,
+      "name": "",
+      "level": 0,
       "index": 1
     },
     {
-      "name": "eat",
-      "level": 9,
+      "name": "",
+      "level": 0,
       "index": 2
     },
     {
-      "name": "luke",
-      "level": 9,
+      "name": "",
+      "level": 0,
       "index": 3
     }
   ],
-  "playerCount": 4,
-  "averageLevel": 6.75,
+  "playerCount": 0,
+  "averageLevel": null,
   "difficulty": 0,
-  "scenarioLevel": 3,
+  "scenarioLevel": null,
   "scenarios": [
     {
       "example": true,
