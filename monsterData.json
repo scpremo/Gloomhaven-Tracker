@@ -2196,42 +2196,42 @@
             {
                 "image": "/images/monster-ability-cards/rending-drake/gh-ma-lc-1.png",
                 "shuffle": "false",
-                "initiative": 36
+                "initiative": 12
             },
             {
                 "image": "/images/monster-ability-cards/rending-drake/gh-ma-lc-2.png",
-                "shuffle": "false",
-                "initiative": 57
+                "shuffle": "true",
+                "initiative": 13
             },
             {
                 "image": "/images/monster-ability-cards/rending-drake/gh-ma-lc-3.png",
                 "shuffle": "false",
-                "initiative": 59
+                "initiative": 25
             },
             {
                 "image": "/images/monster-ability-cards/rending-drake/gh-ma-lc-4.png",
                 "shuffle": "false",
-                "initiative": 66
+                "initiative": 39
             },
             {
                 "image": "/images/monster-ability-cards/rending-drake/gh-ma-lc-5.png",
-                "shuffle": "true",
-                "initiative": 94
+                "shuffle": "false",
+                "initiative": 54
             },
             {
                 "image": "/images/monster-ability-cards/rending-drake/gh-ma-lc-6.png",
-                "shuffle": "true",
-                "initiative": 94
+                "shuffle": "false",
+                "initiative": 59
             },
             {
                 "image": "/images/monster-ability-cards/rending-drake/gh-ma-lc-7.png",
-                "shuffle": "false",
-                "initiative": 66
+                "shuffle": "true",
+                "initiative": 72
             },
             {
                 "image": "/images/monster-ability-cards/rending-drake/gh-ma-lc-8.png",
                 "shuffle": "false",
-                "initiative": 85
+                "initiative": 6
             }
         ],
         "health": [
@@ -2271,6 +2271,178 @@
         "cardBack": "/images/monster-ability-cards/rending-drake/gh-ma-lc-back.png",
         "sleeve": "/images/monster-stat-cards/gh-monster-stat-card-envelope-6.png",
         "maxCount": 6
+    },
+    "savvasIcestorm": {
+        "name": "Savvas Icestorm",
+        "boss": false,
+        "statFront": "/images/monster-stat-cards/gh-savvas-icestorm-0.png",
+        "statBack": "/images/monster-stat-cards/gh-savvas-icestorm-4.png",
+        "image": "/images/monster-standees/Savvas-Icestorm.avif",
+        "deck": [
+            {
+                "image": "/images/monster-ability-cards/savvas-icestorm/gh-ma-lc-1.png",
+                "shuffle": "false",
+                "initiative": 70
+            },
+            {
+                "image": "/images/monster-ability-cards/savvas-icestorm/gh-ma-lc-2.png",
+                "shuffle": "false",
+                "initiative": 98
+            },
+            {
+                "image": "/images/monster-ability-cards/savvas-icestorm/gh-ma-lc-3.png",
+                "shuffle": "false",
+                "initiative": 98
+            },
+            {
+                "image": "/images/monster-ability-cards/savvas-icestorm/gh-ma-lc-4.png",
+                "shuffle": "false",
+                "initiative": 19
+            },
+            {
+                "image": "/images/monster-ability-cards/savvas-icestorm/gh-ma-lc-5.png",
+                "shuffle": "false",
+                "initiative": 14
+            },
+            {
+                "image": "/images/monster-ability-cards/savvas-icestorm/gh-ma-lc-6.png",
+                "shuffle": "false",
+                "initiative": 14
+            },
+            {
+                "image": "/images/monster-ability-cards/savvas-icestorm/gh-ma-lc-7.png",
+                "shuffle": "true",
+                "initiative": 47
+            },
+            {
+                "image": "/images/monster-ability-cards/savvas-icestorm/gh-ma-lc-8.png",
+                "shuffle": "true",
+                "initiative": 35
+            }
+        ],
+        "health": [
+            {
+                "normal": "7",
+                "elite": "12"
+            },
+            {
+                "normal": "10",
+                "elite": "12"
+            },
+            {
+                "normal": "12",
+                "elite": "15"
+            },
+            {
+                "normal": "12",
+                "elite": "18"
+            },
+            {
+                "normal": "14",
+                "elite": "19"
+            },
+            {
+                "normal": "16",
+                "elite": "21"
+            },
+            {
+                "normal": "16",
+                "elite": "23"
+            },
+            {
+                "normal": "17",
+                "elite": "24"
+            }
+        ],
+        "cardBack": "/images/monster-ability-cards/savvas-icestorm/gh-ma-lc-back.png",
+        "sleeve": "/images/monster-stat-cards/gh-monster-stat-card-envelope-6.png",
+        "maxCount": 4
+    },
+    "savvasLavaflow": {
+        "name": "Savvas Lavaflow",
+        "boss": false,
+        "statFront": "/images/monster-stat-cards/gh-savvas-lavaflow-0.png",
+        "statBack": "/images/monster-stat-cards/gh-savvas-lavaflow-4.png",
+        "image": "/images/monster-standees/Savvas-Lavaflow.avif",
+        "deck": [
+            {
+                "image": "/images/monster-ability-cards/savvas-lavaflow/gh-ma-lc-1.png",
+                "shuffle": "false",
+                "initiative": 97
+            },
+            {
+                "image": "/images/monster-ability-cards/savvas-lavaflow/gh-ma-lc-2.png",
+                "shuffle": "false",
+                "initiative": 97
+            },
+            {
+                "image": "/images/monster-ability-cards/savvas-lavaflow/gh-ma-lc-3.png",
+                "shuffle": "false",
+                "initiative": 22
+            },
+            {
+                "image": "/images/monster-ability-cards/savvas-lavaflow/gh-ma-lc-4.png",
+                "shuffle": "true",
+                "initiative": 68
+            },
+            {
+                "image": "/images/monster-ability-cards/savvas-lavaflow/gh-ma-lc-5.png",
+                "shuffle": "false",
+                "initiative": 41
+            },
+            {
+                "image": "/images/monster-ability-cards/savvas-lavaflow/gh-ma-lc-6.png",
+                "shuffle": "false",
+                "initiative": 51
+            },
+            {
+                "image": "/images/monster-ability-cards/savvas-lavaflow/gh-ma-lc-7.png",
+                "shuffle": "false",
+                "initiative": 31
+            },
+            {
+                "image": "/images/monster-ability-cards/savvas-lavaflow/gh-ma-lc-8.png",
+                "shuffle": "true",
+                "initiative": 68
+            }
+        ],
+        "health": [
+            {
+                "normal": "8",
+                "elite": "13"
+            },
+            {
+                "normal": "9",
+                "elite": "15"
+            },
+            {
+                "normal": "11",
+                "elite": "18"
+            },
+            {
+                "normal": "14",
+                "elite": "21"
+            },
+            {
+                "normal": "16",
+                "elite": "24"
+            },
+            {
+                "normal": "18",
+                "elite": "27"
+            },
+            {
+                "normal": "20",
+                "elite": "30"
+            },
+            {
+                "normal": "24",
+                "elite": "35"
+            }
+        ],
+        "cardBack": "/images/monster-ability-cards/savvas-lavaflow/gh-ma-lc-back.png",
+        "sleeve": "/images/monster-stat-cards/gh-monster-stat-card-envelope-6.png",
+        "maxCount": 4
     }
 
 }
