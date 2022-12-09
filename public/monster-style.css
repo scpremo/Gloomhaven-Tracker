@@ -1,0 +1,98 @@
+.monster {
+    background-color: seagreen;
+    display: flex;
+    flex-direction: row;
+}
+
+.monster-info {
+    position: relative;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    max-width: fit-content;
+    padding-right: 10px;
+}
+
+img.stat-img {
+    max-width: 256px;
+    height: auto;
+    margin: 10px;
+}
+
+#stat-overlay {
+    position:absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.battle-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.attack-card {
+    max-width: 150px;
+    min-width: 150px;
+    max-height: 100px;
+    min-height: 100px;
+    margin-top: 10px;
+    background-color: sandybrown;
+    border: 2px solid black;
+}
+
+.add-monster {
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: saddlebrown;
+    
+}
+
+button:hover {
+    background-color: sandybrown;
+}
+
+.monster-area {
+    border: 2px solid black;
+    border-left: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.monster-container {
+    position: relative;
+    margin: 5px;
+    max-height: 128px;
+    border: 2px solid black;
+}
+
+#elite {
+    background-color: goldenrod;
+}
+
+#normal {
+    background-color: brown;
+}
+
+.monster-image {
+    max-height: 118px;
+}
+
+.monster-initiative-number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+.monster-hp {
+    display: flex;
+    flex-direction: row;
+}
