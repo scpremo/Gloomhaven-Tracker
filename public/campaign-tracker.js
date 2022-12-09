@@ -61,7 +61,7 @@ function update() {
         {
             var mission={
                 "example": true,
-                "scenario-even/odd": "scenario-odd"
+                "scenarioEvenOddd": "scenario-odd"
             }
             scenarios.push(mission)
         }
@@ -91,7 +91,7 @@ function update() {
             var missionName=link.substring(link.lastIndexOf('/')+1,link.length)
             var scenario =scenarioLabels[i].textContent
             var mission={
-                "scenario-even/odd": evenOrOdd,
+                "scenarioEvenOddd": evenOrOdd,
                 "found": found,
                 "example": false,
                 "completed": completed,

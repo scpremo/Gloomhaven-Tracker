@@ -3,8 +3,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "build": "handlebars views/partials/levelStarter.handlebars -f public/levelStarterTemplate.js",
-    "prebuild":"handlebars views/partials/scenario.handlebars -f public/scenarioTemplate.js",
     "prebuild":"handlebars views/partials/playerinfo.handlebars -f public/playerinfoTemplate.js",
+    "prebuild":"handlebars views/partials/scenario.handlebars -f public/scenarioTemplate.js",
     "prestart": "npm run build",
     "dev": "nodemon server.js"
     
