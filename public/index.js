@@ -523,6 +523,8 @@ levelData.then(function(levelData){
 var arr = new Array()
 setTimeout(function () {
     // test code 
+    if(Data)
+    {
     console.log("starting tests")
     // arr.push(Data.banditGuard)
     // arr.push(Data.livingBones)
@@ -530,6 +532,9 @@ setTimeout(function () {
     levelRem=document.getElementById("level")
     levelRem.remove()
     cat = new levelControl(Data.monsters, Data.scenarioLevel, Data.playerCount, Data.attackMods)
+    }
+    else 
+        alert("could not load everything please try again")
     
     // cat.monsters[0].newMonster(Elite)
     // cat.monsters[2].newMonster(Elite)
